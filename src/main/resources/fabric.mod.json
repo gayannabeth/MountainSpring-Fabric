@@ -1,0 +1,50 @@
+{
+	"schemaVersion": 1,
+	"id": "mountainspring",
+	"version": "${version}",
+	"name": "Mountain Spring",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"email": "mountainspring379@gmail.com",
+		"discord": "https://discord.gg/8KZvZHq",
+		"sources": "https://github.com/gayannabeth/MountainSpring-Fabric"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mountainspring/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"gay.mountainspring.MSMain"
+		],
+		"client": [
+			"gay.mountainspring.client.MSClient"
+		],
+		"fabric-datagen": [
+			"gay.mountainspring.datagen.MSDataGen"
+		],
+		"modmenu": [
+			"gay.mountainspring.client.modmenu.MSModMenu"
+		],
+		"terrablender": [
+			"gay.mountainspring.terrablender.MSTerraBlender"
+		]
+	},
+	"mixins": [
+		"mountainspring.mixins.json",
+		{
+			"config": "mountainspring.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"		,
+		"cloth-config": "*",
+		"aquifer": "*"
+	}
+}
