@@ -12,7 +12,7 @@
 		"discord": "https://discord.gg/8KZvZHq",
 		"sources": "https://github.com/gayannabeth/MountainSpring-Fabric"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/mountainspring/icon.png",
 	"environment": "*",
 	"entrypoints": {
