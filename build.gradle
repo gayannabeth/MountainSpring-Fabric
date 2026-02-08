@@ -51,6 +51,8 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 	modImplementation "gay.mountainspring.aquifer:aquifer-fabric:${project.aquifer_version}"
 	modRuntimeOnly "gay.mountainspring.sswplus:sswplus-fabric:${project.sswplus_version}"
+	modRuntimeOnly "gay.mountainspring.cauldronsplus:cauldronsplus-fabric:${project.cauldronsplus_version}"
+	modRuntimeOnly "gay.mountainspring.cauldronsplus_sswplus:cauldronsplus-sswplus-fabric:${project.cauldronsplus_sswplus_verion}"
 	
 	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_version}") {
         exclude(group: "net.fabricmc.fabric-api")
