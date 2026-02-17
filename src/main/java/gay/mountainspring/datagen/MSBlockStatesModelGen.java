@@ -47,7 +47,7 @@ public class MSBlockStatesModelGen extends FabricModelProvider {
 		gen.registerSingleton(MSBlocks.MOSSY_ANDESITE_BRICKS, TexturedModel.CUBE_ALL);
 		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_ANDESITE_BRICKS, TexturedModel.CUBE_ALL);
 		
-		gen.registerAxisRotated(MSBlocks.MOSSY_DEEPSLATE, TexturedModel.CUBE_COLUMN);
+		gen.registerAxisRotated(MSBlocks.MOSSY_DEEPSLATE, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
 		gen.registerSingleton(MSBlocks.MOSSY_COBBLED_DEEPSLATE, TexturedModel.CUBE_ALL);
 		gen.registerSingleton(MSBlocks.MOSSY_DEEPSLATE_BRICKS, TexturedModel.CUBE_ALL);
 		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_DEEPSLATE_BRICKS, TexturedModel.CUBE_ALL);
@@ -165,9 +165,9 @@ public class MSBlockStatesModelGen extends FabricModelProvider {
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_ANDESITE_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_ANDESITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_ANDESITE_BRICK_WALL, MSBlocks.CRACKED_MOSSY_ANDESITE_BRICKS);
 		
-		AquiferBlockStates.registerOrientableSlab(gen, MSBlocks.MOSSY_DEEPSLATE_SLAB, TextureMap.sideEnd(MSBlocks.MOSSY_DEEPSLATE), ModelIds.getBlockModelId(MSBlocks.MOSSY_DEEPSLATE));
-		AquiferBlockStates.registerOrientableStairs(gen, MSBlocks.MOSSY_DEEPSLATE_STAIRS, TextureMap.sideEnd(MSBlocks.MOSSY_DEEPSLATE));
-		AquiferBlockStates.registerWallColumn(gen, MSBlocks.MOSSY_DEEPSLATE_WALL, TextureMap.sideEnd(MSBlocks.MOSSY_DEEPSLATE));
+		AquiferBlockStates.registerOrientableSlab(gen, MSBlocks.MOSSY_DEEPSLATE_SLAB, TextureMap.sideAndEndForTop(MSBlocks.MOSSY_DEEPSLATE), ModelIds.getBlockModelId(MSBlocks.MOSSY_DEEPSLATE));
+		AquiferBlockStates.registerOrientableStairs(gen, MSBlocks.MOSSY_DEEPSLATE_STAIRS, TextureMap.sideAndEndForTop(MSBlocks.MOSSY_DEEPSLATE));
+		AquiferBlockStates.registerWallColumn(gen, MSBlocks.MOSSY_DEEPSLATE_WALL, TextureMap.sideAndEndForTop(MSBlocks.MOSSY_DEEPSLATE));
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB, MSBlocks.MOSSY_COBBLED_DEEPSLATE);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS, MSBlocks.MOSSY_COBBLED_DEEPSLATE);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_COBBLED_DEEPSLATE_WALL, MSBlocks.MOSSY_COBBLED_DEEPSLATE);

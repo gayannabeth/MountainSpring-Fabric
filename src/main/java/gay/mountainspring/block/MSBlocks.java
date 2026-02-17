@@ -59,7 +59,7 @@ public class MSBlocks {
 	public static final Block MOSSY_ANDESITE_BRICKS = register("mossy_andesite_bricks", new Block(AbstractBlock.Settings.copy(ANDESITE_BRICKS)));
 	public static final Block CRACKED_MOSSY_ANDESITE_BRICKS = register("cracked_mossy_andesite_bricks", new Block(AbstractBlock.Settings.copy(ANDESITE_BRICKS)));
 	
-	public static final Block MOSSY_DEEPSLATE = register("mossy_depslate", new PillarBlock(AbstractBlock.Settings.copy(Blocks.DEEPSLATE)));
+	public static final Block MOSSY_DEEPSLATE = register("mossy_deepslate", new PillarBlock(AbstractBlock.Settings.copy(Blocks.DEEPSLATE)));
 	public static final Block MOSSY_COBBLED_DEEPSLATE = register("mossy_cobbled_deepslate", new Block(AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE)));
 	public static final Block MOSSY_DEEPSLATE_BRICKS = register("mossy_deepslate_bricks", new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICKS)));
 	public static final Block CRACKED_MOSSY_DEEPSLATE_BRICKS = register("cracked_mossy_deepslate_bricks", new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICKS)));

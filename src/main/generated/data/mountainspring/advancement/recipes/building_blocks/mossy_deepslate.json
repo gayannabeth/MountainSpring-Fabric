@@ -26,7 +26,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mountainspring:mossy_depslate"
+        "recipe": "mountainspring:mossy_deepslate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -40,7 +40,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mountainspring:mossy_depslate"
+      "mountainspring:mossy_deepslate"
     ]
   }
 }

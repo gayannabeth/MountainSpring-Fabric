@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-16T18:39:56.2889776	Mountain Spring/Tags for minecraft:item
+// 1.21.1	2026-02-17T10:11:02.9243216	Mountain Spring/Tags for minecraft:item
 f1efd3afbd5da11e9164b0c17c942a7e730b00f9 data\sswplus\tags\item\tuff.json
 b476c8406c79cc55a86c56594245af5d0c4634f0 data\mountainspring\tags\item\prismarine_brick_stairs.json
 fa96e649b2e1f54f9b5ab23cc057a77217fd7e49 data\sswplus\tags\item\sandstone_walls\beige.json
@@ -6,6 +6,7 @@ eac987d508c5c4178b9829167c5f57e0b8612465 data\sswplus\tags\item\quartz_blocks.js
 7fe9d594c1e0d2cebcb4d83600963c76adba1d9b data\mountainspring\tags\item\diorite_bricks.json
 4e4990e395582097971c6da2157cacff7038f033 data\mountainspring\tags\item\andesite_bricks.json
 2d9a1584ca7d267a83f0afa31a1ac5faba978bdb data\mountainspring\tags\item\nether_brick_blocks\uncolored.json
+3f71b10fd7b2405b289b1abdfcecfd28b784ce1c data\minecraft\tags\item\walls.json
 b92896ae4d56ea574b1c9d18c37f47f57ad4a8e5 data\c\tags\item\cobblestones\andesite.json
 637477b282b5c71a375ff2b1be61d7ed1c6683a9 data\mountainspring\tags\item\granite_brick_slabs.json
 efe9ade3fa9abf4872f3848ff8eafee941ef67dd data\mountainspring\tags\item\sandstone_brick_walls.json
@@ -30,6 +31,7 @@ df5b8c37cdad8a44c29232c69050c64e1bb29333 data\mountainspring\tags\item\nether_br
 d4a7a2fba01f06974bf4302777dfeeaf23565189 data\sswplus\tags\item\diorite.json
 1747ee13583406e08a3346b0266b209cfb37209b data\mountainspring\tags\item\mud_brick_slabs.json
 ea01b354a61de765d28454d7c47c7ab41b8470d3 data\mountainspring\tags\item\granite_bricks.json
+9ab5a4f1e943e3bbf2677baf0c5173a6560fe611 data\minecraft\tags\item\stairs.json
 c6284f525af1e8cfbd5bd908c13d248ffbe12fa5 data\sswplus\tags\item\stone_slabs.json
 f8254d7608389e1d1da602e805b0cc28eba55e41 data\c\tags\item\cobblestones\diorite.json
 65c52cb21f4a8a06847ce6f631e2c61aba3d9bc5 data\mountainspring\tags\item\sandstone_brick_walls\beige.json
@@ -60,8 +62,8 @@ fb6b20a7d333449f4c5978cdfb559872bf4c02a7 data\mountainspring\tags\item\sandstone
 58000e205c261b30a33f780db19002647ebb6690 data\mountainspring\tags\item\nether_brick_stairs\uncolored.json
 289899cbf894ddbfe0f92f40e6d29d7d0fd194ff data\sswplus\tags\item\diorite_slabs.json
 be7ff955f33dd77d7d138fd6287670ef48b92be8 data\sswplus\tags\item\stone_brick_walls.json
-7b54f8e5b2894dca1d8a7cf995ceacd52763b668 data\mountainspring\tags\item\prismarine_brick_walls.json
 d61379b8c5b1766bb99eadcdc95b95a15fa3ffc4 data\mountainspring\tags\item\sandstone_bricks.json
+7b54f8e5b2894dca1d8a7cf995ceacd52763b668 data\mountainspring\tags\item\prismarine_brick_walls.json
 4f615fa2fed0b4241ba13fe0517229e329034ff2 data\sswplus\tags\item\tuff_bricks.json
 382b92eb73edcd2a0021c0990884616a9d89e471 data\sswplus\tags\item\sandstone_walls\red.json
 79cae3a8b60c27e3af366961c3f0011d6537427f data\mountainspring\tags\item\mud_brick_walls.json
@@ -75,7 +77,7 @@ cbb22da5d15987b9b8a5bc5deec6415feb2d8bdf data\mountainspring\tags\item\prismarin
 a08e40fae984a1b84958f32f5f11b97d5f9e9ab6 data\sswplus\tags\item\deepslate_tile_stairs.json
 cb83e63f946e951660901a4ef5bafef26abfe8b0 data\mountainspring\tags\item\sandstone_bricks\beige.json
 e84957b59314a9358b1dc16e94bd1d56f9c5cc9d data\mountainspring\tags\item\nether_brick_slabs\uncolored.json
-977fed87b2b66e43eadf590da1d6a164d733a4d2 data\aquifer\tags\item\infestable.json
+de19f9b2b371cc0094f14b16646430c75617ba26 data\aquifer\tags\item\infestable.json
 3cd337b0f2488b657d0248a925dd5f1345faa064 data\sswplus\tags\item\andesite_stairs.json
 a8b6b86b9fcde2e6bb729b7ef0ca81355af0d9bf data\sswplus\tags\item\nether_brick_walls.json
 10f92d90341777434c66dfde70ad8041cf8add45 data\sswplus\tags\item\granite_slabs.json
@@ -112,7 +114,7 @@ aa9d9694d2ea79fa39cb6fa505ea03339cdcf9d8 data\sswplus\tags\item\sandstone_walls.
 fa5e3ce07c2c418534fb55597698d38f64950a3f data\sswplus\tags\item\diorite_stairs.json
 91ff803f399384efa0765590e47861c5f4dd8fcb data\sswplus\tags\item\sandstone_slabs\red.json
 ac000138df095ec7ef8682544a1828259d2418a0 data\sswplus\tags\item\stone_walls.json
-f8bf39d07c2d3baf5fca2dac4332e21cb490b9c7 data\sswplus\tags\item\deepslate.json
+f9fcad32dcdc4fd8c90406bc719032860f8dfcd3 data\sswplus\tags\item\deepslate.json
 060847b0a8d721d614c1b3fc9ece8ab4c149706b data\mountainspring\tags\item\sandstone_brick_stairs\red.json
 92e11edf06ab9f2e045ff7db7549ebf131b521e8 data\mountainspring\tags\item\quartz_brick_slabs.json
 d282d056876e4c585d0397ef66fe784162a3d6fd data\sswplus\tags\item\sandstone\beige.json
@@ -120,6 +122,7 @@ d282d056876e4c585d0397ef66fe784162a3d6fd data\sswplus\tags\item\sandstone\beige.
 31b2c64411a23a8e60e79b1e18025924bcb80a74 data\mountainspring\tags\item\sandstone_brick_slabs\red.json
 55529425b9f72f45679aa6055e1c80e1288933d8 data\mountainspring\tags\item\brick_stairs.json
 561b67be1e9778757a407cb173f9fdf73cc6d3a2 data\mountainspring\tags\item\diorite_brick_stairs.json
+eb0d53bb39b639aa683726790fe9f49b73edf330 data\minecraft\tags\item\slabs.json
 17bc74aaaf7861d6fece3c3dfc6d6f2fbf85a490 data\sswplus\tags\item\deepslate_brick_walls.json
 202a57bf4851b1df55e3b7070dba441c5edc0dcd data\sswplus\tags\item\sandstone_stairs.json
 ec7a63b88a4e561d6d93bbc2afc828cb0d487160 data\mountainspring\tags\item\andesite_brick_slabs.json

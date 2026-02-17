@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "mountainspring:mossy_depslate"
+    "item": "mountainspring:mossy_deepslate"
   },
   "result": {
     "count": 2,

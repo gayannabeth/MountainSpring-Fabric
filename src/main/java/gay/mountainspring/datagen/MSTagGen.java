@@ -567,6 +567,21 @@ public class MSTagGen {
 					MSBlocks.MOSSY_CHISELED_STONE_BRICKS,
 					MSBlocks.CRACKED_MOSSY_CHISELED_STONE_BRICKS);
 			
+			this.getOrCreateTagBuilder(BlockTags.SLABS)
+			.addTag(MSTags.Blocks.BRICK_SLABS)
+			.addTag(MSTags.Blocks.MUD_BRICK_SLABS)
+			.addTag(MSTags.Blocks.END_STONE_BRICK_SLABS);
+			
+			this.getOrCreateTagBuilder(BlockTags.STAIRS)
+			.addTag(MSTags.Blocks.BRICK_STAIRS)
+			.addTag(MSTags.Blocks.MUD_BRICK_STAIRS)
+			.addTag(MSTags.Blocks.END_STONE_BRICK_STAIRS);
+			
+			this.getOrCreateTagBuilder(BlockTags.WALLS)
+			.addTag(MSTags.Blocks.BRICK_WALLS)
+			.addTag(MSTags.Blocks.MUD_BRICK_WALLS)
+			.addTag(MSTags.Blocks.END_STONE_BRICK_WALLS);
+			
 			this.getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
 			.addTag(MSTags.Blocks.BRICK_BLOCKS)
 			.addTag(MSTags.Blocks.BRICK_SLABS)
@@ -741,6 +756,9 @@ public class MSTagGen {
 			this.copy(AquiferTags.Blocks.INFESTED, AquiferTags.Items.INFESTED);
 			
 			this.copy(BlockTags.STONE_BRICKS, ItemTags.STONE_BRICKS);
+			this.copy(BlockTags.SLABS, ItemTags.SLABS);
+			this.copy(BlockTags.STAIRS, ItemTags.STAIRS);
+			this.copy(BlockTags.WALLS, ItemTags.WALLS);
 			
 			this.copy(MSTags.Blocks.Conventional.GRANITE_COBBLESTONES, MSTags.Items.Conventional.GRANITE_COBBLESTONES);
 			this.copy(MSTags.Blocks.Conventional.DIORITE_COBBLESTONES, MSTags.Items.Conventional.DIORITE_COBBLESTONES);

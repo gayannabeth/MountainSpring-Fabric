@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "group": "mossy_depslate",
+  "group": "mossy_deepslate",
   "ingredients": [
     {
       "item": "minecraft:deepslate"
@@ -17,6 +17,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "mountainspring:mossy_depslate"
+    "id": "mountainspring:mossy_deepslate"
   }
 }

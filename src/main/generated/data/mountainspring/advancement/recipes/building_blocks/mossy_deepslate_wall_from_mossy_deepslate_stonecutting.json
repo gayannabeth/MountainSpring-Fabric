@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mossy_depslate": {
+    "has_mossy_deepslate": {
       "conditions": {
         "items": [
           {
-            "items": "mountainspring:mossy_depslate"
+            "items": "mountainspring:mossy_deepslate"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mountainspring:mossy_deepslate_stairs_from_mossy_depslate_stonecutting"
+        "recipe": "mountainspring:mossy_deepslate_wall_from_mossy_deepslate_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mossy_depslate"
+      "has_mossy_deepslate"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mountainspring:mossy_deepslate_stairs_from_mossy_depslate_stonecutting"
+      "mountainspring:mossy_deepslate_wall_from_mossy_deepslate_stonecutting"
     ]
   }
 }
