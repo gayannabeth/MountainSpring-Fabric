@@ -1,0 +1,7 @@
+{
+  "parent": "aquifer:block/wall_column_inventory",
+  "textures": {
+    "end": "mountainspring:block/mossy_depslate_top",
+    "side": "mountainspring:block/mossy_depslate_side"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cracked_quartz_brick_stairs",
+  "key": {
+    "#": {
+      "item": "mountainspring:cracked_quartz_bricks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:cracked_quartz_brick_stairs"
+  }
+}

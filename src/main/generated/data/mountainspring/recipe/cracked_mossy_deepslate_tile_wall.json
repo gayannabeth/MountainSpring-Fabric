@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cracked_mossy_deepslate_tile_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:cracked_mossy_deepslate_tiles"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:cracked_mossy_deepslate_tile_wall"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mountainspring:block/mossy_stone_slab"
+    },
+    "type=double": {
+      "model": "mountainspring:block/mossy_stone"
+    },
+    "type=top": {
+      "model": "mountainspring:block/mossy_stone_slab_top"
+    }
+  }
+}

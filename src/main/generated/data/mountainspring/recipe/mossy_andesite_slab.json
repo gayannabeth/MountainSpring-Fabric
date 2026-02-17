@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_andesite_slab",
+  "key": {
+    "#": {
+      "item": "mountainspring:mossy_andesite"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:mossy_andesite_slab"
+  }
+}

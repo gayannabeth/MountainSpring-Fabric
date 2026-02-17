@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mountainspring:cobbled_granite"
+  },
+  "result": {
+    "count": 1,
+    "id": "mountainspring:cobbled_granite_slab"
+  }
+}

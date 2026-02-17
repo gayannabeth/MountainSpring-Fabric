@@ -1,9 +1,25 @@
 package gay.mountainspring.block;
 
 import gay.mountainspring.MSMain;
+import gay.mountainspring.aquifer.block.OrientableSlabBlock;
+import gay.mountainspring.aquifer.block.OrientableStairsBlock;
+import gay.mountainspring.sswplus.block.SSWPWoodTypes;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.FenceBlock;
+import net.minecraft.block.FenceGateBlock;
+import net.minecraft.block.InfestedBlock;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.PillarBlock;
+import net.minecraft.block.RotatedInfestedBlock;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.StairsBlock;
+import net.minecraft.block.WallBlock;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class MSBlocks {
@@ -13,7 +29,288 @@ public class MSBlocks {
 		
 	}
 	
+	public static final Block MOSSY_STONE = register("mossy_stone", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+	public static final Block CRACKED_MOSSY_STONE_BRICKS = register("cracked_mossy_stone_bricks", new Block(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS)));
+	public static final Block CRACKED_CHISELED_STONE_BRICKS = register("cracked_chiseled_stone_bricks", new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_STONE_BRICKS)));
+	public static final Block MOSSY_CHISELED_STONE_BRICKS = register("mossy_chiseled_stone_bricks", new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_STONE_BRICKS)));
+	public static final Block CRACKED_MOSSY_CHISELED_STONE_BRICKS = register("cracked_mossy_chiseled_stone_bricks", new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_STONE_BRICKS)));
 	
+	public static final Block MOSSY_GRANITE = register("mossy_granite", new Block(AbstractBlock.Settings.copy(Blocks.GRANITE)));
+	public static final Block COBBLED_GRANITE = register("cobbled_granite", new Block(AbstractBlock.Settings.create().mapColor(MapColor.DIRT_BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(2.0f, 6.0f)));
+	public static final Block MOSSY_COBBLED_GRANITE = register("mossy_cobbled_granite", new Block(AbstractBlock.Settings.copy(COBBLED_GRANITE)));
+	public static final Block GRANITE_BRICKS = register("granite_bricks", new Block(AbstractBlock.Settings.create().mapColor(MapColor.DIRT_BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5f, 6.0f)));
+	public static final Block CRACKED_GRANITE_BRICKS = register("cracked_granite_bricks", new Block(AbstractBlock.Settings.copy(GRANITE_BRICKS)));
+	public static final Block MOSSY_GRANITE_BRICKS = register("mossy_granite_bricks", new Block(AbstractBlock.Settings.copy(GRANITE_BRICKS)));
+	public static final Block CRACKED_MOSSY_GRANITE_BRICKS = register("cracked_mossy_granite_bricks", new Block(AbstractBlock.Settings.copy(GRANITE_BRICKS)));
+	
+	public static final Block MOSSY_DIORITE = register("mossy_diorite", new Block(AbstractBlock.Settings.copy(Blocks.DIORITE)));
+	public static final Block COBBLED_DIORITE = register("cobbled_diorite", new Block(AbstractBlock.Settings.create().mapColor(MapColor.OFF_WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(2.0f, 6.0f)));
+	public static final Block MOSSY_COBBLED_DIORITE = register("mossy_cobbled_diorite", new Block(AbstractBlock.Settings.copy(COBBLED_DIORITE)));
+	public static final Block DIORITE_BRICKS = register("diorite_bricks", new Block(AbstractBlock.Settings.create().mapColor(MapColor.OFF_WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5f, 6.0f)));
+	public static final Block CRACKED_DIORITE_BRICKS = register("cracked_diorite_bricks", new Block(AbstractBlock.Settings.copy(DIORITE_BRICKS)));
+	public static final Block MOSSY_DIORITE_BRICKS = register("mossy_diorite_bricks", new Block(AbstractBlock.Settings.copy(DIORITE_BRICKS)));
+	public static final Block CRACKED_MOSSY_DIORITE_BRICKS = register("cracked_mossy_diorite_bricks", new Block(AbstractBlock.Settings.copy(DIORITE_BRICKS)));
+	
+	public static final Block MOSSY_ANDESITE = register("mossy_andesite", new Block(AbstractBlock.Settings.copy(Blocks.ANDESITE)));
+	public static final Block COBBLED_ANDESITE = register("cobbled_andesite", new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(2.0f, 6.0f)));
+	public static final Block MOSSY_COBBLED_ANDESITE = register("mossy_cobbled_andesite", new Block(AbstractBlock.Settings.copy(COBBLED_ANDESITE)));
+	public static final Block ANDESITE_BRICKS = register("andesite_bricks", new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5f, 6.0f)));
+	public static final Block CRACKED_ANDESITE_BRICKS = register("cracked_andesite_bricks", new Block(AbstractBlock.Settings.copy(ANDESITE_BRICKS)));
+	public static final Block MOSSY_ANDESITE_BRICKS = register("mossy_andesite_bricks", new Block(AbstractBlock.Settings.copy(ANDESITE_BRICKS)));
+	public static final Block CRACKED_MOSSY_ANDESITE_BRICKS = register("cracked_mossy_andesite_bricks", new Block(AbstractBlock.Settings.copy(ANDESITE_BRICKS)));
+	
+	public static final Block MOSSY_DEEPSLATE = register("mossy_depslate", new PillarBlock(AbstractBlock.Settings.copy(Blocks.DEEPSLATE)));
+	public static final Block MOSSY_COBBLED_DEEPSLATE = register("mossy_cobbled_deepslate", new Block(AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE)));
+	public static final Block MOSSY_DEEPSLATE_BRICKS = register("mossy_deepslate_bricks", new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICKS)));
+	public static final Block CRACKED_MOSSY_DEEPSLATE_BRICKS = register("cracked_mossy_deepslate_bricks", new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICKS)));
+	public static final Block MOSSY_DEEPSLATE_TILES = register("mossy_deepslate_tiles", new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_TILES)));
+	public static final Block CRACKED_MOSSY_DEEPSLATE_TILES = register("cracked_mossy_deepslate_tiles", new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_TILES)));
+	
+	public static final Block MOSSY_TUFF = register("mossy_tuff", new Block(AbstractBlock.Settings.copy(Blocks.TUFF)));
+	public static final Block CRACKED_TUFF_BRICKS = register("cracked_tuff_bricks", new Block(AbstractBlock.Settings.copy(Blocks.TUFF_BRICKS)));
+	public static final Block MOSSY_TUFF_BRICKS = register("mossy_tuff_bricks", new Block(AbstractBlock.Settings.copy(Blocks.TUFF_BRICKS)));
+	public static final Block CRACKED_MOSSY_TUFF_BRICKS = register("cracked_mossy_tuff_bricks", new Block(AbstractBlock.Settings.copy(Blocks.TUFF_BRICKS)));
+	public static final Block CRACKED_CHISELED_TUFF_BRICKS = register("cracked_chiseled_tuff_bricks", new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_TUFF_BRICKS)));
+	public static final Block MOSSY_CHISELED_TUFF_BRICKS = register("mossy_chiseled_tuff_bricks", new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_TUFF_BRICKS)));
+	public static final Block CRACKED_MOSSY_CHISELED_TUFF_BRICKS = register("cracked_mossy_chiseled_tuff_bricks", new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_TUFF_BRICKS)));
+	
+	public static final Block CRACKED_BRICKS = register("cracked_bricks", new Block(AbstractBlock.Settings.copy(Blocks.BRICKS)));
+	
+	public static final Block CRACKED_MUD_BRICKS = register("cracked_mud_bricks", new Block(AbstractBlock.Settings.copy(Blocks.MUD_BRICKS)));
+	
+	public static final Block SANDSTONE_BRICKS = register("sandstone_bricks", new Block(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(0.8f)));
+	public static final Block CRACKED_SANDSTONE_BRICKS = register("cracked_sandstone_bricks", new Block(AbstractBlock.Settings.copy(SANDSTONE_BRICKS)));
+	
+	public static final Block RED_SANDSTONE_BRICKS = register("red_sandstone_bricks", new Block(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(0.8f)));
+	public static final Block CRACKED_RED_SANDSTONE_BRICKS = register("cracked_red_sandstone_bricks", new Block(AbstractBlock.Settings.copy(RED_SANDSTONE_BRICKS)));
+	
+	public static final Block CRACKED_PRISMARINE_BRICKS = register("cracked_prismarine_bricks", new Block(AbstractBlock.Settings.copy(Blocks.PRISMARINE_BRICKS)));
+	
+	public static final Block CRACKED_CHISELED_NETHER_BRICKS = register("cracked_chiseled_nether_bricks", new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_NETHER_BRICKS)));
+	public static final Block CRACKED_RED_NETHER_BRICKS = register("cracked_red_nether_bricks", new Block(AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS)));
+	public static final Block CHISELED_RED_NETHER_BRICKS = register("chiseled_red_nether_bricks", new Block(AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS)));
+	public static final Block CRACKED_CHISELED_RED_NETHER_BRICKS = register("cracked_chiseled_red_nether_bricks", new Block(AbstractBlock.Settings.copy(CHISELED_RED_NETHER_BRICKS)));
+	
+	public static final Block CRACKED_END_STONE_BRICKS = register("cracked_end_stone_bricks", new Block(AbstractBlock.Settings.copy(Blocks.END_STONE_BRICKS)));
+	
+	public static final Block CRACKED_QUARTZ_BRICKS = register("cracked_quartz_bricks", new Block(AbstractBlock.Settings.copy(Blocks.QUARTZ_BRICKS)));
+	
+	public static final Block MOSSY_STONE_SLAB = register("mossy_stone_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_STONE)));
+	public static final Block MOSSY_STONE_STAIRS = register("mossy_stone_stairs", new StairsBlock(MOSSY_STONE.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_STONE)));
+	public static final Block MOSSY_STONE_WALL = register("mossy_stone_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_STONE).solid()));
+	public static final Block CRACKED_MOSSY_STONE_BRICK_SLAB = register("cracked_mossy_stone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_STONE_BRICKS)));
+	public static final Block CRACKED_MOSSY_STONE_BRICK_STAIRS = register("cracked_mossy_stone_brick_stairs", new StairsBlock(CRACKED_MOSSY_STONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MOSSY_STONE_BRICKS)));
+	public static final Block CRACKED_MOSSY_STONE_BRICK_WALL = register("cracked_mossy_stone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_STONE_BRICKS).solid()));
+	public static final Block CRACKED_CHISELED_STONE_BRICK_SLAB = register("cracked_chiseled_stone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_CHISELED_STONE_BRICKS)));
+	public static final Block CRACKED_CHISELED_STONE_BRICK_STAIRS = register("cracked_chiseled_stone_brick_stairs", new StairsBlock(CRACKED_CHISELED_STONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_CHISELED_STONE_BRICKS)));
+	public static final Block CRACKED_CHISELED_STONE_BRICK_WALL = register("cracked_chiseled_stone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_CHISELED_STONE_BRICKS).solid()));
+	public static final Block MOSSY_CHISELED_STONE_BRICK_SLAB = register("mossy_chiseled_stone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_CHISELED_STONE_BRICKS)));
+	public static final Block MOSSY_CHISELED_STONE_BRICK_STAIRS = register("mossy_chiseled_stone_brick_stairs", new StairsBlock(MOSSY_CHISELED_STONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_CHISELED_STONE_BRICKS)));
+	public static final Block MOSSY_CHISELED_STONE_BRICK_WALL = register("mossy_chiseled_stone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_CHISELED_STONE_BRICKS).solid()));
+	public static final Block CRACKED_MOSSY_CHISELED_STONE_BRICK_SLAB = register("cracked_mossy_chiseled_stone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_CHISELED_STONE_BRICKS)));
+	public static final Block CRACKED_MOSSY_CHISELED_STONE_BRICK_STAIRS = register("cracked_mossy_chiseled_stone_brick_stairs", new StairsBlock(CRACKED_MOSSY_CHISELED_STONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MOSSY_CHISELED_STONE_BRICKS)));
+	public static final Block CRACKED_MOSSY_CHISELED_STONE_BRICK_WALL = register("cracked_mossy_chiseled_stone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_CHISELED_STONE_BRICKS).solid()));
+	
+	public static final Block MOSSY_GRANITE_SLAB = register("mossy_granite_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_GRANITE)));
+	public static final Block MOSSY_GRANITE_STAIRS = register("mossy_granite_stairs", new StairsBlock(MOSSY_GRANITE.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_GRANITE)));
+	public static final Block MOSSY_GRANITE_WALL = register("mossy_granite_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_GRANITE).solid()));
+	public static final Block COBBLED_GRANITE_SLAB = register("cobbled_granite_slab", new SlabBlock(AbstractBlock.Settings.copy(COBBLED_GRANITE)));
+	public static final Block COBBLED_GRANITE_STAIRS = register("cobbled_granite_stairs", new StairsBlock(COBBLED_GRANITE.getDefaultState(), AbstractBlock.Settings.copy(COBBLED_GRANITE)));
+	public static final Block COBBLED_GRANITE_WALL = register("cobbled_granite_wall", new WallBlock(AbstractBlock.Settings.copy(COBBLED_GRANITE).solid()));
+	public static final Block MOSSY_COBBLED_GRANITE_SLAB = register("mossy_cobbled_granite_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_COBBLED_GRANITE)));
+	public static final Block MOSSY_COBBLED_GRANITE_STAIRS = register("mossy_cobbled_granite_stairs", new StairsBlock(MOSSY_COBBLED_GRANITE.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_COBBLED_GRANITE)));
+	public static final Block MOSSY_COBBLED_GRANITE_WALL = register("mossy_cobbled_granite_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_COBBLED_GRANITE).solid()));
+	public static final Block GRANITE_BRICK_SLAB = register("granite_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(GRANITE_BRICKS)));
+	public static final Block GRANITE_BRICK_STAIRS = register("granite_brick_stairs", new StairsBlock(GRANITE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(GRANITE_BRICKS)));
+	public static final Block GRANITE_BRICK_WALL = register("granite_brick_wall", new WallBlock(AbstractBlock.Settings.copy(GRANITE_BRICKS).solid()));
+	public static final Block CRACKED_GRANITE_BRICK_SLAB = register("cracked_granite_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_GRANITE_BRICKS)));
+	public static final Block CRACKED_GRANITE_BRICK_STAIRS = register("cracked_granite_brick_stairs", new StairsBlock(CRACKED_GRANITE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_GRANITE_BRICKS)));
+	public static final Block CRACKED_GRANITE_BRICK_WALL = register("cracked_granite_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_GRANITE_BRICKS).solid()));
+	public static final Block MOSSY_GRANITE_BRICK_SLAB = register("mossy_granite_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_GRANITE_BRICKS)));
+	public static final Block MOSSY_GRANITE_BRICK_STAIRS = register("mossy_granite_brick_stairs", new StairsBlock(MOSSY_GRANITE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_GRANITE_BRICKS)));
+	public static final Block MOSSY_GRANITE_BRICK_WALL = register("mossy_granite_brick_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_GRANITE_BRICKS).solid()));
+	public static final Block CRACKED_MOSSY_GRANITE_BRICK_SLAB = register("cracked_mossy_granite_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_GRANITE_BRICKS)));
+	public static final Block CRACKED_MOSSY_GRANITE_BRICK_STAIRS = register("cracked_mossy_granite_brick_stairs", new StairsBlock(CRACKED_MOSSY_GRANITE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MOSSY_GRANITE_BRICKS)));
+	public static final Block CRACKED_MOSSY_GRANITE_BRICK_WALL = register("cracked_mossy_granite_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_GRANITE_BRICKS).solid()));
+	
+	public static final Block MOSSY_DIORITE_SLAB = register("mossy_diorite_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_DIORITE)));
+	public static final Block MOSSY_DIORITE_STAIRS = register("mossy_diorite_stairs", new StairsBlock(MOSSY_DIORITE.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_DIORITE)));
+	public static final Block MOSSY_DIORITE_WALL = register("mossy_diorite_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_DIORITE).solid()));
+	public static final Block COBBLED_DIORITE_SLAB = register("cobbled_diorite_slab", new SlabBlock(AbstractBlock.Settings.copy(COBBLED_DIORITE)));
+	public static final Block COBBLED_DIORITE_STAIRS = register("cobbled_diorite_stairs", new StairsBlock(COBBLED_DIORITE.getDefaultState(), AbstractBlock.Settings.copy(COBBLED_DIORITE)));
+	public static final Block COBBLED_DIORITE_WALL = register("cobbled_diorite_wall", new WallBlock(AbstractBlock.Settings.copy(COBBLED_DIORITE).solid()));
+	public static final Block MOSSY_COBBLED_DIORITE_SLAB = register("mossy_cobbled_diorite_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_COBBLED_DIORITE)));
+	public static final Block MOSSY_COBBLED_DIORITE_STAIRS = register("mossy_cobbled_diorite_stairs", new StairsBlock(MOSSY_COBBLED_DIORITE.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_COBBLED_DIORITE)));
+	public static final Block MOSSY_COBBLED_DIORITE_WALL = register("mossy_cobbled_diorite_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_COBBLED_DIORITE).solid()));
+	public static final Block DIORITE_BRICK_SLAB = register("diorite_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(DIORITE_BRICKS)));
+	public static final Block DIORITE_BRICK_STAIRS = register("diorite_brick_stairs", new StairsBlock(DIORITE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(DIORITE_BRICKS)));
+	public static final Block DIORITE_BRICK_WALL = register("diorite_brick_wall", new WallBlock(AbstractBlock.Settings.copy(DIORITE_BRICKS).solid()));
+	public static final Block CRACKED_DIORITE_BRICK_SLAB = register("cracked_diorite_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_DIORITE_BRICKS)));
+	public static final Block CRACKED_DIORITE_BRICK_STAIRS = register("cracked_diorite_brick_stairs", new StairsBlock(CRACKED_DIORITE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_DIORITE_BRICKS)));
+	public static final Block CRACKED_DIORITE_BRICK_WALL = register("cracked_diorite_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_DIORITE_BRICKS).solid()));
+	public static final Block MOSSY_DIORITE_BRICK_SLAB = register("mossy_diorite_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_DIORITE_BRICKS)));
+	public static final Block MOSSY_DIORITE_BRICK_STAIRS = register("mossy_diorite_brick_stairs", new StairsBlock(MOSSY_DIORITE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_DIORITE_BRICKS)));
+	public static final Block MOSSY_DIORITE_BRICK_WALL = register("mossy_diorite_brick_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_DIORITE_BRICKS).solid()));
+	public static final Block CRACKED_MOSSY_DIORITE_BRICK_SLAB = register("cracked_mossy_diorite_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_DIORITE_BRICKS)));
+	public static final Block CRACKED_MOSSY_DIORITE_BRICK_STAIRS = register("cracked_mossy_diorite_brick_stairs", new StairsBlock(CRACKED_MOSSY_DIORITE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MOSSY_DIORITE_BRICKS)));
+	public static final Block CRACKED_MOSSY_DIORITE_BRICK_WALL = register("cracked_mossy_diorite_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_DIORITE_BRICKS).solid()));
+	
+	public static final Block MOSSY_ANDESITE_SLAB = register("mossy_andesite_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_ANDESITE)));
+	public static final Block MOSSY_ANDESITE_STAIRS = register("mossy_andesite_stairs", new StairsBlock(MOSSY_ANDESITE.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_ANDESITE)));
+	public static final Block MOSSY_ANDESITE_WALL = register("mossy_andesite_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_ANDESITE).solid()));
+	public static final Block COBBLED_ANDESITE_SLAB = register("cobbled_andesite_slab", new SlabBlock(AbstractBlock.Settings.copy(COBBLED_ANDESITE)));
+	public static final Block COBBLED_ANDESITE_STAIRS = register("cobbled_andesite_stairs", new StairsBlock(COBBLED_ANDESITE.getDefaultState(), AbstractBlock.Settings.copy(COBBLED_ANDESITE)));
+	public static final Block COBBLED_ANDESITE_WALL = register("cobbled_andesite_wall", new WallBlock(AbstractBlock.Settings.copy(COBBLED_ANDESITE).solid()));
+	public static final Block MOSSY_COBBLED_ANDESITE_SLAB = register("mossy_cobbled_andesite_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_COBBLED_ANDESITE)));
+	public static final Block MOSSY_COBBLED_ANDESITE_STAIRS = register("mossy_cobbled_andesite_stairs", new StairsBlock(MOSSY_COBBLED_ANDESITE.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_COBBLED_ANDESITE)));
+	public static final Block MOSSY_COBBLED_ANDESITE_WALL = register("mossy_cobbled_andesite_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_COBBLED_ANDESITE).solid()));
+	public static final Block ANDESITE_BRICK_SLAB = register("andesite_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(ANDESITE_BRICKS)));
+	public static final Block ANDESITE_BRICK_STAIRS = register("andesite_brick_stairs", new StairsBlock(ANDESITE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(ANDESITE_BRICKS)));
+	public static final Block ANDESITE_BRICK_WALL = register("andesite_brick_wall", new WallBlock(AbstractBlock.Settings.copy(ANDESITE_BRICKS).solid()));
+	public static final Block CRACKED_ANDESITE_BRICK_SLAB = register("cracked_andesite_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_ANDESITE_BRICKS)));
+	public static final Block CRACKED_ANDESITE_BRICK_STAIRS = register("cracked_andesite_brick_stairs", new StairsBlock(CRACKED_ANDESITE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_ANDESITE_BRICKS)));
+	public static final Block CRACKED_ANDESITE_BRICK_WALL = register("cracked_andesite_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_ANDESITE_BRICKS).solid()));
+	public static final Block MOSSY_ANDESITE_BRICK_SLAB = register("mossy_andesite_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_ANDESITE_BRICKS)));
+	public static final Block MOSSY_ANDESITE_BRICK_STAIRS = register("mossy_andesite_brick_stairs", new StairsBlock(MOSSY_ANDESITE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_ANDESITE_BRICKS)));
+	public static final Block MOSSY_ANDESITE_BRICK_WALL = register("mossy_andesite_brick_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_ANDESITE_BRICKS).solid()));
+	public static final Block CRACKED_MOSSY_ANDESITE_BRICK_SLAB = register("cracked_mossy_andesite_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_ANDESITE_BRICKS)));
+	public static final Block CRACKED_MOSSY_ANDESITE_BRICK_STAIRS = register("cracked_mossy_andesite_brick_stairs", new StairsBlock(CRACKED_MOSSY_ANDESITE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MOSSY_ANDESITE_BRICKS)));
+	public static final Block CRACKED_MOSSY_ANDESITE_BRICK_WALL = register("cracked_mossy_andesite_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_ANDESITE_BRICKS).solid()));
+	
+	public static final Block MOSSY_DEEPSLATE_SLAB = register("mossy_deepslate_slab", new OrientableSlabBlock(AbstractBlock.Settings.copy(MOSSY_DEEPSLATE)));
+	public static final Block MOSSY_DEEPSLATE_STAIRS = register("mossy_deepslate_stairs", new OrientableStairsBlock(MOSSY_DEEPSLATE.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_DEEPSLATE)));
+	public static final Block MOSSY_DEEPSLATE_WALL = register("mossy_deepslate_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_DEEPSLATE).solid()));
+	public static final Block MOSSY_COBBLED_DEEPSLATE_SLAB = register("mossy_cobbled_deepslate_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_COBBLED_DEEPSLATE)));
+	public static final Block MOSSY_COBBLED_DEEPSLATE_STAIRS = register("mossy_cobbled_deepslate_stairs", new StairsBlock(MOSSY_COBBLED_DEEPSLATE.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_COBBLED_DEEPSLATE)));
+	public static final Block MOSSY_COBBLED_DEEPSLATE_WALL = register("mossy_cobbled_deepslate_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_COBBLED_DEEPSLATE).solid()));
+	public static final Block MOSSY_DEEPSLATE_BRICK_SLAB = register("mossy_deepslate_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_DEEPSLATE_BRICKS)));
+	public static final Block MOSSY_DEEPSLATE_BRICK_STAIRS = register("mossy_deepslate_brick_stairs", new StairsBlock(MOSSY_DEEPSLATE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_DEEPSLATE_BRICKS)));
+	public static final Block MOSSY_DEEPSLATE_BRICK_WALL = register("mossy_deepslate_brick_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_DEEPSLATE_BRICKS).solid()));
+	public static final Block CRACKED_MOSSY_DEEPSLATE_BRICK_SLAB = register("cracked_mossy_deepslate_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_DEEPSLATE_BRICKS)));
+	public static final Block CRACKED_MOSSY_DEEPSLATE_BRICK_STAIRS = register("cracked_mossy_deepslate_brick_stairs", new StairsBlock(CRACKED_MOSSY_DEEPSLATE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MOSSY_DEEPSLATE_BRICKS)));
+	public static final Block CRACKED_MOSSY_DEEPSLATE_BRICK_WALL = register("cracked_mossy_deepslate_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_DEEPSLATE_BRICKS).solid()));
+	public static final Block MOSSY_DEEPSLATE_TILE_SLAB = register("mossy_deepslate_tile_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_DEEPSLATE_TILES)));
+	public static final Block MOSSY_DEEPSLATE_TILE_STAIRS = register("mossy_deepslate_tile_stairs", new StairsBlock(MOSSY_DEEPSLATE_TILES.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_DEEPSLATE_TILES)));
+	public static final Block MOSSY_DEEPSLATE_TILE_WALL = register("mossy_deepslate_tile_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_DEEPSLATE_TILES).solid()));
+	public static final Block CRACKED_MOSSY_DEEPSLATE_TILE_SLAB = register("cracked_mossy_deepslate_tile_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_DEEPSLATE_TILES)));
+	public static final Block CRACKED_MOSSY_DEEPSLATE_TILE_STAIRS = register("cracked_mossy_deepslate_tile_stairs", new StairsBlock(CRACKED_MOSSY_DEEPSLATE_TILES.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MOSSY_DEEPSLATE_TILES)));
+	public static final Block CRACKED_MOSSY_DEEPSLATE_TILE_WALL = register("cracked_mossy_deepslate_tile_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_DEEPSLATE_TILES).solid()));
+	
+	public static final Block MOSSY_TUFF_SLAB = register("mossy_tuff_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_TUFF)));
+	public static final Block MOSSY_TUFF_STAIRS = register("mossy_tuff_stairs", new StairsBlock(MOSSY_TUFF.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_TUFF)));
+	public static final Block MOSSY_TUFF_WALL = register("mossy_tuff_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_TUFF).solid()));
+	public static final Block CRACKED_TUFF_BRICK_SLAB = register("cracked_tuff_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_TUFF_BRICKS)));
+	public static final Block CRACKED_TUFF_BRICK_STAIRS = register("cracked_tuff_brick_stairs", new StairsBlock(CRACKED_TUFF_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_TUFF_BRICKS)));
+	public static final Block CRACKED_TUFF_BRICK_WALL = register("cracked_tuff_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_TUFF_BRICKS).solid()));
+	public static final Block MOSSY_TUFF_BRICK_SLAB = register("mossy_tuff_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_TUFF_BRICKS)));
+	public static final Block MOSSY_TUFF_BRICK_STAIRS = register("mossy_tuff_brick_stairs", new StairsBlock(MOSSY_TUFF_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_TUFF_BRICKS)));
+	public static final Block MOSSY_TUFF_BRICK_WALL = register("mossy_tuff_brick_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_TUFF_BRICKS).solid()));
+	public static final Block CRACKED_MOSSY_TUFF_BRICK_SLAB = register("cracked_mossy_tuff_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_TUFF_BRICKS)));
+	public static final Block CRACKED_MOSSY_TUFF_BRICK_STAIRS = register("cracked_mossy_tuff_brick_stairs", new StairsBlock(CRACKED_MOSSY_TUFF_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MOSSY_TUFF_BRICKS)));
+	public static final Block CRACKED_MOSSY_TUFF_BRICK_WALL = register("cracked_mossy_tuff_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_TUFF_BRICKS).solid()));
+	public static final Block CRACKED_CHISELED_TUFF_BRICK_SLAB = register("cracked_chiseled_tuff_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_CHISELED_TUFF_BRICKS)));
+	public static final Block CRACKED_CHISELED_TUFF_BRICK_STAIRS = register("cracked_chiseled_tuff_brick_stairs", new StairsBlock(CRACKED_CHISELED_TUFF_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_CHISELED_TUFF_BRICKS)));
+	public static final Block CRACKED_CHISELED_TUFF_BRICK_WALL = register("cracked_chiseled_tuff_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_CHISELED_TUFF_BRICKS).solid()));
+	public static final Block MOSSY_CHISELED_TUFF_BRICK_SLAB = register("mossy_chiseled_tuff_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_CHISELED_TUFF_BRICKS)));
+	public static final Block MOSSY_CHISELED_TUFF_BRICK_STAIRS = register("mossy_chiseled_tuff_brick_stairs", new StairsBlock(MOSSY_CHISELED_TUFF_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_CHISELED_TUFF_BRICKS)));
+	public static final Block MOSSY_CHISELED_TUFF_BRICK_WALL = register("mossy_chiseled_tuff_brick_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_CHISELED_TUFF_BRICKS).solid()));
+	public static final Block CRACKED_MOSSY_CHISELED_TUFF_BRICK_SLAB = register("cracked_mossy_chiseled_tuff_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_CHISELED_TUFF_BRICKS)));
+	public static final Block CRACKED_MOSSY_CHISELED_TUFF_BRICK_STAIRS = register("cracked_mossy_chiseled_tuff_brick_stairs", new StairsBlock(CRACKED_MOSSY_CHISELED_TUFF_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MOSSY_CHISELED_TUFF_BRICKS)));
+	public static final Block CRACKED_MOSSY_CHISELED_TUFF_BRICK_WALL = register("cracked_mossy_chiseled_tuff_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_CHISELED_TUFF_BRICKS).solid()));
+	
+	public static final Block CRACKED_BRICK_SLAB = register("cracked_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_BRICKS)));
+	public static final Block CRACKED_BRICK_STAIRS = register("cracked_brick_stairs", new StairsBlock(CRACKED_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_BRICKS)));
+	public static final Block CRACKED_BRICK_WALL = register("cracked_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_BRICKS).solid()));
+	
+	public static final Block CRACKED_MUD_BRICK_SLAB = register("cracked_mud_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_MUD_BRICKS)));
+	public static final Block CRACKED_MUD_BRICK_STAIRS = register("cracked_mud_brick_stairs", new StairsBlock(CRACKED_MUD_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MUD_BRICKS)));
+	public static final Block CRACKED_MUD_BRICK_WALL = register("cracked_mud_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MUD_BRICKS).solid()));
+	
+	public static final Block SANDSTONE_BRICK_SLAB = register("sandstone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(SANDSTONE_BRICKS)));
+	public static final Block SANDSTONE_BRICK_STAIRS = register("sandstone_brick_stairs", new StairsBlock(SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(SANDSTONE_BRICKS)));
+	public static final Block SANDSTONE_BRICK_WALL = register("sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(SANDSTONE_BRICKS).solid()));
+	public static final Block CRACKED_SANDSTONE_BRICK_SLAB = register("cracked_sandstone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_SANDSTONE_BRICK_STAIRS = register("cracked_sandstone_brick_stairs", new StairsBlock(CRACKED_SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_SANDSTONE_BRICK_WALL = register("cracked_sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_SANDSTONE_BRICKS).solid()));
+	
+	public static final Block RED_SANDSTONE_BRICK_SLAB = register("red_sandstone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(RED_SANDSTONE_BRICKS)));
+	public static final Block RED_SANDSTONE_BRICK_STAIRS = register("red_sandstone_brick_stairs", new StairsBlock(RED_SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(RED_SANDSTONE_BRICKS)));
+	public static final Block RED_SANDSTONE_BRICK_WALL = register("red_sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(RED_SANDSTONE_BRICKS).solid()));
+	public static final Block CRACKED_RED_SANDSTONE_BRICK_SLAB = register("cracked_red_sandstone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_RED_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_RED_SANDSTONE_BRICK_STAIRS = register("cracked_red_sandstone_brick_stairs", new StairsBlock(CRACKED_RED_SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_RED_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_RED_SANDSTONE_BRICK_WALL = register("cracked_red_sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_RED_SANDSTONE_BRICKS).solid()));
+	
+	public static final Block CRACKED_PRISMARINE_BRICK_SLAB = register("cracked_prismarine_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_PRISMARINE_BRICKS)));
+	public static final Block CRACKED_PRISMARINE_BRICK_STAIRS = register("cracked_prismarine_brick_stairs", new StairsBlock(CRACKED_PRISMARINE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_PRISMARINE_BRICKS)));
+	public static final Block CRACKED_PRISMARINE_BRICK_WALL = register("cracked_prismarine_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_PRISMARINE_BRICKS).solid()));
+	
+	public static final Block CRACKED_CHISELED_NETHER_BRICK_SLAB = register("cracked_chiseled_nether_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_CHISELED_NETHER_BRICKS)));
+	public static final Block CRACKED_CHISELED_NETHER_BRICK_STAIRS = register("cracked_chiseled_nether_brick_stairs", new StairsBlock(CRACKED_CHISELED_NETHER_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_CHISELED_NETHER_BRICKS)));
+	public static final Block CRACKED_CHISELED_NETHER_BRICK_WALL = register("cracked_chiseled_nether_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_CHISELED_NETHER_BRICKS).solid()));
+	public static final Block CRACKED_RED_NETHER_BRICK_SLAB = register("cracked_red_nether_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_RED_NETHER_BRICKS)));
+	public static final Block CRACKED_RED_NETHER_BRICK_STAIRS = register("cracked_red_nether_brick_stairs", new StairsBlock(CRACKED_RED_NETHER_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_RED_NETHER_BRICKS)));
+	public static final Block CRACKED_RED_NETHER_BRICK_WALL = register("cracked_red_nether_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_RED_NETHER_BRICKS).solid()));
+	public static final Block CRACKED_RED_NETHER_BRICK_FENCE = register("cracked_red_nether_brick_fence", new FenceBlock(AbstractBlock.Settings.copy(CRACKED_RED_NETHER_BRICKS).solid()));
+	public static final Block CRACKED_RED_NETHER_BRICK_FENCE_GATE = register("cracked_red_nether_brick_fence_gate", new FenceGateBlock(SSWPWoodTypes.NETHER_BRICK, AbstractBlock.Settings.copy(CRACKED_RED_NETHER_BRICKS).solid()));
+	public static final Block CHISELED_RED_NETHER_BRICK_SLAB = register("chiseled_red_nether_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CHISELED_RED_NETHER_BRICKS)));
+	public static final Block CHISELED_RED_NETHER_BRICK_STAIRS = register("chiseled_red_nether_brick_stairs", new StairsBlock(CHISELED_RED_NETHER_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CHISELED_RED_NETHER_BRICKS)));
+	public static final Block CHISELED_RED_NETHER_BRICK_WALL = register("chiseled_red_nether_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CHISELED_RED_NETHER_BRICKS).solid()));
+	public static final Block CRACKED_CHISELED_RED_NETHER_BRICK_SLAB = register("cracked_chiseled_red_nether_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_CHISELED_RED_NETHER_BRICKS)));
+	public static final Block CRACKED_CHISELED_RED_NETHER_BRICK_STAIRS = register("cracked_chiseled_red_nether_brick_stairs", new StairsBlock(CRACKED_CHISELED_RED_NETHER_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_CHISELED_RED_NETHER_BRICKS)));
+	public static final Block CRACKED_CHISELED_RED_NETHER_BRICK_WALL = register("cracked_chiseled_red_nether_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_CHISELED_RED_NETHER_BRICKS).solid()));
+	
+	public static final Block CRACKED_END_STONE_BRICK_SLAB = register("cracked_end_stone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_END_STONE_BRICKS)));
+	public static final Block CRACKED_END_STONE_BRICK_STAIRS = register("cracked_end_stone_brick_stairs", new StairsBlock(CRACKED_END_STONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_END_STONE_BRICKS)));
+	public static final Block CRACKED_END_STONE_BRICK_WALL = register("cracked_end_stone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_END_STONE_BRICKS).solid()));
+	
+	public static final Block CRACKED_QUARTZ_BRICK_SLAB = register("cracked_quartz_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_QUARTZ_BRICKS)));
+	public static final Block CRACKED_QUARTZ_BRICK_STAIRS = register("cracked_quartz_brick_stairs", new StairsBlock(CRACKED_QUARTZ_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_QUARTZ_BRICKS)));
+	public static final Block CRACKED_QUARTZ_BRICK_WALL = register("cracked_quartz_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_QUARTZ_BRICKS).solid()));
+	
+	public static final Block INFESTED_MOSSY_STONE = register("infested_mossy_stone", new InfestedBlock(MOSSY_STONE, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)));
+	public static final Block INFESTED_CRACKED_MOSSY_STONE_BRICKS = register("infested_cracked_mossy_stone_bricks", new InfestedBlock(CRACKED_MOSSY_STONE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)));
+	public static final Block INFESTED_CRACKED_CHISELED_STONE_BRICKS = register("infested_cracked_chiseled_stone_bricks", new InfestedBlock(CRACKED_CHISELED_STONE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)));
+	public static final Block INFESTED_MOSSY_CHISELED_STONE_BRICKS = register("infested_mossy_chiseled_stone_bricks", new InfestedBlock(MOSSY_CHISELED_STONE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)));
+	public static final Block INFESTED_CRACKED_MOSSY_CHISELED_STONE_BRICKS = register("infested_cracked_mossy_chiseled_stone_bricks", new InfestedBlock(CRACKED_MOSSY_CHISELED_STONE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)));
+	
+	public static final Block INFESTED_MOSSY_GRANITE = register("infested_mossy_granite", new InfestedBlock(MOSSY_GRANITE, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN)));
+	public static final Block INFESTED_COBBLED_GRANITE = register("infested_cobbled_granite", new InfestedBlock(COBBLED_GRANITE, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN)));
+	public static final Block INFESTED_MOSSY_COBBLED_GRANITE = register("infested_mossy_cobbled_granite", new InfestedBlock(MOSSY_COBBLED_GRANITE, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN)));
+	public static final Block INFESTED_GRANITE_BRICKS = register("infested_granite_bricks", new InfestedBlock(GRANITE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN)));
+	public static final Block INFESTED_CRACKED_GRANITE_BRICKS = register("infested_cracked_granite_bricks", new InfestedBlock(CRACKED_GRANITE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN)));
+	public static final Block INFESTED_MOSSY_GRANITE_BRICKS = register("infested_mossy_granite_bricks", new InfestedBlock(MOSSY_GRANITE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN)));
+	public static final Block INFESTED_CRACKED_MOSSY_GRANITE_BRICKS = register("infested_cracked_mossy_granite_bricks", new InfestedBlock(CRACKED_MOSSY_GRANITE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN)));
+	
+	public static final Block INFESTED_MOSSY_DIORITE = register("infested_mossy_diorite", new InfestedBlock(MOSSY_DIORITE, AbstractBlock.Settings.create().mapColor(MapColor.WHITE_GRAY)));
+	public static final Block INFESTED_COBBLED_DIORITE = register("infested_cobbled_diorite", new InfestedBlock(COBBLED_DIORITE, AbstractBlock.Settings.create().mapColor(MapColor.WHITE_GRAY)));
+	public static final Block INFESTED_MOSSY_COBBLED_DIORITE = register("infested_mossy_cobbled_diorite", new InfestedBlock(MOSSY_COBBLED_DIORITE, AbstractBlock.Settings.create().mapColor(MapColor.WHITE_GRAY)));
+	public static final Block INFESTED_DIORITE_BRICKS = register("infested_diorite_bricks", new InfestedBlock(DIORITE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.WHITE_GRAY)));
+	public static final Block INFESTED_CRACKED_DIORITE_BRICKS = register("infested_cracked_diorite_bricks", new InfestedBlock(CRACKED_DIORITE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.WHITE_GRAY)));
+	public static final Block INFESTED_MOSSY_DIORITE_BRICKS = register("infested_mossy_diorite_bricks", new InfestedBlock(MOSSY_DIORITE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.WHITE_GRAY)));
+	public static final Block INFESTED_CRACKED_MOSSY_DIORITE_BRICKS = register("infested_cracked_mossy_diorite_bricks", new InfestedBlock(CRACKED_MOSSY_DIORITE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.WHITE_GRAY)));
+	
+	public static final Block INFESTED_MOSSY_ANDESITE = register("infested_mossy_andesite", new InfestedBlock(MOSSY_ANDESITE, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)));
+	public static final Block INFESTED_COBBLED_ANDESITE = register("infested_cobbled_andesite", new InfestedBlock(COBBLED_ANDESITE, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)));
+	public static final Block INFESTED_MOSSY_COBBLED_ANDESITE = register("infested_mossy_cobbled_andesite", new InfestedBlock(MOSSY_COBBLED_ANDESITE, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)));
+	public static final Block INFESTED_ANDESITE_BRICKS = register("infested_andesite_bricks", new InfestedBlock(ANDESITE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)));
+	public static final Block INFESTED_CRACKED_ANDESITE_BRICKS = register("infested_cracked_andesite_bricks", new InfestedBlock(CRACKED_ANDESITE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)));
+	public static final Block INFESTED_MOSSY_ANDESITE_BRICKS = register("infested_mossy_andesite_bricks", new InfestedBlock(MOSSY_ANDESITE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)));
+	public static final Block INFESTED_CRACKED_MOSSY_ANDESITE_BRICKS = register("infested_cracked_mossy_andesite_bricks", new InfestedBlock(CRACKED_MOSSY_ANDESITE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)));
+	
+	public static final Block INFESTED_MOSSY_DEEPSLATE = register("infested_mossy_deepslate", new RotatedInfestedBlock(MOSSY_DEEPSLATE, AbstractBlock.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)));
+	public static final Block INFESTED_MOSSY_COBBLED_DEEPSLATE = register("infested_mossy_cobbled_deepslate", new InfestedBlock(MOSSY_COBBLED_DEEPSLATE, AbstractBlock.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE)));
+	public static final Block INFESTED_MOSSY_DEEPSLATE_BRICKS = register("infested_mossy_deepslate_bricks", new InfestedBlock(MOSSY_DEEPSLATE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+	public static final Block INFESTED_CRACKED_MOSSY_DEEPSLATE_BRICKS = register("infested_cracked_mossy_deepslate_bricks", new InfestedBlock(CRACKED_MOSSY_DEEPSLATE_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+	public static final Block INFESTED_MOSSY_DEEPSLATE_TILES = register("infested_mossy_deepslate_tiles", new InfestedBlock(MOSSY_DEEPSLATE_TILES, AbstractBlock.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE_TILES)));
+	public static final Block INFESTED_CRACKED_MOSSY_DEEPSLATE_TILES = register("infested_cracked_mossy_deepslate_tiles", new InfestedBlock(CRACKED_MOSSY_DEEPSLATE_TILES, AbstractBlock.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).sounds(BlockSoundGroup.DEEPSLATE_TILES)));
+	
+	public static final Block INFESTED_MOSSY_TUFF = register("infested_mossy_tuff", new InfestedBlock(MOSSY_TUFF, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.TUFF)));
+	public static final Block INFESTED_CRACKED_TUFF_BRICKS = register("infested_cracked_tuff_bricks", new InfestedBlock(CRACKED_TUFF_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.TUFF_BRICKS)));
+	public static final Block INFESTED_MOSSY_TUFF_BRICKS = register("infested_mossy_tuff_bricks", new InfestedBlock(MOSSY_TUFF_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.TUFF_BRICKS)));
+	public static final Block INFESTED_CRACKED_MOSSY_TUFF_BRICKS = register("infested_cracked_mossy_tuff_bricks", new InfestedBlock(CRACKED_MOSSY_TUFF_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.TUFF_BRICKS)));
+	public static final Block INFESTED_CRACKED_CHISELED_TUFF_BRICKS = register("infested_cracked_chiseled_tuff_bricks", new InfestedBlock(CRACKED_CHISELED_TUFF_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.TUFF_BRICKS)));
+	public static final Block INFESTED_MOSSY_CHISELED_TUFF_BRICKS = register("infested_mossy_chiseled_tuff_bricks", new InfestedBlock(MOSSY_CHISELED_TUFF_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.TUFF_BRICKS)));
+	public static final Block INFESTED_CRACKED_MOSSY_CHISELED_TUFF_BRICKS = register("infested_cracked_mossy_chiseled_tuff_bricks", new InfestedBlock(CRACKED_MOSSY_CHISELED_TUFF_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.TUFF_BRICKS)));
 	
 	public static Block register(String name, Block block) {
 		return Registry.register(Registries.BLOCK, Identifier.of(MSMain.MOD_ID, name), block);

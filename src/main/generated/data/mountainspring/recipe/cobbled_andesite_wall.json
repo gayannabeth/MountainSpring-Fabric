@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cobbled_andesite_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:cobbled_andesite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:cobbled_andesite_wall"
+  }
+}

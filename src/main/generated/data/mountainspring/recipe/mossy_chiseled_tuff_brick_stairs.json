@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_chiseled_tuff_brick_stairs",
+  "key": {
+    "#": {
+      "item": "mountainspring:mossy_chiseled_tuff_bricks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:mossy_chiseled_tuff_brick_stairs"
+  }
+}

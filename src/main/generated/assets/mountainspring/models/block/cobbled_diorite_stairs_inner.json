@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "mountainspring:block/cobbled_diorite",
+    "side": "mountainspring:block/cobbled_diorite",
+    "top": "mountainspring:block/cobbled_diorite"
+  }
+}

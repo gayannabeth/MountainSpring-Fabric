@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mountainspring:mossy_granite"
+  },
+  "result": {
+    "count": 1,
+    "id": "mountainspring:mossy_granite_wall"
+  }
+}

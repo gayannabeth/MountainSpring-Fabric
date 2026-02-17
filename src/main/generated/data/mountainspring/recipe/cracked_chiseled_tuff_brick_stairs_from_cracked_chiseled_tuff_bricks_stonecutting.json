@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mountainspring:cracked_chiseled_tuff_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "mountainspring:cracked_chiseled_tuff_brick_stairs"
+  }
+}

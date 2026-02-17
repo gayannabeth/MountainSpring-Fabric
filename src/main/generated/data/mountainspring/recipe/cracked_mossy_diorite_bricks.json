@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "cracked_mossy_diorite_bricks",
+  "ingredients": [
+    {
+      "item": "mountainspring:cracked_diorite_bricks"
+    },
+    [
+      {
+        "item": "minecraft:moss_block"
+      },
+      {
+        "item": "minecraft:vine"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:cracked_mossy_diorite_bricks"
+  }
+}

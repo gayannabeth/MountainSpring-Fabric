@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "mountainspring:block/cobbled_andesite",
+    "side": "mountainspring:block/cobbled_andesite",
+    "top": "mountainspring:block/cobbled_andesite"
+  }
+}

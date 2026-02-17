@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "mossy_cobbled_granite_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:mossy_cobbled_granite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:mossy_cobbled_granite_wall"
+  }
+}

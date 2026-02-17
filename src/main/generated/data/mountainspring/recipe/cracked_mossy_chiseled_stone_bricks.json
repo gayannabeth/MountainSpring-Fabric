@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cracked_mossy_chiseled_stone_bricks",
+  "key": {
+    "#": {
+      "item": "mountainspring:cracked_mossy_stone_brick_slab"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:cracked_mossy_chiseled_stone_bricks"
+  }
+}

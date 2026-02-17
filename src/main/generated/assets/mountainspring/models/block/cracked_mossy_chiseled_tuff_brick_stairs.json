@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "mountainspring:block/cracked_mossy_chiseled_tuff_bricks_top",
+    "side": "mountainspring:block/cracked_mossy_chiseled_tuff_bricks",
+    "top": "mountainspring:block/cracked_mossy_chiseled_tuff_bricks_top"
+  }
+}

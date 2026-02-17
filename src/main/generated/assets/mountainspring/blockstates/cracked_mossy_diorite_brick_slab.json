@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mountainspring:block/cracked_mossy_diorite_brick_slab"
+    },
+    "type=double": {
+      "model": "mountainspring:block/cracked_mossy_diorite_bricks"
+    },
+    "type=top": {
+      "model": "mountainspring:block/cracked_mossy_diorite_brick_slab_top"
+    }
+  }
+}

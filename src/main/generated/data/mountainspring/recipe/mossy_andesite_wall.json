@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "mossy_andesite_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:mossy_andesite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:mossy_andesite_wall"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cracked_mud_brick_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:cracked_mud_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:cracked_mud_brick_wall"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mountainspring:cobbled_diorite"
+  },
+  "result": {
+    "count": 1,
+    "id": "mountainspring:cobbled_diorite_slab"
+  }
+}

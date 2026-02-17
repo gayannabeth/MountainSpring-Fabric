@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "andesite_brick_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:andesite_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:andesite_brick_wall"
+  }
+}

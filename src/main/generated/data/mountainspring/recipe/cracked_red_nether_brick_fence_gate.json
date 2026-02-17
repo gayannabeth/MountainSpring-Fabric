@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "cracked_red_nether_brick_fence_gate",
+  "key": {
+    "X": {
+      "item": "mountainspring:cracked_red_nether_bricks"
+    },
+    "Y": {
+      "item": "sswplus:red_nether_brick"
+    }
+  },
+  "pattern": [
+    "YXY",
+    "YXY"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:cracked_red_nether_brick_fence_gate"
+  }
+}

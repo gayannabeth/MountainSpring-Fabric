@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import gay.mountainspring.block.MSBlocks;
 import gay.mountainspring.item.MSItems;
 import gay.mountainspring.item.group.MSVanillaGroups;
+import gay.mountainspring.loot.MSLootModifications;
 
 public class MSMain implements ModInitializer {
 	public static final String MOD_ID = "mountainspring";
@@ -18,5 +19,6 @@ public class MSMain implements ModInitializer {
 		MSBlocks.init();
 		MSItems.init();
 		MSVanillaGroups.init();
+		MSLootModifications.init();
 	}
 }

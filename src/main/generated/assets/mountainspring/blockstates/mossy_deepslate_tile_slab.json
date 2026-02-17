@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mountainspring:block/mossy_deepslate_tile_slab"
+    },
+    "type=double": {
+      "model": "mountainspring:block/mossy_deepslate_tiles"
+    },
+    "type=top": {
+      "model": "mountainspring:block/mossy_deepslate_tile_slab_top"
+    }
+  }
+}

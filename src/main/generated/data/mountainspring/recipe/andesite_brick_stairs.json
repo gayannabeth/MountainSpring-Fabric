@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "andesite_brick_stairs",
+  "key": {
+    "#": {
+      "item": "mountainspring:andesite_bricks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:andesite_brick_stairs"
+  }
+}

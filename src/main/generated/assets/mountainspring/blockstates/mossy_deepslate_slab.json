@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "axis=x,type=bottom": {
+      "model": "mountainspring:block/mossy_deepslate_slab_oriented",
+      "y": 90
+    },
+    "axis=x,type=double": {
+      "model": "mountainspring:block/mossy_depslate",
+      "x": 90,
+      "y": 90
+    },
+    "axis=x,type=top": {
+      "model": "mountainspring:block/mossy_deepslate_slab_oriented_top",
+      "y": 90
+    },
+    "axis=y,type=bottom": {
+      "model": "mountainspring:block/mossy_deepslate_slab"
+    },
+    "axis=y,type=double": {
+      "model": "mountainspring:block/mossy_depslate"
+    },
+    "axis=y,type=top": {
+      "model": "mountainspring:block/mossy_deepslate_slab_top"
+    },
+    "axis=z,type=bottom": {
+      "model": "mountainspring:block/mossy_deepslate_slab_oriented"
+    },
+    "axis=z,type=double": {
+      "model": "mountainspring:block/mossy_depslate",
+      "x": 90
+    },
+    "axis=z,type=top": {
+      "model": "mountainspring:block/mossy_deepslate_slab_oriented_top"
+    }
+  }
+}

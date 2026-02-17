@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "diorite_brick_slab",
+  "key": {
+    "#": {
+      "item": "mountainspring:diorite_bricks"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:diorite_brick_slab"
+  }
+}

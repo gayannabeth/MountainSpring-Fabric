@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mountainspring:block/cracked_mossy_chiseled_tuff_bricks_top",
+    "side": "mountainspring:block/cracked_mossy_chiseled_tuff_bricks"
+  }
+}

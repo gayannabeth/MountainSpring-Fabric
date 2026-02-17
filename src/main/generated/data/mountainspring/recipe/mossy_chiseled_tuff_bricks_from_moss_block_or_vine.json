@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_chiseled_tuff_bricks",
+  "ingredients": [
+    {
+      "item": "minecraft:chiseled_tuff_bricks"
+    },
+    [
+      {
+        "item": "minecraft:moss_block"
+      },
+      {
+        "item": "minecraft:vine"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:mossy_chiseled_tuff_bricks"
+  }
+}

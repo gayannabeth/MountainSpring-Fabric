@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mountainspring:block/mossy_cobbled_deepslate_slab"
+    },
+    "type=double": {
+      "model": "mountainspring:block/mossy_cobbled_deepslate"
+    },
+    "type=top": {
+      "model": "mountainspring:block/mossy_cobbled_deepslate_slab_top"
+    }
+  }
+}

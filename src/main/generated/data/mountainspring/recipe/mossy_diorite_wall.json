@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "mossy_diorite_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:mossy_diorite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:mossy_diorite_wall"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "mossy_tuff_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:mossy_tuff"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:mossy_tuff_wall"
+  }
+}

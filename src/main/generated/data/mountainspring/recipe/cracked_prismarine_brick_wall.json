@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cracked_prismarine_brick_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:cracked_prismarine_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:cracked_prismarine_brick_wall"
+  }
+}

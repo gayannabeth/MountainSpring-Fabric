@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "granite_brick_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:granite_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:granite_brick_wall"
+  }
+}

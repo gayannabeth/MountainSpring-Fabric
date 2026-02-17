@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "red_sandstone_brick_stairs",
+  "key": {
+    "#": {
+      "item": "mountainspring:red_sandstone_bricks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:red_sandstone_brick_stairs"
+  }
+}

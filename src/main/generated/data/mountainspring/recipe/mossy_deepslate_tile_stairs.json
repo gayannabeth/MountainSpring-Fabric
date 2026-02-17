@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_deepslate_tile_stairs",
+  "key": {
+    "#": {
+      "item": "mountainspring:mossy_deepslate_tiles"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:mossy_deepslate_tile_stairs"
+  }
+}

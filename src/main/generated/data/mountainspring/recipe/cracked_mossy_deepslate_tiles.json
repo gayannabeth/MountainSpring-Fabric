@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "cracked_mossy_deepslate_tiles",
+  "ingredients": [
+    {
+      "item": "minecraft:cracked_deepslate_tiles"
+    },
+    [
+      {
+        "item": "minecraft:moss_block"
+      },
+      {
+        "item": "minecraft:vine"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:cracked_mossy_deepslate_tiles"
+  }
+}

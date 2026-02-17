@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_deepslate_slab",
+  "key": {
+    "#": {
+      "item": "mountainspring:mossy_depslate"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:mossy_deepslate_slab"
+  }
+}

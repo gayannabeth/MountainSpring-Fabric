@@ -1,0 +1,16 @@
+{
+  "values": [
+    "#mountainspring:brick_blocks",
+    "#mountainspring:brick_slabs",
+    "#mountainspring:brick_stairs",
+    "#mountainspring:brick_walls",
+    "#mountainspring:mud_bricks",
+    "#mountainspring:mud_brick_slabs",
+    "#mountainspring:mud_brick_stairs",
+    "#mountainspring:mud_brick_walls",
+    "#mountainspring:end_stone_bricks",
+    "#mountainspring:end_stone_brick_slabs",
+    "#mountainspring:end_stone_brick_stairs",
+    "#mountainspring:end_stone_brick_walls"
+  ]
+}

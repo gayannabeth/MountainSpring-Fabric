@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "diorite_brick_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:diorite_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:diorite_brick_wall"
+  }
+}
