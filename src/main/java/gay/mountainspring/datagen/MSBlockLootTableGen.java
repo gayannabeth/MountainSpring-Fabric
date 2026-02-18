@@ -62,13 +62,21 @@ public class MSBlockLootTableGen extends AquiferBlockLootTableProvider {
 		this.addDrop(MSBlocks.CRACKED_MOSSY_CHISELED_TUFF_BRICKS);
 		
 		this.addDrop(MSBlocks.CRACKED_BRICKS);
+		this.addDrop(MSBlocks.MOSSY_BRICKS);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_BRICKS);
 		
 		this.addDrop(MSBlocks.CRACKED_MUD_BRICKS);
+		this.addDrop(MSBlocks.MOSSY_MUD_BRICKS);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_MUD_BRICKS);
 		
 		this.addDrop(MSBlocks.SANDSTONE_BRICKS);
 		this.addDrop(MSBlocks.CRACKED_SANDSTONE_BRICKS);
+		this.addDrop(MSBlocks.MOSSY_SANDSTONE_BRICKS);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_SANDSTONE_BRICKS);
 		this.addDrop(MSBlocks.RED_SANDSTONE_BRICKS);
 		this.addDrop(MSBlocks.CRACKED_RED_SANDSTONE_BRICKS);
+		this.addDrop(MSBlocks.MOSSY_RED_SANDSTONE_BRICKS);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICKS);
 		
 		this.addDrop(MSBlocks.CRACKED_PRISMARINE_BRICKS);
 		
@@ -208,10 +216,22 @@ public class MSBlockLootTableGen extends AquiferBlockLootTableProvider {
 		this.addDrop(MSBlocks.CRACKED_BRICK_SLAB, this::slabDrops);
 		this.addDrop(MSBlocks.CRACKED_BRICK_STAIRS);
 		this.addDrop(MSBlocks.CRACKED_BRICK_WALL);
+		this.addDrop(MSBlocks.MOSSY_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.MOSSY_BRICK_STAIRS);
+		this.addDrop(MSBlocks.MOSSY_BRICK_WALL);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_BRICK_STAIRS);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_BRICK_WALL);
 		
 		this.addDrop(MSBlocks.CRACKED_MUD_BRICK_SLAB, this::slabDrops);
 		this.addDrop(MSBlocks.CRACKED_MUD_BRICK_STAIRS);
 		this.addDrop(MSBlocks.CRACKED_MUD_BRICK_WALL);
+		this.addDrop(MSBlocks.MOSSY_MUD_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.MOSSY_MUD_BRICK_STAIRS);
+		this.addDrop(MSBlocks.MOSSY_MUD_BRICK_WALL);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_MUD_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_MUD_BRICK_STAIRS);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_MUD_BRICK_WALL);
 		
 		this.addDrop(MSBlocks.SANDSTONE_BRICK_SLAB, this::slabDrops);
 		this.addDrop(MSBlocks.SANDSTONE_BRICK_STAIRS);
@@ -219,6 +239,12 @@ public class MSBlockLootTableGen extends AquiferBlockLootTableProvider {
 		this.addDrop(MSBlocks.CRACKED_SANDSTONE_BRICK_SLAB, this::slabDrops);
 		this.addDrop(MSBlocks.CRACKED_SANDSTONE_BRICK_STAIRS);
 		this.addDrop(MSBlocks.CRACKED_SANDSTONE_BRICK_WALL);
+		this.addDrop(MSBlocks.MOSSY_SANDSTONE_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.MOSSY_SANDSTONE_BRICK_STAIRS);
+		this.addDrop(MSBlocks.MOSSY_SANDSTONE_BRICK_WALL);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_SANDSTONE_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_SANDSTONE_BRICK_STAIRS);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_SANDSTONE_BRICK_WALL);
 		
 		this.addDrop(MSBlocks.RED_SANDSTONE_BRICK_SLAB, this::slabDrops);
 		this.addDrop(MSBlocks.RED_SANDSTONE_BRICK_STAIRS);
@@ -226,6 +252,12 @@ public class MSBlockLootTableGen extends AquiferBlockLootTableProvider {
 		this.addDrop(MSBlocks.CRACKED_RED_SANDSTONE_BRICK_SLAB, this::slabDrops);
 		this.addDrop(MSBlocks.CRACKED_RED_SANDSTONE_BRICK_STAIRS);
 		this.addDrop(MSBlocks.CRACKED_RED_SANDSTONE_BRICK_WALL);
+		this.addDrop(MSBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.MOSSY_RED_SANDSTONE_BRICK_STAIRS);
+		this.addDrop(MSBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_STAIRS);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_WALL);
 		
 		this.addDrop(MSBlocks.CRACKED_PRISMARINE_BRICK_SLAB, this::slabDrops);
 		this.addDrop(MSBlocks.CRACKED_PRISMARINE_BRICK_STAIRS);

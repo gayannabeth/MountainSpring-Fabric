@@ -12,9 +12,7 @@ import net.minecraft.util.Identifier;
 public class MSItems {
 	private MSItems() {}
 	
-	public static void init() {
-		
-	}
+	public static void init() {}
 	
 	public static final Item MOSSY_STONE = registerBlock(MSBlocks.MOSSY_STONE);	
 	public static final Item MOSSY_STONE_SLAB = registerBlock(MSBlocks.MOSSY_STONE_SLAB);

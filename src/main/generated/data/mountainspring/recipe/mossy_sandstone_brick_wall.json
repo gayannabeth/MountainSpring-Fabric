@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "mossy_sandstone_brick_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:mossy_sandstone_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:mossy_sandstone_brick_wall"
+  }
+}

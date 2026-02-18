@@ -1,6 +1,8 @@
 {
   "values": [
     "mountainspring:sandstone_bricks",
-    "mountainspring:cracked_sandstone_bricks"
+    "mountainspring:cracked_sandstone_bricks",
+    "mountainspring:mossy_sandstone_bricks",
+    "mountainspring:cracked_mossy_sandstone_bricks"
   ]
 }

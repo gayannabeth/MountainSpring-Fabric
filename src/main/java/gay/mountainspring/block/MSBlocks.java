@@ -25,9 +25,7 @@ import net.minecraft.util.Identifier;
 public class MSBlocks {
 	private MSBlocks() {}
 	
-	public static void init() {
-		
-	}
+	public static void init() {}
 	
 	public static final Block MOSSY_STONE = register("mossy_stone", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
 	public static final Block MOSSY_STONE_SLAB = register("mossy_stone_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_STONE)));

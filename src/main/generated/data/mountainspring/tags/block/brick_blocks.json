@@ -1,6 +1,8 @@
 {
   "values": [
     "minecraft:bricks",
-    "mountainspring:cracked_bricks"
+    "mountainspring:cracked_bricks",
+    "mountainspring:mossy_bricks",
+    "mountainspring:cracked_mossy_bricks"
   ]
 }

@@ -131,19 +131,35 @@ public class MSRecipeGen extends FabricRecipeProvider {
 		
 		tuff(exp);
 		
-		crackedBricks(exp,
+		bricks(exp,
 				Items.BRICKS,
 				MSItems.CRACKED_BRICKS,
 				MSItems.CRACKED_BRICK_SLAB,
 				MSItems.CRACKED_BRICK_STAIRS,
-				MSItems.CRACKED_BRICK_WALL);
+				MSItems.CRACKED_BRICK_WALL,
+				MSItems.MOSSY_BRICKS,
+				MSItems.MOSSY_BRICK_SLAB,
+				MSItems.MOSSY_BRICK_STAIRS,
+				MSItems.MOSSY_BRICK_WALL,
+				MSItems.CRACKED_MOSSY_BRICKS,
+				MSItems.CRACKED_MOSSY_BRICK_SLAB,
+				MSItems.CRACKED_MOSSY_BRICK_STAIRS,
+				MSItems.CRACKED_MOSSY_BRICK_WALL);
 		
-		crackedBricks(exp,
+		bricks(exp,
 				Items.MUD_BRICKS,
 				MSItems.CRACKED_MUD_BRICKS,
 				MSItems.CRACKED_MUD_BRICK_SLAB,
 				MSItems.CRACKED_MUD_BRICK_STAIRS,
-				MSItems.CRACKED_MUD_BRICK_WALL);
+				MSItems.CRACKED_MUD_BRICK_WALL,
+				MSItems.MOSSY_MUD_BRICKS,
+				MSItems.MOSSY_MUD_BRICK_SLAB,
+				MSItems.MOSSY_MUD_BRICK_STAIRS,
+				MSItems.MOSSY_MUD_BRICK_WALL,
+				MSItems.CRACKED_MOSSY_MUD_BRICKS,
+				MSItems.CRACKED_MOSSY_MUD_BRICK_SLAB,
+				MSItems.CRACKED_MOSSY_MUD_BRICK_STAIRS,
+				MSItems.CRACKED_MOSSY_MUD_BRICK_WALL);
 		
 		bricks(exp,
 				Items.SMOOTH_SANDSTONE,
@@ -154,7 +170,15 @@ public class MSRecipeGen extends FabricRecipeProvider {
 				MSItems.CRACKED_SANDSTONE_BRICKS,
 				MSItems.CRACKED_SANDSTONE_BRICK_SLAB,
 				MSItems.CRACKED_SANDSTONE_BRICK_STAIRS,
-				MSItems.CRACKED_SANDSTONE_BRICK_WALL);
+				MSItems.CRACKED_SANDSTONE_BRICK_WALL,
+				MSItems.MOSSY_SANDSTONE_BRICKS,
+				MSItems.MOSSY_SANDSTONE_BRICK_SLAB,
+				MSItems.MOSSY_SANDSTONE_BRICK_STAIRS,
+				MSItems.MOSSY_SANDSTONE_BRICK_WALL,
+				MSItems.CRACKED_MOSSY_SANDSTONE_BRICKS,
+				MSItems.CRACKED_MOSSY_SANDSTONE_BRICK_SLAB,
+				MSItems.CRACKED_MOSSY_SANDSTONE_BRICK_STAIRS,
+				MSItems.CRACKED_MOSSY_SANDSTONE_BRICK_WALL);
 		
 		bricks(exp,
 				Items.SMOOTH_RED_SANDSTONE,
@@ -165,7 +189,15 @@ public class MSRecipeGen extends FabricRecipeProvider {
 				MSItems.CRACKED_RED_SANDSTONE_BRICKS,
 				MSItems.CRACKED_RED_SANDSTONE_BRICK_SLAB,
 				MSItems.CRACKED_RED_SANDSTONE_BRICK_STAIRS,
-				MSItems.CRACKED_RED_SANDSTONE_BRICK_WALL);
+				MSItems.CRACKED_RED_SANDSTONE_BRICK_WALL,
+				MSItems.MOSSY_RED_SANDSTONE_BRICKS,
+				MSItems.MOSSY_RED_SANDSTONE_BRICK_SLAB,
+				MSItems.MOSSY_RED_SANDSTONE_BRICK_STAIRS,
+				MSItems.MOSSY_RED_SANDSTONE_BRICK_WALL,
+				MSItems.CRACKED_MOSSY_RED_SANDSTONE_BRICKS,
+				MSItems.CRACKED_MOSSY_RED_SANDSTONE_BRICK_SLAB,
+				MSItems.CRACKED_MOSSY_RED_SANDSTONE_BRICK_STAIRS,
+				MSItems.CRACKED_MOSSY_RED_SANDSTONE_BRICK_WALL);
 		
 		crackedBricks(exp,
 				Items.PRISMARINE_BRICKS,
@@ -511,6 +543,101 @@ public class MSRecipeGen extends FabricRecipeProvider {
 			ItemConvertible crackedBrick,
 			ItemConvertible crackedBrickSlab,
 			ItemConvertible crackedBrickStairs,
+			ItemConvertible crackedBrickWall,
+			ItemConvertible mossyBrick,
+			ItemConvertible mossyBrickSlab,
+			ItemConvertible mossyBrickStairs,
+			ItemConvertible mossyBrickWall,
+			ItemConvertible crackedMossyBrick,
+			ItemConvertible crackedMossyBrickSlab,
+			ItemConvertible crackedMossyBrickStairs,
+			ItemConvertible crackedMossyBrickWall) {
+		offer2x2Recipe(exp, RecipeCategory.BUILDING_BLOCKS, brick, base);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, brick, base);
+		offerSlabRecipe(exp, brickSlab, brick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, brickSlab, brick, 2);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, brickSlab, base, 2);
+		offerStairsRecipe(exp, brickStairs, brick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, brickStairs, brick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, brickStairs, base);
+		offerWallRecipe(exp, brickWall, brick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, brickWall, brick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, brickWall, base);
+		
+		offerSmeltingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedBrick, brick);
+		offerSlabRecipe(exp, crackedBrickSlab, crackedBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedBrickSlab, crackedBrick, 2);
+		offerStairsRecipe(exp, crackedBrickStairs, crackedBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedBrickStairs, crackedBrick);
+		offerWallRecipe(exp, crackedBrickWall, crackedBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedBrickWall, crackedBrick);
+		
+		offerCombineWithMossRecipe(exp, RecipeCategory.BUILDING_BLOCKS, mossyBrick, brick);
+		offerSlabRecipe(exp, mossyBrickSlab, mossyBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, mossyBrickSlab, mossyBrick, 2);
+		offerStairsRecipe(exp, mossyBrickStairs, mossyBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, mossyBrickStairs, mossyBrick);
+		offerWallRecipe(exp, mossyBrickWall, mossyBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, mossyBrickWall, mossyBrick);
+		
+		offerCombineWithMossRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedMossyBrick, crackedBrick);
+		offerSlabRecipe(exp, crackedMossyBrickSlab, crackedMossyBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedMossyBrickSlab, crackedMossyBrick, 2);
+		offerStairsRecipe(exp, crackedMossyBrickStairs, crackedMossyBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedMossyBrickStairs, crackedMossyBrick);
+		offerWallRecipe(exp, crackedMossyBrickWall, crackedMossyBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedMossyBrickWall, crackedMossyBrick);
+	}
+	
+	private static void bricks(RecipeExporter exp,
+			ItemConvertible brick,
+			ItemConvertible crackedBrick,
+			ItemConvertible crackedBrickSlab,
+			ItemConvertible crackedBrickStairs,
+			ItemConvertible crackedBrickWall,
+			ItemConvertible mossyBrick,
+			ItemConvertible mossyBrickSlab,
+			ItemConvertible mossyBrickStairs,
+			ItemConvertible mossyBrickWall,
+			ItemConvertible crackedMossyBrick,
+			ItemConvertible crackedMossyBrickSlab,
+			ItemConvertible crackedMossyBrickStairs,
+			ItemConvertible crackedMossyBrickWall) {
+		offerSmeltingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedBrick, brick);
+		offerSlabRecipe(exp, crackedBrickSlab, crackedBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedBrickSlab, crackedBrick, 2);
+		offerStairsRecipe(exp, crackedBrickStairs, crackedBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedBrickStairs, crackedBrick);
+		offerWallRecipe(exp, crackedBrickWall, crackedBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedBrickWall, crackedBrick);
+		
+		offerCombineWithMossRecipe(exp, RecipeCategory.BUILDING_BLOCKS, mossyBrick, brick);
+		offerSlabRecipe(exp, mossyBrickSlab, mossyBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, mossyBrickSlab, mossyBrick, 2);
+		offerStairsRecipe(exp, mossyBrickStairs, mossyBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, mossyBrickStairs, mossyBrick);
+		offerWallRecipe(exp, mossyBrickWall, mossyBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, mossyBrickWall, mossyBrick);
+		
+		offerCombineWithMossRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedMossyBrick, crackedBrick);
+		offerSlabRecipe(exp, crackedMossyBrickSlab, crackedMossyBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedMossyBrickSlab, crackedMossyBrick, 2);
+		offerStairsRecipe(exp, crackedMossyBrickStairs, crackedMossyBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedMossyBrickStairs, crackedMossyBrick);
+		offerWallRecipe(exp, crackedMossyBrickWall, crackedMossyBrick);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, crackedMossyBrickWall, crackedMossyBrick);
+	}
+	
+	@SuppressWarnings("unused")
+	private static void bricks(RecipeExporter exp,
+			ItemConvertible base,
+			ItemConvertible brick,
+			ItemConvertible brickSlab,
+			ItemConvertible brickStairs,
+			ItemConvertible brickWall,
+			ItemConvertible crackedBrick,
+			ItemConvertible crackedBrickSlab,
+			ItemConvertible crackedBrickStairs,
 			ItemConvertible crackedBrickWall) {
 		offer2x2Recipe(exp, RecipeCategory.BUILDING_BLOCKS, brick, base);
 		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, brick, base);
@@ -598,6 +725,8 @@ public class MSRecipeGen extends FabricRecipeProvider {
 		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, MSItems.CRACKED_CHISELED_RED_NETHER_BRICK_WALL, MSItems.CRACKED_CHISELED_RED_NETHER_BRICKS);
 		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, MSItems.CRACKED_CHISELED_RED_NETHER_BRICK_WALL, MSItems.CRACKED_RED_NETHER_BRICKS);
 	}
+	
+	//TODO: general nether bricks method
 	
 	public static void offerSlabRecipe(RecipeExporter exp, ItemConvertible output, ItemConvertible input) {
 		createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).group(getItemPath(output)).offerTo(exp);
