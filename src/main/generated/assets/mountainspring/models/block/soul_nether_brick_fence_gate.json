@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate",
+  "textures": {
+    "texture": "mountainspring:block/soul_nether_bricks"
+  }
+}

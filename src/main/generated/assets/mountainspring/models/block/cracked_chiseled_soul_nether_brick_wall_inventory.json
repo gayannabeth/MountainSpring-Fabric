@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "mountainspring:block/cracked_chiseled_soul_nether_bricks"
+  }
+}

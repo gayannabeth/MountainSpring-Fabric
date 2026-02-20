@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "sand",
+  "ingredients": [
+    {
+      "item": "minecraft:sandstone"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:sand"
+  }
+}

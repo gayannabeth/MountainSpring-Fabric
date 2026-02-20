@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ghastly_nether_brick",
+  "ingredients": [
+    {
+      "item": "mountainspring:ghastly_nether_bricks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:ghastly_nether_brick"
+  }
+}

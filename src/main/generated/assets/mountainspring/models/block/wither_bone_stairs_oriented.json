@@ -1,0 +1,9 @@
+{
+  "parent": "aquifer:block/oriented_outer_stairs_inside",
+  "textures": {
+    "bottom": "mountainspring:block/wither_bone_block_top",
+    "inside": "mountainspring:block/wither_bone_block_inside",
+    "side": "mountainspring:block/wither_bone_block_side",
+    "top": "mountainspring:block/wither_bone_block_top"
+  }
+}

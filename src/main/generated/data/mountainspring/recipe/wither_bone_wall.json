@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wither_bone_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:wither_bone_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:wither_bone_wall"
+  }
+}

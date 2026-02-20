@@ -2,6 +2,7 @@
   "values": [
     "#mountainspring:brick_walls",
     "#mountainspring:mud_brick_walls",
+    "#mountainspring:bone_walls",
     "#mountainspring:end_stone_brick_walls"
   ]
 }

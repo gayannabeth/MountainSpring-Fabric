@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "smooth_soul_sandstone_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:smooth_soul_sandstone"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:smooth_soul_sandstone_wall"
+  }
+}

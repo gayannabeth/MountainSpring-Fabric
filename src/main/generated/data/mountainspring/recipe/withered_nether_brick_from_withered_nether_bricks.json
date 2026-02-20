@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "withered_nether_brick",
+  "ingredients": [
+    {
+      "item": "mountainspring:withered_nether_bricks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:withered_nether_brick"
+  }
+}

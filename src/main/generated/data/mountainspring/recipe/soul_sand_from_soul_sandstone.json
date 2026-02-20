@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "soul_sand",
+  "ingredients": [
+    {
+      "item": "mountainspring:soul_sandstone"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:soul_sand"
+  }
+}

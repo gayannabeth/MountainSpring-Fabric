@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mountainspring:withered_nether_brick_from_withered_nether_bricks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_withered_nether_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mountainspring:withered_nether_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_withered_nether_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mountainspring:withered_nether_brick_from_withered_nether_bricks"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mountainspring:block/blazing_nether_bricks"
+  }
+}

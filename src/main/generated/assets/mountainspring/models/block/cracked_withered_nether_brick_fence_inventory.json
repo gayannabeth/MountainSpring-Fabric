@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "mountainspring:block/cracked_withered_nether_bricks"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "ghastly_nether_brick_fence_gate",
+  "key": {
+    "X": {
+      "item": "mountainspring:ghastly_nether_bricks"
+    },
+    "Y": {
+      "item": "mountainspring:ghastly_nether_brick"
+    }
+  },
+  "pattern": [
+    "YXY",
+    "YXY"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:ghastly_nether_brick_fence_gate"
+  }
+}

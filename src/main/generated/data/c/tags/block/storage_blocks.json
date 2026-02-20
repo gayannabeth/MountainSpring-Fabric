@@ -1,0 +1,19 @@
+{
+  "values": [
+    "#c:storage_blocks/brick",
+    "#c:storage_blocks/sand",
+    "#c:storage_blocks/prismarine_shard",
+    "#c:storage_blocks/nether_brick",
+    "#c:storage_blocks/quartz",
+    "#c:storage_blocks/amethyst_shard",
+    "#c:storage_blocks/string",
+    "#c:storage_blocks/clay_ball",
+    "#c:storage_blocks/ice",
+    "#c:storage_blocks/snowball",
+    "#c:storage_blocks/pointed_dripstone",
+    "#c:storage_blocks/magma_cream",
+    "#c:storage_blocks/glowstone_dust",
+    "#c:storage_blocks/wart",
+    "#c:storage_blocks/melon_slice"
+  ]
+}

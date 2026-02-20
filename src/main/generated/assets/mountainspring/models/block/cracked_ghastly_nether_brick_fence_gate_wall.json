@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate_wall",
+  "textures": {
+    "texture": "mountainspring:block/cracked_ghastly_nether_bricks"
+  }
+}

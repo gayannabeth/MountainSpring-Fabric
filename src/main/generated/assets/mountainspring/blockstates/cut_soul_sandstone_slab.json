@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mountainspring:block/cut_soul_sandstone_slab"
+    },
+    "type=double": {
+      "model": "mountainspring:block/cut_soul_sandstone"
+    },
+    "type=top": {
+      "model": "mountainspring:block/cut_soul_sandstone_slab_top"
+    }
+  }
+}

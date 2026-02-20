@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mountainspring:wither_bone_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "mountainspring:wither_bone_stairs"
+  }
+}

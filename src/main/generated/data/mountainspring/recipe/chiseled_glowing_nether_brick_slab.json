@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chiseled_glowing_nether_brick_slab",
+  "key": {
+    "#": {
+      "item": "mountainspring:chiseled_glowing_nether_bricks"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:chiseled_glowing_nether_brick_slab"
+  }
+}

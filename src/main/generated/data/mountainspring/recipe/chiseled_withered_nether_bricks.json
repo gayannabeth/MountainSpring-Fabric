@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chiseled_withered_nether_bricks",
+  "key": {
+    "#": {
+      "item": "mountainspring:withered_nether_brick_slab"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:chiseled_withered_nether_bricks"
+  }
+}

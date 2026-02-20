@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "mountainspring:block/warped_nether_bricks"
+  }
+}

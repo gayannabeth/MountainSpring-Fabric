@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "mountainspring:block/cracked_mossy_soul_sandstone_bricks",
+    "side": "mountainspring:block/cracked_mossy_soul_sandstone_bricks",
+    "top": "mountainspring:block/cracked_mossy_soul_sandstone_bricks"
+  }
+}

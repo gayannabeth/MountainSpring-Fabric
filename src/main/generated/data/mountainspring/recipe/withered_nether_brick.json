@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "withered_nether_brick",
+  "ingredients": [
+    {
+      "item": "mountainspring:wither_bone_meal"
+    },
+    {
+      "item": "minecraft:nether_brick"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "mountainspring:withered_nether_brick"
+  }
+}

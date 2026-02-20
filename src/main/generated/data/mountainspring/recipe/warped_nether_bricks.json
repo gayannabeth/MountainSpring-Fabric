@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "warped_nether_bricks",
+  "key": {
+    "A": {
+      "item": "mountainspring:warped_wart"
+    },
+    "B": {
+      "item": "minecraft:nether_brick"
+    }
+  },
+  "pattern": [
+    "AB",
+    "BA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:warped_nether_bricks"
+  }
+}

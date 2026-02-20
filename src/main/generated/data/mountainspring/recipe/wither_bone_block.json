@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wither_bone_meal",
+  "key": {
+    "#": {
+      "item": "mountainspring:wither_bone_meal"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:wither_bone_block"
+  }
+}

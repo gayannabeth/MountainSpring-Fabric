@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "blazing_nether_brick_fence",
+  "key": {
+    "X": {
+      "item": "mountainspring:blazing_nether_bricks"
+    },
+    "Y": {
+      "item": "mountainspring:blazing_nether_brick"
+    }
+  },
+  "pattern": [
+    "XYX",
+    "XYX"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:blazing_nether_brick_fence"
+  }
+}

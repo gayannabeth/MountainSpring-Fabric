@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "glowing_nether_brick_fence_gate",
+  "key": {
+    "X": {
+      "item": "mountainspring:glowing_nether_bricks"
+    },
+    "Y": {
+      "item": "mountainspring:glowing_nether_brick"
+    }
+  },
+  "pattern": [
+    "YXY",
+    "YXY"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:glowing_nether_brick_fence_gate"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "warped_wart",
+  "ingredients": [
+    {
+      "item": "minecraft:warped_wart_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "mountainspring:warped_wart"
+  }
+}

@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gay.mountainspring.block.MSBlockTypes;
 import gay.mountainspring.block.MSBlocks;
 import gay.mountainspring.item.MSItems;
 import gay.mountainspring.item.group.MSVanillaGroups;
@@ -16,6 +17,7 @@ public class MSMain implements ModInitializer {
 	
 	@Override
 	public void onInitialize() {
+		MSBlockTypes.init();
 		MSBlocks.init();
 		MSItems.init();
 		MSVanillaGroups.init();

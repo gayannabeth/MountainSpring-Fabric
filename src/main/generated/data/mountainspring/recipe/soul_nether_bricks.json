@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "soul_nether_bricks",
+  "key": {
+    "A": {
+      "item": "minecraft:soul_sand"
+    },
+    "B": {
+      "item": "minecraft:nether_brick"
+    }
+  },
+  "pattern": [
+    "AB",
+    "BA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:soul_nether_bricks"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "mountainspring:block/wither_bone_block_top",
+    "side": "mountainspring:block/wither_bone_block_side",
+    "top": "mountainspring:block/wither_bone_block_top"
+  }
+}

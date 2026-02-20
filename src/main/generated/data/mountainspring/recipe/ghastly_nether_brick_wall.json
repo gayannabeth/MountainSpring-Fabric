@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ghastly_nether_brick_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:ghastly_nether_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:ghastly_nether_brick_wall"
+  }
+}

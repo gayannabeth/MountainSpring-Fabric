@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mountainspring:block/wither_bone_block_top",
+    "side": "mountainspring:block/wither_bone_block_side"
+  }
+}

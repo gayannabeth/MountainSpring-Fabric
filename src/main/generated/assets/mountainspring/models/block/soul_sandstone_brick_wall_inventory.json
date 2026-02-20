@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "mountainspring:block/soul_sandstone_bricks"
+  }
+}

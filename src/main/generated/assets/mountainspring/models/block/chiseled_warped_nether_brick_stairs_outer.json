@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "mountainspring:block/chiseled_warped_nether_bricks",
+    "side": "mountainspring:block/chiseled_warped_nether_bricks",
+    "top": "mountainspring:block/chiseled_warped_nether_bricks"
+  }
+}

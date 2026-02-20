@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "mountainspring:block/blazing_nether_bricks"
+  }
+}

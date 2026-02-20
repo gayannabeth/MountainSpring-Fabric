@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "mountainspring:block/soul_sandstone_top",
+    "side": "mountainspring:block/cut_soul_sandstone",
+    "top": "mountainspring:block/soul_sandstone_top"
+  }
+}

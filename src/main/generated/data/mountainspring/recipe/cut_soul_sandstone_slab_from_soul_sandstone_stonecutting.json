@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mountainspring:soul_sandstone"
+  },
+  "result": {
+    "count": 2,
+    "id": "mountainspring:cut_soul_sandstone_slab"
+  }
+}

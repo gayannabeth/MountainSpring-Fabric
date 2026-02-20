@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wither_bone_slab",
+  "key": {
+    "#": {
+      "item": "mountainspring:wither_bone_block"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:wither_bone_slab"
+  }
+}

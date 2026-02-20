@@ -1,0 +1,8 @@
+{
+  "parent": "aquifer:block/template_wall_side_bottom_top",
+  "textures": {
+    "bottom": "mountainspring:block/soul_sandstone_bottom",
+    "side": "mountainspring:block/soul_sandstone",
+    "top": "mountainspring:block/soul_sandstone_top"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "smooth_soul_sandstone_stairs",
+  "key": {
+    "#": {
+      "item": "mountainspring:smooth_soul_sandstone"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:smooth_soul_sandstone_stairs"
+  }
+}

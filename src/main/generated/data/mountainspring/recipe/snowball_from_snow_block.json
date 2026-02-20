@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "group": "snowball",
+  "ingredients": [
+    {
+      "item": "minecraft:snow_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:snowball"
+  }
+}

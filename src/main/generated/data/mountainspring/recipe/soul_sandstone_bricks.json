@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "soul_sandstone_bricks",
+  "key": {
+    "#": {
+      "item": "mountainspring:smooth_soul_sandstone"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:soul_sandstone_bricks"
+  }
+}

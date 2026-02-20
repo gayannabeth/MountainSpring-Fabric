@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "wither_bone_meal",
+  "ingredients": [
+    {
+      "item": "mountainspring:wither_bone"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "mountainspring:wither_bone_meal"
+  }
+}

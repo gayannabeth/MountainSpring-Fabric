@@ -1,6 +1,12 @@
 {
   "values": [
     "#mountainspring:nether_brick_slabs/uncolored",
-    "#mountainspring:nether_brick_slabs/red"
+    "#mountainspring:nether_brick_slabs/red",
+    "#mountainspring:nether_brick_slabs/warped",
+    "#mountainspring:nether_brick_slabs/withered",
+    "#mountainspring:nether_brick_slabs/soul",
+    "#mountainspring:nether_brick_slabs/blazing",
+    "#mountainspring:nether_brick_slabs/glowing",
+    "#mountainspring:nether_brick_slabs/ghastly"
   ]
 }

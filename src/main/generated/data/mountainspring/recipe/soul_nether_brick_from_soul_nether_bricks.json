@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "soul_nether_brick",
+  "ingredients": [
+    {
+      "item": "mountainspring:soul_nether_bricks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:soul_nether_brick"
+  }
+}

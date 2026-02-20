@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cracked_mossy_soul_sandstone_brick_slab",
+  "key": {
+    "#": {
+      "item": "mountainspring:cracked_mossy_soul_sandstone_bricks"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:cracked_mossy_soul_sandstone_brick_slab"
+  }
+}

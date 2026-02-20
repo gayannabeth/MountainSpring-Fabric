@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "mountainspring:block/withered_nether_bricks",
+    "side": "mountainspring:block/withered_nether_bricks",
+    "top": "mountainspring:block/withered_nether_bricks"
+  }
+}

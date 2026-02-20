@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mountainspring:ghastly_nether_bricks"
+  },
+  "result": {
+    "count": 4,
+    "id": "mountainspring:ghastly_nether_brick"
+  }
+}

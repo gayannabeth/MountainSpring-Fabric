@@ -1,0 +1,12 @@
+{
+  "values": [
+    "#c:storage_blocks/nether_brick/uncolored",
+    "#c:storage_blocks/nether_brick/red",
+    "#c:storage_blocks/nether_brick/warped",
+    "#c:storage_blocks/nether_brick/withered",
+    "#c:storage_blocks/nether_brick/soul",
+    "#c:storage_blocks/nether_brick/blazing",
+    "#c:storage_blocks/nether_brick/glowing",
+    "#c:storage_blocks/nether_brick/ghastly"
+  ]
+}

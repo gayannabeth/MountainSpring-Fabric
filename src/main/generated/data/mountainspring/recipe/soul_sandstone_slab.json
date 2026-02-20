@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "soul_sandstone_slab",
+  "key": {
+    "#": {
+      "item": "mountainspring:soul_sandstone"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:soul_sandstone_slab"
+  }
+}

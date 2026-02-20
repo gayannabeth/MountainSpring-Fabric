@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "mountainspring:block/blazing_nether_bricks",
+    "side": "mountainspring:block/blazing_nether_bricks",
+    "top": "mountainspring:block/blazing_nether_bricks"
+  }
+}

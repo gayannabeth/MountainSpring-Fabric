@@ -1,12 +1,21 @@
 package gay.mountainspring.datagen;
 
+import java.util.Map;
+
+import com.google.common.collect.Maps;
+
 import gay.mountainspring.aquifer.datagen.AquiferBlockStates;
 import gay.mountainspring.block.MSBlocks;
+import gay.mountainspring.block.WarpedWartBlock;
+import gay.mountainspring.item.MSItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Block;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.ModelIds;
+import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TextureKey;
 import net.minecraft.data.client.TextureMap;
 import net.minecraft.data.client.TexturedModel;
 
@@ -15,274 +24,429 @@ public class MSBlockStatesModelGen extends FabricModelProvider {
 		super(output);
 	}
 	
+	private static final Map<Block, TexturedModel.Factory> SANDSTONE_MODEL_FACTORIES = Maps.newHashMap();
+	
 	@Override
 	public void generateBlockStateModels(BlockStateModelGenerator gen) {
 		gen.registerSingleton(MSBlocks.MOSSY_STONE, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_STONE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_STONE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_CHISELED_STONE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_CHISELED_STONE_BRICKS, TexturedModel.CUBE_ALL);
-		
-		gen.registerSingleton(MSBlocks.MOSSY_GRANITE, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.COBBLED_GRANITE, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_COBBLED_GRANITE, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.GRANITE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_GRANITE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_GRANITE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_GRANITE_BRICKS, TexturedModel.CUBE_ALL);
-		
-		gen.registerSingleton(MSBlocks.MOSSY_DIORITE, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.COBBLED_DIORITE, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_COBBLED_DIORITE, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.DIORITE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_DIORITE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_DIORITE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_DIORITE_BRICKS, TexturedModel.CUBE_ALL);
-		
-		gen.registerSingleton(MSBlocks.MOSSY_ANDESITE, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.COBBLED_ANDESITE, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_COBBLED_ANDESITE, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.ANDESITE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_ANDESITE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_ANDESITE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_ANDESITE_BRICKS, TexturedModel.CUBE_ALL);
-		
-		gen.registerAxisRotated(MSBlocks.MOSSY_DEEPSLATE, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
-		gen.registerSingleton(MSBlocks.MOSSY_COBBLED_DEEPSLATE, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_DEEPSLATE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_DEEPSLATE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_DEEPSLATE_TILES, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_DEEPSLATE_TILES, TexturedModel.CUBE_ALL);
-		
-		gen.registerSingleton(MSBlocks.MOSSY_TUFF, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_TUFF_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_TUFF_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_TUFF_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_TUFF_BRICKS, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
-		gen.registerSingleton(MSBlocks.MOSSY_CHISELED_TUFF_BRICKS, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_CHISELED_TUFF_BRICKS, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
-		
-		gen.registerSingleton(MSBlocks.CRACKED_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_BRICKS, TexturedModel.CUBE_ALL);
-		
-		gen.registerSingleton(MSBlocks.CRACKED_MUD_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_MUD_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_MUD_BRICKS, TexturedModel.CUBE_ALL);
-		
-		gen.registerSingleton(MSBlocks.SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
-		
-		gen.registerSingleton(MSBlocks.RED_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_RED_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.MOSSY_RED_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
-		
-		gen.registerSingleton(MSBlocks.CRACKED_PRISMARINE_BRICKS, TexturedModel.CUBE_ALL);
-		
-		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_RED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CHISELED_RED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
-		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_RED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
-		
-		gen.registerSingleton(MSBlocks.CRACKED_END_STONE_BRICKS, TexturedModel.CUBE_ALL);
-		
-		gen.registerSingleton(MSBlocks.CRACKED_QUARTZ_BRICKS, TexturedModel.CUBE_ALL);
-		
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_STONE_SLAB, MSBlocks.MOSSY_STONE);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_STONE_STAIRS, MSBlocks.MOSSY_STONE);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_STONE_WALL, MSBlocks.MOSSY_STONE);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_STONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_STONE_BRICK_SLAB, MSBlocks.CRACKED_MOSSY_STONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_STONE_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_STONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_STONE_BRICK_WALL, MSBlocks.CRACKED_MOSSY_STONE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_STONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_CHISELED_STONE_BRICK_SLAB, MSBlocks.CRACKED_CHISELED_STONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_CHISELED_STONE_BRICK_STAIRS, MSBlocks.CRACKED_CHISELED_STONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_CHISELED_STONE_BRICK_WALL, MSBlocks.CRACKED_CHISELED_STONE_BRICKS);
+		gen.registerSingleton(MSBlocks.MOSSY_CHISELED_STONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_CHISELED_STONE_BRICK_SLAB, MSBlocks.MOSSY_CHISELED_STONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_CHISELED_STONE_BRICK_STAIRS, MSBlocks.MOSSY_CHISELED_STONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_CHISELED_STONE_BRICK_WALL, MSBlocks.MOSSY_CHISELED_STONE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_CHISELED_STONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_CHISELED_STONE_BRICK_SLAB, MSBlocks.CRACKED_MOSSY_CHISELED_STONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_CHISELED_STONE_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_CHISELED_STONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_CHISELED_STONE_BRICK_WALL, MSBlocks.CRACKED_MOSSY_CHISELED_STONE_BRICKS);
 		
+		gen.registerSingleton(MSBlocks.MOSSY_GRANITE, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_GRANITE_SLAB, MSBlocks.MOSSY_GRANITE);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_GRANITE_STAIRS, MSBlocks.MOSSY_GRANITE);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_GRANITE_WALL, MSBlocks.MOSSY_GRANITE);
+		gen.registerSingleton(MSBlocks.COBBLED_GRANITE, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.COBBLED_GRANITE_SLAB, MSBlocks.COBBLED_GRANITE);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.COBBLED_GRANITE_STAIRS, MSBlocks.COBBLED_GRANITE);
 		AquiferBlockStates.registerWall(gen, MSBlocks.COBBLED_GRANITE_WALL, MSBlocks.COBBLED_GRANITE);
+		gen.registerSingleton(MSBlocks.MOSSY_COBBLED_GRANITE, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_COBBLED_GRANITE_SLAB, MSBlocks.MOSSY_COBBLED_GRANITE);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_COBBLED_GRANITE_STAIRS, MSBlocks.MOSSY_COBBLED_GRANITE);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_COBBLED_GRANITE_WALL, MSBlocks.MOSSY_COBBLED_GRANITE);
+		gen.registerSingleton(MSBlocks.GRANITE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.GRANITE_BRICK_SLAB, MSBlocks.GRANITE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.GRANITE_BRICK_STAIRS, MSBlocks.GRANITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.GRANITE_BRICK_WALL, MSBlocks.GRANITE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_GRANITE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_GRANITE_BRICK_SLAB, MSBlocks.CRACKED_GRANITE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_GRANITE_BRICK_STAIRS, MSBlocks.CRACKED_GRANITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_GRANITE_BRICK_WALL, MSBlocks.CRACKED_GRANITE_BRICKS);
+		gen.registerSingleton(MSBlocks.MOSSY_GRANITE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_GRANITE_BRICK_SLAB, MSBlocks.MOSSY_GRANITE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_GRANITE_BRICK_STAIRS, MSBlocks.MOSSY_GRANITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_GRANITE_BRICK_WALL, MSBlocks.MOSSY_GRANITE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_GRANITE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_GRANITE_BRICK_SLAB, MSBlocks.CRACKED_MOSSY_GRANITE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_GRANITE_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_GRANITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_GRANITE_BRICK_WALL, MSBlocks.CRACKED_MOSSY_GRANITE_BRICKS);
 		
+		gen.registerSingleton(MSBlocks.MOSSY_DIORITE, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_DIORITE_SLAB, MSBlocks.MOSSY_DIORITE);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_DIORITE_STAIRS, MSBlocks.MOSSY_DIORITE);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_DIORITE_WALL, MSBlocks.MOSSY_DIORITE);
+		gen.registerSingleton(MSBlocks.COBBLED_DIORITE, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.COBBLED_DIORITE_SLAB, MSBlocks.COBBLED_DIORITE);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.COBBLED_DIORITE_STAIRS, MSBlocks.COBBLED_DIORITE);
 		AquiferBlockStates.registerWall(gen, MSBlocks.COBBLED_DIORITE_WALL, MSBlocks.COBBLED_DIORITE);
+		gen.registerSingleton(MSBlocks.MOSSY_COBBLED_DIORITE, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_COBBLED_DIORITE_SLAB, MSBlocks.MOSSY_COBBLED_DIORITE);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_COBBLED_DIORITE_STAIRS, MSBlocks.MOSSY_COBBLED_DIORITE);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_COBBLED_DIORITE_WALL, MSBlocks.MOSSY_COBBLED_DIORITE);
+		gen.registerSingleton(MSBlocks.DIORITE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.DIORITE_BRICK_SLAB, MSBlocks.DIORITE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.DIORITE_BRICK_STAIRS, MSBlocks.DIORITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.DIORITE_BRICK_WALL, MSBlocks.DIORITE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_DIORITE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_DIORITE_BRICK_SLAB, MSBlocks.CRACKED_DIORITE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_DIORITE_BRICK_STAIRS, MSBlocks.CRACKED_DIORITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_DIORITE_BRICK_WALL, MSBlocks.CRACKED_DIORITE_BRICKS);
+		gen.registerSingleton(MSBlocks.MOSSY_DIORITE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_DIORITE_BRICK_SLAB, MSBlocks.MOSSY_DIORITE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_DIORITE_BRICK_STAIRS, MSBlocks.MOSSY_DIORITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_DIORITE_BRICK_WALL, MSBlocks.MOSSY_DIORITE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_DIORITE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_DIORITE_BRICK_SLAB, MSBlocks.CRACKED_MOSSY_DIORITE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_DIORITE_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_DIORITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_DIORITE_BRICK_WALL, MSBlocks.CRACKED_MOSSY_DIORITE_BRICKS);
 		
+		gen.registerSingleton(MSBlocks.MOSSY_ANDESITE, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_ANDESITE_SLAB, MSBlocks.MOSSY_ANDESITE);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_ANDESITE_STAIRS, MSBlocks.MOSSY_ANDESITE);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_ANDESITE_WALL, MSBlocks.MOSSY_ANDESITE);
+		gen.registerSingleton(MSBlocks.COBBLED_ANDESITE, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.COBBLED_ANDESITE_SLAB, MSBlocks.COBBLED_ANDESITE);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.COBBLED_ANDESITE_STAIRS, MSBlocks.COBBLED_ANDESITE);
 		AquiferBlockStates.registerWall(gen, MSBlocks.COBBLED_ANDESITE_WALL, MSBlocks.COBBLED_ANDESITE);
+		gen.registerSingleton(MSBlocks.MOSSY_COBBLED_ANDESITE, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_COBBLED_ANDESITE_SLAB, MSBlocks.MOSSY_COBBLED_ANDESITE);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_COBBLED_ANDESITE_STAIRS, MSBlocks.MOSSY_COBBLED_ANDESITE);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_COBBLED_ANDESITE_WALL, MSBlocks.MOSSY_COBBLED_ANDESITE);
+		gen.registerSingleton(MSBlocks.ANDESITE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.ANDESITE_BRICK_SLAB, MSBlocks.ANDESITE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.ANDESITE_BRICK_STAIRS, MSBlocks.ANDESITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.ANDESITE_BRICK_WALL, MSBlocks.ANDESITE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_ANDESITE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_ANDESITE_BRICK_SLAB, MSBlocks.CRACKED_ANDESITE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_ANDESITE_BRICK_STAIRS, MSBlocks.CRACKED_ANDESITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_ANDESITE_BRICK_WALL, MSBlocks.CRACKED_ANDESITE_BRICKS);
+		gen.registerSingleton(MSBlocks.MOSSY_ANDESITE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_ANDESITE_BRICK_SLAB, MSBlocks.MOSSY_ANDESITE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_ANDESITE_BRICK_STAIRS, MSBlocks.MOSSY_ANDESITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_ANDESITE_BRICK_WALL, MSBlocks.MOSSY_ANDESITE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_ANDESITE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_ANDESITE_BRICK_SLAB, MSBlocks.CRACKED_MOSSY_ANDESITE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_ANDESITE_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_ANDESITE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_ANDESITE_BRICK_WALL, MSBlocks.CRACKED_MOSSY_ANDESITE_BRICKS);
 		
+		gen.registerAxisRotated(MSBlocks.MOSSY_DEEPSLATE, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
 		AquiferBlockStates.registerOrientableSlab(gen, MSBlocks.MOSSY_DEEPSLATE_SLAB, TextureMap.sideAndEndForTop(MSBlocks.MOSSY_DEEPSLATE), ModelIds.getBlockModelId(MSBlocks.MOSSY_DEEPSLATE));
 		AquiferBlockStates.registerOrientableStairs(gen, MSBlocks.MOSSY_DEEPSLATE_STAIRS, TextureMap.sideAndEndForTop(MSBlocks.MOSSY_DEEPSLATE));
 		AquiferBlockStates.registerWallColumn(gen, MSBlocks.MOSSY_DEEPSLATE_WALL, TextureMap.sideAndEndForTop(MSBlocks.MOSSY_DEEPSLATE));
+		gen.registerSingleton(MSBlocks.MOSSY_COBBLED_DEEPSLATE, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB, MSBlocks.MOSSY_COBBLED_DEEPSLATE);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS, MSBlocks.MOSSY_COBBLED_DEEPSLATE);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_COBBLED_DEEPSLATE_WALL, MSBlocks.MOSSY_COBBLED_DEEPSLATE);
+		gen.registerSingleton(MSBlocks.MOSSY_DEEPSLATE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_DEEPSLATE_BRICK_SLAB, MSBlocks.MOSSY_DEEPSLATE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS, MSBlocks.MOSSY_DEEPSLATE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_DEEPSLATE_BRICK_WALL, MSBlocks.MOSSY_DEEPSLATE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_DEEPSLATE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_DEEPSLATE_BRICK_SLAB, MSBlocks.CRACKED_MOSSY_DEEPSLATE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_DEEPSLATE_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_DEEPSLATE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_DEEPSLATE_BRICK_WALL, MSBlocks.CRACKED_MOSSY_DEEPSLATE_BRICKS);
+		gen.registerSingleton(MSBlocks.MOSSY_DEEPSLATE_TILES, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_DEEPSLATE_TILE_SLAB, MSBlocks.MOSSY_DEEPSLATE_TILES);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_DEEPSLATE_TILE_STAIRS, MSBlocks.MOSSY_DEEPSLATE_TILES);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_DEEPSLATE_TILE_WALL, MSBlocks.MOSSY_DEEPSLATE_TILES);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_DEEPSLATE_TILES, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_DEEPSLATE_TILE_SLAB, MSBlocks.CRACKED_MOSSY_DEEPSLATE_TILES);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_DEEPSLATE_TILE_STAIRS, MSBlocks.CRACKED_MOSSY_DEEPSLATE_TILES);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_DEEPSLATE_TILE_WALL, MSBlocks.CRACKED_MOSSY_DEEPSLATE_TILES);
 		
+		gen.registerSingleton(MSBlocks.MOSSY_TUFF, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_TUFF_SLAB, MSBlocks.MOSSY_TUFF);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_TUFF_STAIRS, MSBlocks.MOSSY_TUFF);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_TUFF_WALL, MSBlocks.MOSSY_TUFF);
+		gen.registerSingleton(MSBlocks.CRACKED_TUFF_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_TUFF_BRICK_SLAB, MSBlocks.CRACKED_TUFF_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_TUFF_BRICK_STAIRS, MSBlocks.CRACKED_TUFF_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_TUFF_BRICK_WALL, MSBlocks.CRACKED_TUFF_BRICKS);
+		gen.registerSingleton(MSBlocks.MOSSY_TUFF_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_TUFF_BRICK_SLAB, MSBlocks.MOSSY_TUFF_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_TUFF_BRICK_STAIRS, MSBlocks.MOSSY_TUFF_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_TUFF_BRICK_WALL, MSBlocks.MOSSY_TUFF_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_TUFF_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_TUFF_BRICK_SLAB, MSBlocks.CRACKED_MOSSY_TUFF_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_TUFF_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_TUFF_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_TUFF_BRICK_WALL, MSBlocks.CRACKED_MOSSY_TUFF_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_TUFF_BRICKS, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_CHISELED_TUFF_BRICK_SLAB, TextureMap.sideAndEndForTop(MSBlocks.CRACKED_CHISELED_TUFF_BRICKS), ModelIds.getBlockModelId(MSBlocks.CRACKED_CHISELED_TUFF_BRICKS));
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_CHISELED_TUFF_BRICK_STAIRS, TextureMap.sideAndEndForTop(MSBlocks.CRACKED_CHISELED_TUFF_BRICKS));
 		AquiferBlockStates.registerWallColumn(gen, MSBlocks.CRACKED_CHISELED_TUFF_BRICK_WALL, TextureMap.sideAndEndForTop(MSBlocks.CRACKED_CHISELED_TUFF_BRICKS));
+		gen.registerSingleton(MSBlocks.MOSSY_CHISELED_TUFF_BRICKS, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_CHISELED_TUFF_BRICK_SLAB, TextureMap.sideAndEndForTop(MSBlocks.MOSSY_CHISELED_TUFF_BRICKS), ModelIds.getBlockModelId(MSBlocks.MOSSY_CHISELED_TUFF_BRICKS));
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_CHISELED_TUFF_BRICK_STAIRS, TextureMap.sideAndEndForTop(MSBlocks.MOSSY_CHISELED_TUFF_BRICKS));
 		AquiferBlockStates.registerWallColumn(gen, MSBlocks.MOSSY_CHISELED_TUFF_BRICK_WALL, TextureMap.sideAndEndForTop(MSBlocks.MOSSY_CHISELED_TUFF_BRICKS));
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_CHISELED_TUFF_BRICKS, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_CHISELED_TUFF_BRICK_SLAB, TextureMap.sideAndEndForTop(MSBlocks.CRACKED_MOSSY_CHISELED_TUFF_BRICKS), ModelIds.getBlockModelId(MSBlocks.CRACKED_MOSSY_CHISELED_TUFF_BRICKS));
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_CHISELED_TUFF_BRICK_STAIRS, TextureMap.sideAndEndForTop(MSBlocks.CRACKED_MOSSY_CHISELED_TUFF_BRICKS));
 		AquiferBlockStates.registerWallColumn(gen, MSBlocks.CRACKED_MOSSY_CHISELED_TUFF_BRICK_WALL, TextureMap.sideAndEndForTop(MSBlocks.CRACKED_MOSSY_CHISELED_TUFF_BRICKS));
 		
+		gen.registerSingleton(MSBlocks.CRACKED_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_BRICK_SLAB, MSBlocks.CRACKED_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_BRICK_STAIRS, MSBlocks.CRACKED_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_BRICK_WALL, MSBlocks.CRACKED_BRICKS);
+		gen.registerSingleton(MSBlocks.MOSSY_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_BRICK_SLAB, MSBlocks.MOSSY_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_BRICK_STAIRS, MSBlocks.MOSSY_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_BRICK_WALL, MSBlocks.MOSSY_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_BRICK_SLAB, MSBlocks.CRACKED_MOSSY_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_BRICK_WALL, MSBlocks.CRACKED_MOSSY_BRICKS);
 		
+		gen.registerSingleton(MSBlocks.CRACKED_MUD_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MUD_BRICK_SLAB, MSBlocks.CRACKED_MUD_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MUD_BRICK_STAIRS, MSBlocks.CRACKED_MUD_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MUD_BRICK_WALL, MSBlocks.CRACKED_MUD_BRICKS);
+		gen.registerSingleton(MSBlocks.MOSSY_MUD_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_MUD_BRICK_SLAB, MSBlocks.MOSSY_MUD_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_MUD_BRICK_STAIRS, MSBlocks.MOSSY_MUD_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_MUD_BRICK_WALL, MSBlocks.MOSSY_MUD_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_MUD_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_MUD_BRICK_SLAB, MSBlocks.CRACKED_MOSSY_MUD_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_MUD_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_MUD_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_MUD_BRICK_WALL, MSBlocks.CRACKED_MOSSY_MUD_BRICKS);
 		
+		gen.registerSingleton(MSBlocks.SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.SANDSTONE_BRICK_SLAB, MSBlocks.SANDSTONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.SANDSTONE_BRICK_STAIRS, MSBlocks.SANDSTONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.SANDSTONE_BRICK_WALL, MSBlocks.SANDSTONE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_SANDSTONE_BRICK_SLAB, MSBlocks.CRACKED_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_SANDSTONE_BRICK_STAIRS, MSBlocks.CRACKED_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_SANDSTONE_BRICK_WALL, MSBlocks.CRACKED_SANDSTONE_BRICKS);
+		gen.registerSingleton(MSBlocks.MOSSY_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_SANDSTONE_BRICK_SLAB, MSBlocks.MOSSY_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_SANDSTONE_BRICK_STAIRS, MSBlocks.MOSSY_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_SANDSTONE_BRICK_WALL, MSBlocks.MOSSY_SANDSTONE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_SANDSTONE_BRICK_SLAB, MSBlocks.CRACKED_MOSSY_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_SANDSTONE_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_SANDSTONE_BRICK_WALL, MSBlocks.CRACKED_MOSSY_SANDSTONE_BRICKS);
 		
+		gen.registerSingleton(MSBlocks.RED_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.RED_SANDSTONE_BRICK_SLAB, MSBlocks.RED_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.RED_SANDSTONE_BRICK_STAIRS, MSBlocks.RED_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.RED_SANDSTONE_BRICK_WALL, MSBlocks.RED_SANDSTONE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_RED_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_RED_SANDSTONE_BRICK_SLAB, MSBlocks.CRACKED_RED_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_RED_SANDSTONE_BRICK_STAIRS, MSBlocks.CRACKED_RED_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_RED_SANDSTONE_BRICK_WALL, MSBlocks.CRACKED_RED_SANDSTONE_BRICKS);
+		gen.registerSingleton(MSBlocks.MOSSY_RED_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_RED_SANDSTONE_BRICK_SLAB, MSBlocks.MOSSY_RED_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_RED_SANDSTONE_BRICK_STAIRS, MSBlocks.MOSSY_RED_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL, MSBlocks.MOSSY_RED_SANDSTONE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_SLAB, MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_WALL, MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICKS);
 		
+		gen.registerSingleton(MSBlocks.CRACKED_PRISMARINE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_PRISMARINE_BRICK_SLAB, MSBlocks.CRACKED_PRISMARINE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_PRISMARINE_BRICK_STAIRS, MSBlocks.CRACKED_PRISMARINE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_PRISMARINE_BRICK_WALL, MSBlocks.CRACKED_PRISMARINE_BRICKS);
 		
+		gen.registerSingleton(MSBlocks.SOUL_SANDSTONE, TexturedModel.SIDE_TOP_BOTTOM_WALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.SOUL_SANDSTONE_SLAB, TextureMap.wallSideTopBottom(MSBlocks.SOUL_SANDSTONE), ModelIds.getBlockModelId(MSBlocks.SOUL_SANDSTONE));
+		AquiferBlockStates.registerStairs(gen, MSBlocks.SOUL_SANDSTONE_STAIRS, TextureMap.wallSideTopBottom(MSBlocks.SOUL_SANDSTONE));
+		AquiferBlockStates.registerWallBottomTop(gen, MSBlocks.SOUL_SANDSTONE_WALL, TextureMap.wallSideTopBottom(MSBlocks.SOUL_SANDSTONE));
+		gen.registerSingleton(MSBlocks.CHISELED_SOUL_SANDSTONE, getOrCreateSandstoneModelFactory(MSBlocks.SOUL_SANDSTONE));
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CHISELED_SOUL_SANDSTONE_SLAB, forSandstoneVariant(MSBlocks.SOUL_SANDSTONE, MSBlocks.CHISELED_SOUL_SANDSTONE), ModelIds.getBlockModelId(MSBlocks.CHISELED_SOUL_SANDSTONE));
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CHISELED_SOUL_SANDSTONE_STAIRS, forSandstoneVariant(MSBlocks.SOUL_SANDSTONE, MSBlocks.CHISELED_SOUL_SANDSTONE));
+		AquiferBlockStates.registerWallColumn(gen, MSBlocks.CHISELED_SOUL_SANDSTONE_WALL, forSandstoneVariant(MSBlocks.SOUL_SANDSTONE, MSBlocks.CHISELED_SOUL_SANDSTONE));
+		gen.registerSingleton(MSBlocks.SMOOTH_SOUL_SANDSTONE, TextureMap.all(TextureMap.getSubId(MSBlocks.SOUL_SANDSTONE, "_top")), Models.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.SMOOTH_SOUL_SANDSTONE_SLAB, TextureMap.all(TextureMap.getSubId(MSBlocks.SOUL_SANDSTONE, "_top")), ModelIds.getBlockModelId(MSBlocks.SMOOTH_SOUL_SANDSTONE));
+		AquiferBlockStates.registerStairs(gen, MSBlocks.SMOOTH_SOUL_SANDSTONE_STAIRS, TextureMap.all(TextureMap.getSubId(MSBlocks.SOUL_SANDSTONE, "_top")));
+		AquiferBlockStates.registerWall(gen, MSBlocks.SMOOTH_SOUL_SANDSTONE_WALL, TextureMap.all(TextureMap.getSubId(MSBlocks.SOUL_SANDSTONE, "_top")));
+		gen.registerSingleton(MSBlocks.CUT_SOUL_SANDSTONE, getOrCreateSandstoneModelFactory(MSBlocks.SOUL_SANDSTONE));
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CUT_SOUL_SANDSTONE_SLAB, forSandstoneVariant(MSBlocks.SOUL_SANDSTONE, MSBlocks.CUT_SOUL_SANDSTONE), ModelIds.getBlockModelId(MSBlocks.CUT_SOUL_SANDSTONE));
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CUT_SOUL_SANDSTONE_STAIRS, forSandstoneVariant(MSBlocks.SOUL_SANDSTONE, MSBlocks.CUT_SOUL_SANDSTONE));
+		AquiferBlockStates.registerWallColumn(gen, MSBlocks.CUT_SOUL_SANDSTONE_WALL, forSandstoneVariant(MSBlocks.SOUL_SANDSTONE, MSBlocks.CUT_SOUL_SANDSTONE));
+		gen.registerSingleton(MSBlocks.SOUL_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.SOUL_SANDSTONE_BRICK_SLAB, MSBlocks.SOUL_SANDSTONE_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.SOUL_SANDSTONE_BRICK_STAIRS, MSBlocks.SOUL_SANDSTONE_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.SOUL_SANDSTONE_BRICK_WALL, MSBlocks.SOUL_SANDSTONE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_SOUL_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_SOUL_SANDSTONE_BRICK_SLAB, MSBlocks.CRACKED_SOUL_SANDSTONE_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_SOUL_SANDSTONE_BRICK_STAIRS, MSBlocks.CRACKED_SOUL_SANDSTONE_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_SOUL_SANDSTONE_BRICK_WALL, MSBlocks.CRACKED_SOUL_SANDSTONE_BRICKS);
+		gen.registerSingleton(MSBlocks.MOSSY_SOUL_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.MOSSY_SOUL_SANDSTONE_BRICK_SLAB, MSBlocks.MOSSY_SOUL_SANDSTONE_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.MOSSY_SOUL_SANDSTONE_BRICK_STAIRS, MSBlocks.MOSSY_SOUL_SANDSTONE_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.MOSSY_SOUL_SANDSTONE_BRICK_WALL, MSBlocks.MOSSY_SOUL_SANDSTONE_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_MOSSY_SOUL_SANDSTONE_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_MOSSY_SOUL_SANDSTONE_BRICK_SLAB, MSBlocks.CRACKED_MOSSY_SOUL_SANDSTONE_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_MOSSY_SOUL_SANDSTONE_BRICK_STAIRS, MSBlocks.CRACKED_MOSSY_SOUL_SANDSTONE_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_MOSSY_SOUL_SANDSTONE_BRICK_WALL, MSBlocks.CRACKED_MOSSY_SOUL_SANDSTONE_BRICKS);
+		
+		gen.registerAxisRotated(MSBlocks.WITHER_BONE_BLOCK, TexturedModel.CUBE_COLUMN);
+		AquiferBlockStates.registerOrientableSlab(gen, MSBlocks.WITHER_BONE_SLAB, sideEndInside(MSBlocks.WITHER_BONE_BLOCK), ModelIds.getBlockModelId(MSBlocks.WITHER_BONE_BLOCK), true);
+		AquiferBlockStates.registerOrientableStairs(gen, MSBlocks.WITHER_BONE_STAIRS, sideEndInside(MSBlocks.WITHER_BONE_BLOCK), true);
+		AquiferBlockStates.registerWallColumn(gen, MSBlocks.WITHER_BONE_WALL, TextureMap.sideEnd(MSBlocks.WITHER_BONE_BLOCK));
+		
+		gen.registerCrop(MSBlocks.WARPED_WART, WarpedWartBlock.AGE, 0, 1, 1, 2);
+		
+		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_CHISELED_NETHER_BRICK_SLAB, MSBlocks.CRACKED_CHISELED_NETHER_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_CHISELED_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_CHISELED_NETHER_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_CHISELED_NETHER_BRICK_WALL, MSBlocks.CRACKED_CHISELED_NETHER_BRICKS);
+		
+		gen.registerSingleton(MSBlocks.CRACKED_RED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_RED_NETHER_BRICK_SLAB, MSBlocks.CRACKED_RED_NETHER_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_RED_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_RED_NETHER_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_RED_NETHER_BRICK_WALL, MSBlocks.CRACKED_RED_NETHER_BRICKS);
 		AquiferBlockStates.registerFence(gen, MSBlocks.CRACKED_RED_NETHER_BRICK_FENCE, MSBlocks.CRACKED_RED_NETHER_BRICKS);
 		AquiferBlockStates.registerFenceGate(gen, MSBlocks.CRACKED_RED_NETHER_BRICK_FENCE_GATE, MSBlocks.CRACKED_RED_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CHISELED_RED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CHISELED_RED_NETHER_BRICK_SLAB, MSBlocks.CHISELED_RED_NETHER_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CHISELED_RED_NETHER_BRICK_STAIRS, MSBlocks.CHISELED_RED_NETHER_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CHISELED_RED_NETHER_BRICK_WALL, MSBlocks.CHISELED_RED_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_RED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_CHISELED_RED_NETHER_BRICK_SLAB, MSBlocks.CRACKED_CHISELED_RED_NETHER_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_CHISELED_RED_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_CHISELED_RED_NETHER_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_CHISELED_RED_NETHER_BRICK_WALL, MSBlocks.CRACKED_CHISELED_RED_NETHER_BRICKS);
 		
+		gen.registerSingleton(MSBlocks.WARPED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.WARPED_NETHER_BRICK_SLAB, MSBlocks.WARPED_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.WARPED_NETHER_BRICK_STAIRS, MSBlocks.WARPED_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.WARPED_NETHER_BRICK_WALL, MSBlocks.WARPED_NETHER_BRICKS);
+		AquiferBlockStates.registerFence(gen, MSBlocks.WARPED_NETHER_BRICK_FENCE, MSBlocks.WARPED_NETHER_BRICKS);
+		AquiferBlockStates.registerFenceGate(gen, MSBlocks.WARPED_NETHER_BRICK_FENCE_GATE, MSBlocks.WARPED_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_WARPED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_WARPED_NETHER_BRICK_SLAB, MSBlocks.CRACKED_WARPED_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_WARPED_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_WARPED_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_WARPED_NETHER_BRICK_WALL, MSBlocks.CRACKED_WARPED_NETHER_BRICKS);
+		AquiferBlockStates.registerFence(gen, MSBlocks.CRACKED_WARPED_NETHER_BRICK_FENCE, MSBlocks.CRACKED_WARPED_NETHER_BRICKS);
+		AquiferBlockStates.registerFenceGate(gen, MSBlocks.CRACKED_WARPED_NETHER_BRICK_FENCE_GATE, MSBlocks.CRACKED_WARPED_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CHISELED_WARPED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CHISELED_WARPED_NETHER_BRICK_SLAB, MSBlocks.CHISELED_WARPED_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CHISELED_WARPED_NETHER_BRICK_STAIRS, MSBlocks.CHISELED_WARPED_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CHISELED_WARPED_NETHER_BRICK_WALL, MSBlocks.CHISELED_WARPED_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_WARPED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_CHISELED_WARPED_NETHER_BRICK_SLAB, MSBlocks.CRACKED_CHISELED_WARPED_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_CHISELED_WARPED_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_CHISELED_WARPED_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_CHISELED_WARPED_NETHER_BRICK_WALL, MSBlocks.CRACKED_CHISELED_WARPED_NETHER_BRICKS);
+		
+		gen.registerSingleton(MSBlocks.WITHERED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.WITHERED_NETHER_BRICK_SLAB, MSBlocks.WITHERED_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.WITHERED_NETHER_BRICK_STAIRS, MSBlocks.WITHERED_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.WITHERED_NETHER_BRICK_WALL, MSBlocks.WITHERED_NETHER_BRICKS);
+		AquiferBlockStates.registerFence(gen, MSBlocks.WITHERED_NETHER_BRICK_FENCE, MSBlocks.WITHERED_NETHER_BRICKS);
+		AquiferBlockStates.registerFenceGate(gen, MSBlocks.WITHERED_NETHER_BRICK_FENCE_GATE, MSBlocks.WITHERED_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_WITHERED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_WITHERED_NETHER_BRICK_SLAB, MSBlocks.CRACKED_WITHERED_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_WITHERED_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_WITHERED_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_WITHERED_NETHER_BRICK_WALL, MSBlocks.CRACKED_WITHERED_NETHER_BRICKS);
+		AquiferBlockStates.registerFence(gen, MSBlocks.CRACKED_WITHERED_NETHER_BRICK_FENCE, MSBlocks.CRACKED_WITHERED_NETHER_BRICKS);
+		AquiferBlockStates.registerFenceGate(gen, MSBlocks.CRACKED_WITHERED_NETHER_BRICK_FENCE_GATE, MSBlocks.CRACKED_WITHERED_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CHISELED_WITHERED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CHISELED_WITHERED_NETHER_BRICK_SLAB, MSBlocks.CHISELED_WITHERED_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CHISELED_WITHERED_NETHER_BRICK_STAIRS, MSBlocks.CHISELED_WITHERED_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CHISELED_WITHERED_NETHER_BRICK_WALL, MSBlocks.CHISELED_WITHERED_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_WITHERED_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_CHISELED_WITHERED_NETHER_BRICK_SLAB, MSBlocks.CRACKED_CHISELED_WITHERED_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_CHISELED_WITHERED_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_CHISELED_WITHERED_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_CHISELED_WITHERED_NETHER_BRICK_WALL, MSBlocks.CRACKED_CHISELED_WITHERED_NETHER_BRICKS);
+		
+		gen.registerSingleton(MSBlocks.SOUL_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.SOUL_NETHER_BRICK_SLAB, MSBlocks.SOUL_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.SOUL_NETHER_BRICK_STAIRS, MSBlocks.SOUL_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.SOUL_NETHER_BRICK_WALL, MSBlocks.SOUL_NETHER_BRICKS);
+		AquiferBlockStates.registerFence(gen, MSBlocks.SOUL_NETHER_BRICK_FENCE, MSBlocks.SOUL_NETHER_BRICKS);
+		AquiferBlockStates.registerFenceGate(gen, MSBlocks.SOUL_NETHER_BRICK_FENCE_GATE, MSBlocks.SOUL_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_SOUL_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_SOUL_NETHER_BRICK_SLAB, MSBlocks.CRACKED_SOUL_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_SOUL_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_SOUL_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_SOUL_NETHER_BRICK_WALL, MSBlocks.CRACKED_SOUL_NETHER_BRICKS);
+		AquiferBlockStates.registerFence(gen, MSBlocks.CRACKED_SOUL_NETHER_BRICK_FENCE, MSBlocks.CRACKED_SOUL_NETHER_BRICKS);
+		AquiferBlockStates.registerFenceGate(gen, MSBlocks.CRACKED_SOUL_NETHER_BRICK_FENCE_GATE, MSBlocks.CRACKED_SOUL_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CHISELED_SOUL_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CHISELED_SOUL_NETHER_BRICK_SLAB, MSBlocks.CHISELED_SOUL_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CHISELED_SOUL_NETHER_BRICK_STAIRS, MSBlocks.CHISELED_SOUL_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CHISELED_SOUL_NETHER_BRICK_WALL, MSBlocks.CHISELED_SOUL_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_SOUL_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_CHISELED_SOUL_NETHER_BRICK_SLAB, MSBlocks.CRACKED_CHISELED_SOUL_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_CHISELED_SOUL_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_CHISELED_SOUL_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_CHISELED_SOUL_NETHER_BRICK_WALL, MSBlocks.CRACKED_CHISELED_SOUL_NETHER_BRICKS);
+		
+		gen.registerSingleton(MSBlocks.BLAZING_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.BLAZING_NETHER_BRICK_SLAB, MSBlocks.BLAZING_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.BLAZING_NETHER_BRICK_STAIRS, MSBlocks.BLAZING_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.BLAZING_NETHER_BRICK_WALL, MSBlocks.BLAZING_NETHER_BRICKS);
+		AquiferBlockStates.registerFence(gen, MSBlocks.BLAZING_NETHER_BRICK_FENCE, MSBlocks.BLAZING_NETHER_BRICKS);
+		AquiferBlockStates.registerFenceGate(gen, MSBlocks.BLAZING_NETHER_BRICK_FENCE_GATE, MSBlocks.BLAZING_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_BLAZING_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_BLAZING_NETHER_BRICK_SLAB, MSBlocks.CRACKED_BLAZING_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_BLAZING_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_BLAZING_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_BLAZING_NETHER_BRICK_WALL, MSBlocks.CRACKED_BLAZING_NETHER_BRICKS);
+		AquiferBlockStates.registerFence(gen, MSBlocks.CRACKED_BLAZING_NETHER_BRICK_FENCE, MSBlocks.CRACKED_BLAZING_NETHER_BRICKS);
+		AquiferBlockStates.registerFenceGate(gen, MSBlocks.CRACKED_BLAZING_NETHER_BRICK_FENCE_GATE, MSBlocks.CRACKED_BLAZING_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CHISELED_BLAZING_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CHISELED_BLAZING_NETHER_BRICK_SLAB, MSBlocks.CHISELED_BLAZING_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CHISELED_BLAZING_NETHER_BRICK_STAIRS, MSBlocks.CHISELED_BLAZING_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CHISELED_BLAZING_NETHER_BRICK_WALL, MSBlocks.CHISELED_BLAZING_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_BLAZING_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_CHISELED_BLAZING_NETHER_BRICK_SLAB, MSBlocks.CRACKED_CHISELED_BLAZING_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_CHISELED_BLAZING_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_CHISELED_BLAZING_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_CHISELED_BLAZING_NETHER_BRICK_WALL, MSBlocks.CRACKED_CHISELED_BLAZING_NETHER_BRICKS);
+		
+		gen.registerSingleton(MSBlocks.GLOWING_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.GLOWING_NETHER_BRICK_SLAB, MSBlocks.GLOWING_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.GLOWING_NETHER_BRICK_STAIRS, MSBlocks.GLOWING_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.GLOWING_NETHER_BRICK_WALL, MSBlocks.GLOWING_NETHER_BRICKS);
+		AquiferBlockStates.registerFence(gen, MSBlocks.GLOWING_NETHER_BRICK_FENCE, MSBlocks.GLOWING_NETHER_BRICKS);
+		AquiferBlockStates.registerFenceGate(gen, MSBlocks.GLOWING_NETHER_BRICK_FENCE_GATE, MSBlocks.GLOWING_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_GLOWING_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_GLOWING_NETHER_BRICK_SLAB, MSBlocks.CRACKED_GLOWING_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_GLOWING_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_GLOWING_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_GLOWING_NETHER_BRICK_WALL, MSBlocks.CRACKED_GLOWING_NETHER_BRICKS);
+		AquiferBlockStates.registerFence(gen, MSBlocks.CRACKED_GLOWING_NETHER_BRICK_FENCE, MSBlocks.CRACKED_GLOWING_NETHER_BRICKS);
+		AquiferBlockStates.registerFenceGate(gen, MSBlocks.CRACKED_GLOWING_NETHER_BRICK_FENCE_GATE, MSBlocks.CRACKED_GLOWING_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CHISELED_GLOWING_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CHISELED_GLOWING_NETHER_BRICK_SLAB, MSBlocks.CHISELED_GLOWING_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CHISELED_GLOWING_NETHER_BRICK_STAIRS, MSBlocks.CHISELED_GLOWING_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CHISELED_GLOWING_NETHER_BRICK_WALL, MSBlocks.CHISELED_GLOWING_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICK_SLAB, MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICK_WALL, MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICKS);
+		
+		gen.registerSingleton(MSBlocks.GHASTLY_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.GHASTLY_NETHER_BRICK_SLAB, MSBlocks.GHASTLY_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.GHASTLY_NETHER_BRICK_STAIRS, MSBlocks.GHASTLY_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.GHASTLY_NETHER_BRICK_WALL, MSBlocks.GHASTLY_NETHER_BRICKS);
+		AquiferBlockStates.registerFence(gen, MSBlocks.GHASTLY_NETHER_BRICK_FENCE, MSBlocks.GHASTLY_NETHER_BRICKS);
+		AquiferBlockStates.registerFenceGate(gen, MSBlocks.GHASTLY_NETHER_BRICK_FENCE_GATE, MSBlocks.GHASTLY_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_GHASTLY_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_GHASTLY_NETHER_BRICK_SLAB, MSBlocks.CRACKED_GHASTLY_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_GHASTLY_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_GHASTLY_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_GHASTLY_NETHER_BRICK_WALL, MSBlocks.CRACKED_GHASTLY_NETHER_BRICKS);
+		AquiferBlockStates.registerFence(gen, MSBlocks.CRACKED_GHASTLY_NETHER_BRICK_FENCE, MSBlocks.CRACKED_GHASTLY_NETHER_BRICKS);
+		AquiferBlockStates.registerFenceGate(gen, MSBlocks.CRACKED_GHASTLY_NETHER_BRICK_FENCE_GATE, MSBlocks.CRACKED_GHASTLY_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CHISELED_GHASTLY_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CHISELED_GHASTLY_NETHER_BRICK_SLAB, MSBlocks.CHISELED_GHASTLY_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CHISELED_GHASTLY_NETHER_BRICK_STAIRS, MSBlocks.CHISELED_GHASTLY_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CHISELED_GHASTLY_NETHER_BRICK_WALL, MSBlocks.CHISELED_GHASTLY_NETHER_BRICKS);
+		gen.registerSingleton(MSBlocks.CRACKED_CHISELED_GHASTLY_NETHER_BRICKS, TexturedModel.CUBE_ALL);
+		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_CHISELED_GHASTLY_NETHER_BRICK_SLAB, MSBlocks.CRACKED_CHISELED_GHASTLY_NETHER_BRICKS);
+		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_CHISELED_GHASTLY_NETHER_BRICK_STAIRS, MSBlocks.CRACKED_CHISELED_GHASTLY_NETHER_BRICKS);
+		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_CHISELED_GHASTLY_NETHER_BRICK_WALL, MSBlocks.CRACKED_CHISELED_GHASTLY_NETHER_BRICKS);
+		
+		gen.registerSingleton(MSBlocks.CRACKED_END_STONE_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_END_STONE_BRICK_SLAB, MSBlocks.CRACKED_END_STONE_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_END_STONE_BRICK_STAIRS, MSBlocks.CRACKED_END_STONE_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_END_STONE_BRICK_WALL, MSBlocks.CRACKED_END_STONE_BRICKS);
 		
+		gen.registerSingleton(MSBlocks.CRACKED_QUARTZ_BRICKS, TexturedModel.CUBE_ALL);
 		AquiferBlockStates.registerSlab(gen, MSBlocks.CRACKED_QUARTZ_BRICK_SLAB, MSBlocks.CRACKED_QUARTZ_BRICKS);
 		AquiferBlockStates.registerStairs(gen, MSBlocks.CRACKED_QUARTZ_BRICK_STAIRS, MSBlocks.CRACKED_QUARTZ_BRICKS);
 		AquiferBlockStates.registerWall(gen, MSBlocks.CRACKED_QUARTZ_BRICK_WALL, MSBlocks.CRACKED_QUARTZ_BRICKS);
@@ -335,6 +499,26 @@ public class MSBlockStatesModelGen extends FabricModelProvider {
 	
 	@Override
 	public void generateItemModels(ItemModelGenerator gen) {
+		gen.register(MSItems.WITHER_BONE, Models.GENERATED);
+		gen.register(MSItems.WITHER_BONE_MEAL, Models.GENERATED);
 		
+		gen.register(MSItems.WARPED_NETHER_BRICK, Models.GENERATED);
+		gen.register(MSItems.WITHERED_NETHER_BRICK, Models.GENERATED);
+		gen.register(MSItems.SOUL_NETHER_BRICK, Models.GENERATED);
+		gen.register(MSItems.BLAZING_NETHER_BRICK, Models.GENERATED);
+		gen.register(MSItems.GLOWING_NETHER_BRICK, Models.GENERATED);
+		gen.register(MSItems.GHASTLY_NETHER_BRICK, Models.GENERATED);
+	}
+	
+	private static TexturedModel.Factory getOrCreateSandstoneModelFactory(Block sandstone) {
+		return SANDSTONE_MODEL_FACTORIES.computeIfAbsent(sandstone, block -> TexturedModel.makeFactory(block_ -> forSandstoneVariant(block, block_), Models.CUBE_COLUMN));
+	}
+	
+	public static TextureMap forSandstoneVariant(Block baseSandstone, Block variantSandstone) {
+		return TextureMap.sideEnd(TextureMap.getId(variantSandstone), TextureMap.getSubId(baseSandstone, "_top"));
+	}
+	
+	public static TextureMap sideEndInside(Block block) {
+		return new TextureMap().put(TextureKey.SIDE, TextureMap.getSubId(block, "_side")).put(TextureKey.END, TextureMap.getSubId(block, "_top")).put(TextureKey.INSIDE, TextureMap.getSubId(block, "_inside"));
 	}
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mountainspring:item/glowing_nether_brick"
+  }
+}

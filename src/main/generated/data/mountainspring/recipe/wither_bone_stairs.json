@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wither_bone_stairs",
+  "key": {
+    "#": {
+      "item": "mountainspring:wither_bone_block"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:wither_bone_stairs"
+  }
+}

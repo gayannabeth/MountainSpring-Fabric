@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "mountainspring:block/cracked_ghastly_nether_bricks"
+  }
+}

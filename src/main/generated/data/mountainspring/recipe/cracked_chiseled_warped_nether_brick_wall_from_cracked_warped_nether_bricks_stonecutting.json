@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mountainspring:cracked_warped_nether_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "mountainspring:cracked_chiseled_warped_nether_brick_wall"
+  }
+}

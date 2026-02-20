@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "soul_nether_brick_stairs",
+  "key": {
+    "#": {
+      "item": "mountainspring:soul_nether_bricks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:soul_nether_brick_stairs"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mountainspring:chiseled_withered_nether_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "mountainspring:chiseled_withered_nether_brick_stairs"
+  }
+}

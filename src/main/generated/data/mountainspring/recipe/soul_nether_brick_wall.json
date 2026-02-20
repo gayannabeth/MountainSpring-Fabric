@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "soul_nether_brick_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:soul_nether_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:soul_nether_brick_wall"
+  }
+}

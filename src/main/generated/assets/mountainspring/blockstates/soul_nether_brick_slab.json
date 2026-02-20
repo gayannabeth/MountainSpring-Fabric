@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mountainspring:block/soul_nether_brick_slab"
+    },
+    "type=double": {
+      "model": "mountainspring:block/soul_nether_bricks"
+    },
+    "type=top": {
+      "model": "mountainspring:block/soul_nether_brick_slab_top"
+    }
+  }
+}

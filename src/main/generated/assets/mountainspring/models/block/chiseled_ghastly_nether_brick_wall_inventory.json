@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "mountainspring:block/chiseled_ghastly_nether_bricks"
+  }
+}
