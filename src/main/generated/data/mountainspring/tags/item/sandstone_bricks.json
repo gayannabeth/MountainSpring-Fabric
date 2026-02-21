@@ -2,6 +2,8 @@
   "values": [
     "#mountainspring:sandstone_bricks/beige",
     "#mountainspring:sandstone_bricks/red",
-    "#mountainspring:soul_sandstone_bricks"
+    "#mountainspring:sandstone_bricks/white",
+    "#mountainspring:sandstone_bricks/black",
+    "#mountainspring:sandstone_bricks/soul"
   ]
 }

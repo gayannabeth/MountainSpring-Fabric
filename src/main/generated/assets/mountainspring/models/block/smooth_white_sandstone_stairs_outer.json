@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "mountainspring:block/white_sandstone_top",
+    "side": "mountainspring:block/white_sandstone_top",
+    "top": "mountainspring:block/white_sandstone_top"
+  }
+}

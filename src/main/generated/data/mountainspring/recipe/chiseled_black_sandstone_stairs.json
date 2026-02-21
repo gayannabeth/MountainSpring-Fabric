@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chiseled_black_sandstone_stairs",
+  "key": {
+    "#": {
+      "item": "mountainspring:chiseled_black_sandstone"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:chiseled_black_sandstone_stairs"
+  }
+}

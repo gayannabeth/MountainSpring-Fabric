@@ -5,8 +5,10 @@ import java.util.concurrent.CompletableFuture;
 import gay.mountainspring.MSMain;
 import gay.mountainspring.item.MSItems;
 import gay.mountainspring.sswplus.item.SSWPItems;
+import gay.mountainspring.tag.MSTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 import net.minecraft.advancement.AdvancementCriterion;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
@@ -203,6 +205,76 @@ public class MSRecipeGen extends FabricRecipeProvider {
 				MSItems.CRACKED_MOSSY_RED_SANDSTONE_BRICK_STAIRS,
 				MSItems.CRACKED_MOSSY_RED_SANDSTONE_BRICK_WALL);
 		
+		sandstone(exp,
+				MSItems.WHITE_SAND,
+				MSItems.WHITE_SANDSTONE,
+				MSItems.WHITE_SANDSTONE_SLAB,
+				MSItems.WHITE_SANDSTONE_STAIRS,
+				MSItems.WHITE_SANDSTONE_WALL,
+				MSItems.CHISELED_WHITE_SANDSTONE,
+				MSItems.CHISELED_WHITE_SANDSTONE_SLAB,
+				MSItems.CHISELED_WHITE_SANDSTONE_STAIRS,
+				MSItems.CHISELED_WHITE_SANDSTONE_WALL,
+				MSItems.SMOOTH_WHITE_SANDSTONE,
+				MSItems.SMOOTH_WHITE_SANDSTONE_SLAB,
+				MSItems.SMOOTH_WHITE_SANDSTONE_STAIRS,
+				MSItems.SMOOTH_WHITE_SANDSTONE_WALL,
+				MSItems.CUT_WHITE_SANDSTONE,
+				MSItems.CUT_WHITE_SANDSTONE_SLAB,
+				MSItems.CUT_WHITE_SANDSTONE_STAIRS,
+				MSItems.CUT_WHITE_SANDSTONE_WALL,
+				MSItems.WHITE_SANDSTONE_BRICKS,
+				MSItems.WHITE_SANDSTONE_BRICK_SLAB,
+				MSItems.WHITE_SANDSTONE_BRICK_STAIRS,
+				MSItems.WHITE_SANDSTONE_BRICK_WALL,
+				MSItems.CRACKED_WHITE_SANDSTONE_BRICKS,
+				MSItems.CRACKED_WHITE_SANDSTONE_BRICK_SLAB,
+				MSItems.CRACKED_WHITE_SANDSTONE_BRICK_STAIRS,
+				MSItems.CRACKED_WHITE_SANDSTONE_BRICK_WALL,
+				MSItems.MOSSY_WHITE_SANDSTONE_BRICKS,
+				MSItems.MOSSY_WHITE_SANDSTONE_BRICK_SLAB,
+				MSItems.MOSSY_WHITE_SANDSTONE_BRICK_STAIRS,
+				MSItems.MOSSY_WHITE_SANDSTONE_BRICK_WALL,
+				MSItems.CRACKED_MOSSY_WHITE_SANDSTONE_BRICKS,
+				MSItems.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_SLAB,
+				MSItems.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_STAIRS,
+				MSItems.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_WALL);
+		
+		sandstone(exp,
+				MSItems.BLACK_SAND,
+				MSItems.BLACK_SANDSTONE,
+				MSItems.BLACK_SANDSTONE_SLAB,
+				MSItems.BLACK_SANDSTONE_STAIRS,
+				MSItems.BLACK_SANDSTONE_WALL,
+				MSItems.CHISELED_BLACK_SANDSTONE,
+				MSItems.CHISELED_BLACK_SANDSTONE_SLAB,
+				MSItems.CHISELED_BLACK_SANDSTONE_STAIRS,
+				MSItems.CHISELED_BLACK_SANDSTONE_WALL,
+				MSItems.SMOOTH_BLACK_SANDSTONE,
+				MSItems.SMOOTH_BLACK_SANDSTONE_SLAB,
+				MSItems.SMOOTH_BLACK_SANDSTONE_STAIRS,
+				MSItems.SMOOTH_BLACK_SANDSTONE_WALL,
+				MSItems.CUT_BLACK_SANDSTONE,
+				MSItems.CUT_BLACK_SANDSTONE_SLAB,
+				MSItems.CUT_BLACK_SANDSTONE_STAIRS,
+				MSItems.CUT_BLACK_SANDSTONE_WALL,
+				MSItems.BLACK_SANDSTONE_BRICKS,
+				MSItems.BLACK_SANDSTONE_BRICK_SLAB,
+				MSItems.BLACK_SANDSTONE_BRICK_STAIRS,
+				MSItems.BLACK_SANDSTONE_BRICK_WALL,
+				MSItems.CRACKED_BLACK_SANDSTONE_BRICKS,
+				MSItems.CRACKED_BLACK_SANDSTONE_BRICK_SLAB,
+				MSItems.CRACKED_BLACK_SANDSTONE_BRICK_STAIRS,
+				MSItems.CRACKED_BLACK_SANDSTONE_BRICK_WALL,
+				MSItems.MOSSY_BLACK_SANDSTONE_BRICKS,
+				MSItems.MOSSY_BLACK_SANDSTONE_BRICK_SLAB,
+				MSItems.MOSSY_BLACK_SANDSTONE_BRICK_STAIRS,
+				MSItems.MOSSY_BLACK_SANDSTONE_BRICK_WALL,
+				MSItems.CRACKED_MOSSY_BLACK_SANDSTONE_BRICKS,
+				MSItems.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_SLAB,
+				MSItems.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_STAIRS,
+				MSItems.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_WALL);
+		
 		crackedBricks(exp,
 				Items.PRISMARINE_BRICKS,
 				MSItems.CRACKED_PRISMARINE_BRICKS,
@@ -339,6 +411,30 @@ public class MSRecipeGen extends FabricRecipeProvider {
 				MSItems.CRACKED_CHISELED_GLOWING_NETHER_BRICK_WALL);
 		
 		netherBricks(exp,
+				Items.MAGMA_CREAM,
+				MSItems.MAGMA_NETHER_BRICK,
+				MSItems.MAGMA_NETHER_BRICKS,
+				MSItems.MAGMA_NETHER_BRICK_SLAB,
+				MSItems.MAGMA_NETHER_BRICK_STAIRS,
+				MSItems.MAGMA_NETHER_BRICK_WALL,
+				MSItems.MAGMA_NETHER_BRICK_FENCE,
+				MSItems.MAGMA_NETHER_BRICK_FENCE_GATE,
+				MSItems.CRACKED_MAGMA_NETHER_BRICKS,
+				MSItems.CRACKED_MAGMA_NETHER_BRICK_SLAB,
+				MSItems.CRACKED_MAGMA_NETHER_BRICK_STAIRS,
+				MSItems.CRACKED_MAGMA_NETHER_BRICK_WALL,
+				MSItems.CRACKED_MAGMA_NETHER_BRICK_FENCE,
+				MSItems.CRACKED_MAGMA_NETHER_BRICK_FENCE_GATE,
+				MSItems.CHISELED_MAGMA_NETHER_BRICKS,
+				MSItems.CHISELED_MAGMA_NETHER_BRICK_SLAB,
+				MSItems.CHISELED_MAGMA_NETHER_BRICK_STAIRS,
+				MSItems.CHISELED_MAGMA_NETHER_BRICK_WALL,
+				MSItems.CRACKED_CHISELED_MAGMA_NETHER_BRICKS,
+				MSItems.CRACKED_CHISELED_MAGMA_NETHER_BRICK_SLAB,
+				MSItems.CRACKED_CHISELED_MAGMA_NETHER_BRICK_STAIRS,
+				MSItems.CRACKED_CHISELED_MAGMA_NETHER_BRICK_WALL);
+		
+		netherBricks(exp,
 				Items.GHAST_TEAR,
 				MSItems.GHASTLY_NETHER_BRICK,
 				MSItems.GHASTLY_NETHER_BRICKS,
@@ -375,6 +471,12 @@ public class MSRecipeGen extends FabricRecipeProvider {
 				MSItems.CRACKED_QUARTZ_BRICK_SLAB,
 				MSItems.CRACKED_QUARTZ_BRICK_STAIRS,
 				MSItems.CRACKED_QUARTZ_BRICK_WALL);
+		
+		offerAxeRecipe(exp, MSItems.FLINT_AXE, MSTags.Items.FLINT_TOOL_MATERIALS);
+		offerHoeRecipe(exp, MSItems.FLINT_HOE, MSTags.Items.FLINT_TOOL_MATERIALS);
+		offerPickaxeRecipe(exp, MSItems.FLINT_PICKAXE, MSTags.Items.FLINT_TOOL_MATERIALS);
+		offerShovelRecipe(exp, MSItems.FLINT_SHOVEL, MSTags.Items.FLINT_TOOL_MATERIALS);
+		offerSwordRecipe(exp, MSItems.FLINT_SWORD, MSTags.Items.FLINT_TOOL_MATERIALS);
 	}
 	
 	private static void defaultUncompactingRecipes(RecipeExporter exp) {
@@ -944,7 +1046,7 @@ public class MSRecipeGen extends FabricRecipeProvider {
 		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, MSItems.CRACKED_CHISELED_RED_NETHER_BRICK_WALL, MSItems.CRACKED_RED_NETHER_BRICKS);
 	}
 	
-	private final void netherBricks(RecipeExporter exp,
+	private static void netherBricks(RecipeExporter exp,
 			ItemConvertible material,
 			ItemConvertible item,
 			ItemConvertible base,
@@ -1017,7 +1119,7 @@ public class MSRecipeGen extends FabricRecipeProvider {
 		offerStonecuttingRecipe(exp, RecipeCategory.DECORATIONS, crackedChiseledWall, cracked);
 	}
 	
-	private final void witherBone(RecipeExporter exp) {
+	private static void witherBone(RecipeExporter exp) {
 		offerShapelessRecipe(exp, RecipeCategory.MISC, MSItems.WITHER_BONE_MEAL, MSItems.WITHER_BONE, 3);
 		offerReversible3x3CompactingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, RecipeCategory.MISC, MSItems.WITHER_BONE_BLOCK, MSItems.WITHER_BONE_MEAL);
 		offerStonecuttingRecipe(exp, RecipeCategory.MISC, MSItems.WITHER_BONE_MEAL, MSItems.WITHER_BONE_BLOCK, 9);
@@ -1030,12 +1132,12 @@ public class MSRecipeGen extends FabricRecipeProvider {
 		offerStonecuttingRecipe(exp, RecipeCategory.DECORATIONS, MSItems.WITHER_BONE_WALL, MSItems.WITHER_BONE_BLOCK);
 	}
 	
-	private final void warpedWart(RecipeExporter exp) {
+	private static void warpedWart(RecipeExporter exp) {
 		ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.WARPED_WART_BLOCK).pattern("###").pattern("###").pattern("###").input('#', MSItems.WARPED_WART).criterion(hasItem(MSItems.WARPED_WART), conditionsFromItem(MSItems.WARPED_WART)).offerTo(exp, Identifier.of(MSMain.MOD_ID, getItemPath(Items.WARPED_WART_BLOCK)));
 		offerAlternativeShapelessRecipe(exp, RecipeCategory.BREWING, MSItems.WARPED_WART, Items.WARPED_WART_BLOCK, 9);
 	}
 	
-	private final void soulSandstone(RecipeExporter exp) {
+	private static void soulSandstone(RecipeExporter exp) {
 		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, SSWPItems.SOUL_SAND_SLAB, MSItems.SOUL_SANDSTONE, 8);
 		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, SSWPItems.SOUL_SAND_STAIRS, MSItems.SOUL_SANDSTONE, 4);
 		offerStonecuttingRecipe(exp, RecipeCategory.DECORATIONS, SSWPItems.SOUL_SAND_WALL, MSItems.SOUL_SANDSTONE, 4);
@@ -1076,7 +1178,7 @@ public class MSRecipeGen extends FabricRecipeProvider {
 				MSItems.CRACKED_MOSSY_SOUL_SANDSTONE_BRICK_WALL);
 	}
 	
-	private final void sandstone(RecipeExporter exp,
+	private static void sandstone(RecipeExporter exp,
 			ItemConvertible sand,
 			ItemConvertible base,
 			ItemConvertible slab,
@@ -1111,7 +1213,7 @@ public class MSRecipeGen extends FabricRecipeProvider {
 			ItemConvertible crackedMossyBrickStairs,
 			ItemConvertible crackedMossyBrickWall) {
 		offerReversible2x2CompactingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, RecipeCategory.BUILDING_BLOCKS, base, sand);
-		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, Items.SOUL_SAND, MSItems.SOUL_SANDSTONE, 4);
+		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, sand, base, 4);
 		offerSlabRecipe(exp, slab, base);
 		offerStonecuttingRecipe(exp, RecipeCategory.BUILDING_BLOCKS, slab, base, 2);
 		offerStairsRecipe(exp, stairs, base);
@@ -1493,6 +1595,42 @@ public class MSRecipeGen extends FabricRecipeProvider {
 	public static void offerAlternativeReversible3x3CompactingRecipe(RecipeExporter exp, RecipeCategory compactingCat, RecipeCategory uncompactingCat, ItemConvertible compacted, ItemConvertible uncompacted) {
 		offerAlternative3x3CompactingRecipe(exp, compactingCat, compacted, uncompacted);
 		offerAlternativeShapelessRecipe(exp, uncompactingCat, uncompacted, compacted, 9);
+	}
+	
+	public static void offerAxeRecipe(RecipeExporter exp, ItemConvertible axe, TagKey<Item> material) {
+		ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, axe).pattern("##").pattern("#|").pattern(" |").input('#', material).input('|', ConventionalItemTags.WOODEN_RODS).criterion(hasTag(material), conditionsFromTag(material)).offerTo(exp);
+	}
+	
+	public static void offerHoeRecipe(RecipeExporter exp, ItemConvertible hoe, TagKey<Item> material) {
+		ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hoe).pattern("##").pattern(" |").pattern(" |").input('#', material).input('|', ConventionalItemTags.WOODEN_RODS).criterion(hasTag(material), conditionsFromTag(material)).offerTo(exp);
+	}
+	
+	public static void offerPickaxeRecipe(RecipeExporter exp, ItemConvertible pickaxe, TagKey<Item> material) {
+		ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, pickaxe).pattern("###").pattern(" | ").pattern(" | ").input('#', material).input('|', ConventionalItemTags.WOODEN_RODS).criterion(hasTag(material), conditionsFromTag(material)).offerTo(exp);
+	}
+	
+	public static void offerShovelRecipe(RecipeExporter exp, ItemConvertible shovel, TagKey<Item> material) {
+		ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, shovel).pattern("#").pattern("|").pattern("|").input('#', material).input('|', ConventionalItemTags.WOODEN_RODS).criterion(hasTag(material), conditionsFromTag(material)).offerTo(exp);
+	}
+	
+	public static void offerSwordRecipe(RecipeExporter exp, ItemConvertible sword, TagKey<Item> material) {
+		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, sword).pattern("#").pattern("#").pattern("|").input('#', material).input('|', ConventionalItemTags.WOODEN_RODS).criterion(hasTag(material), conditionsFromTag(material)).offerTo(exp);
+	}
+	
+	public static void offerHelmetRecipe(RecipeExporter exp, ItemConvertible helmet, TagKey<Item> material) {
+		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, helmet).pattern("###").pattern("# #").input('#', material).criterion(hasTag(material), conditionsFromTag(material)).offerTo(exp);
+	}
+	
+	public static void offerChestplateRecipe(RecipeExporter exp, ItemConvertible chestplate, TagKey<Item> material) {
+		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, chestplate).pattern("# #").pattern("###").pattern("###").input('#', material).criterion(hasTag(material), conditionsFromTag(material)).offerTo(exp);
+	}
+	
+	public static void offerLeggingsRecipe(RecipeExporter exp, ItemConvertible leggings, TagKey<Item> material) {
+		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, leggings).pattern("###").pattern("# #").pattern("# #").input('#', material).criterion(hasTag(material), conditionsFromTag(material)).offerTo(exp);
+	}
+	
+	public static void offerBootsRecipe(RecipeExporter exp, ItemConvertible boots, TagKey<Item> material) {
+		ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, boots).pattern("# #").pattern("# #").input('#', material).criterion(hasTag(material), conditionsFromTag(material)).offerTo(exp);
 	}
 	
 	public static AdvancementCriterion<InventoryChangedCriterion.Conditions> conditionsFromItems(ItemConvertible... items) {

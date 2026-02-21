@@ -1,0 +1,7 @@
+{
+  "parent": "aquifer:block/wall_column_inventory",
+  "textures": {
+    "end": "mountainspring:block/white_sandstone_top",
+    "side": "mountainspring:block/cut_white_sandstone"
+  }
+}

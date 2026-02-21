@@ -1,0 +1,7 @@
+{
+  "parent": "aquifer:block/template_wall_side_column",
+  "textures": {
+    "end": "mountainspring:block/white_sandstone_top",
+    "side": "mountainspring:block/chiseled_white_sandstone"
+  }
+}

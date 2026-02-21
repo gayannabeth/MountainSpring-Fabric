@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_white_sandstone_bricks",
+  "ingredients": [
+    {
+      "item": "mountainspring:white_sandstone_bricks"
+    },
+    [
+      {
+        "item": "minecraft:moss_block"
+      },
+      {
+        "item": "minecraft:vine"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:mossy_white_sandstone_bricks"
+  }
+}

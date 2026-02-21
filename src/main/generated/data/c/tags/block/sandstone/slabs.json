@@ -1,5 +1,7 @@
 {
   "values": [
+    "#c:sandstone/white_slabs",
+    "#c:sandstone/black_slabs",
     "#c:sandstone/soul_slabs"
   ]
 }

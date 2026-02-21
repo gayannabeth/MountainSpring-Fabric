@@ -240,6 +240,74 @@ public class MSBlockLootTableGen extends AquiferBlockLootTableProvider {
 		this.addDrop(MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_STAIRS);
 		this.addDrop(MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_WALL);
 		
+		this.addDrop(MSBlocks.WHITE_SAND);
+		this.addDrop(MSBlocks.WHITE_SANDSTONE);
+		this.addDrop(MSBlocks.WHITE_SANDSTONE_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.WHITE_SANDSTONE_STAIRS);
+		this.addDrop(MSBlocks.WHITE_SANDSTONE_WALL);
+		this.addDrop(MSBlocks.CHISELED_WHITE_SANDSTONE);
+		this.addDrop(MSBlocks.CHISELED_WHITE_SANDSTONE_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CHISELED_WHITE_SANDSTONE_STAIRS);
+		this.addDrop(MSBlocks.CHISELED_WHITE_SANDSTONE_WALL);
+		this.addDrop(MSBlocks.SMOOTH_WHITE_SANDSTONE);
+		this.addDrop(MSBlocks.SMOOTH_WHITE_SANDSTONE_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.SMOOTH_WHITE_SANDSTONE_STAIRS);
+		this.addDrop(MSBlocks.SMOOTH_WHITE_SANDSTONE_WALL);
+		this.addDrop(MSBlocks.CUT_WHITE_SANDSTONE);
+		this.addDrop(MSBlocks.CUT_WHITE_SANDSTONE_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CUT_WHITE_SANDSTONE_STAIRS);
+		this.addDrop(MSBlocks.CUT_WHITE_SANDSTONE_WALL);
+		this.addDrop(MSBlocks.WHITE_SANDSTONE_BRICKS);
+		this.addDrop(MSBlocks.WHITE_SANDSTONE_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.WHITE_SANDSTONE_BRICK_STAIRS);
+		this.addDrop(MSBlocks.WHITE_SANDSTONE_BRICK_WALL);
+		this.addDrop(MSBlocks.CRACKED_WHITE_SANDSTONE_BRICKS);
+		this.addDrop(MSBlocks.CRACKED_WHITE_SANDSTONE_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CRACKED_WHITE_SANDSTONE_BRICK_STAIRS);
+		this.addDrop(MSBlocks.CRACKED_WHITE_SANDSTONE_BRICK_WALL);
+		this.addDrop(MSBlocks.MOSSY_WHITE_SANDSTONE_BRICKS);
+		this.addDrop(MSBlocks.MOSSY_WHITE_SANDSTONE_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.MOSSY_WHITE_SANDSTONE_BRICK_STAIRS);
+		this.addDrop(MSBlocks.MOSSY_WHITE_SANDSTONE_BRICK_WALL);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICKS);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_STAIRS);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_WALL);
+		
+		this.addDrop(MSBlocks.BLACK_SAND);
+		this.addDrop(MSBlocks.BLACK_SANDSTONE);
+		this.addDrop(MSBlocks.BLACK_SANDSTONE_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.BLACK_SANDSTONE_STAIRS);
+		this.addDrop(MSBlocks.BLACK_SANDSTONE_WALL);
+		this.addDrop(MSBlocks.CHISELED_BLACK_SANDSTONE);
+		this.addDrop(MSBlocks.CHISELED_BLACK_SANDSTONE_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CHISELED_BLACK_SANDSTONE_STAIRS);
+		this.addDrop(MSBlocks.CHISELED_BLACK_SANDSTONE_WALL);
+		this.addDrop(MSBlocks.SMOOTH_BLACK_SANDSTONE);
+		this.addDrop(MSBlocks.SMOOTH_BLACK_SANDSTONE_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.SMOOTH_BLACK_SANDSTONE_STAIRS);
+		this.addDrop(MSBlocks.SMOOTH_BLACK_SANDSTONE_WALL);
+		this.addDrop(MSBlocks.CUT_BLACK_SANDSTONE);
+		this.addDrop(MSBlocks.CUT_BLACK_SANDSTONE_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CUT_BLACK_SANDSTONE_STAIRS);
+		this.addDrop(MSBlocks.CUT_BLACK_SANDSTONE_WALL);
+		this.addDrop(MSBlocks.BLACK_SANDSTONE_BRICKS);
+		this.addDrop(MSBlocks.BLACK_SANDSTONE_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.BLACK_SANDSTONE_BRICK_STAIRS);
+		this.addDrop(MSBlocks.BLACK_SANDSTONE_BRICK_WALL);
+		this.addDrop(MSBlocks.CRACKED_BLACK_SANDSTONE_BRICKS);
+		this.addDrop(MSBlocks.CRACKED_BLACK_SANDSTONE_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CRACKED_BLACK_SANDSTONE_BRICK_STAIRS);
+		this.addDrop(MSBlocks.CRACKED_BLACK_SANDSTONE_BRICK_WALL);
+		this.addDrop(MSBlocks.MOSSY_BLACK_SANDSTONE_BRICKS);
+		this.addDrop(MSBlocks.MOSSY_BLACK_SANDSTONE_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.MOSSY_BLACK_SANDSTONE_BRICK_STAIRS);
+		this.addDrop(MSBlocks.MOSSY_BLACK_SANDSTONE_BRICK_WALL);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICKS);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_STAIRS);
+		this.addDrop(MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_WALL);
+		
 		this.addDrop(MSBlocks.CRACKED_PRISMARINE_BRICKS);
 		this.addDrop(MSBlocks.CRACKED_PRISMARINE_BRICK_SLAB, this::slabDrops);
 		this.addDrop(MSBlocks.CRACKED_PRISMARINE_BRICK_STAIRS);
@@ -410,6 +478,27 @@ public class MSBlockLootTableGen extends AquiferBlockLootTableProvider {
 		this.addDrop(MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICK_STAIRS);
 		this.addDrop(MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICK_WALL);
 		
+		this.addDrop(MSBlocks.MAGMA_NETHER_BRICKS);
+		this.addDrop(MSBlocks.MAGMA_NETHER_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.MAGMA_NETHER_BRICK_STAIRS);
+		this.addDrop(MSBlocks.MAGMA_NETHER_BRICK_WALL);
+		this.addDrop(MSBlocks.MAGMA_NETHER_BRICK_FENCE);
+		this.addDrop(MSBlocks.MAGMA_NETHER_BRICK_FENCE_GATE);
+		this.addDrop(MSBlocks.CRACKED_MAGMA_NETHER_BRICKS);
+		this.addDrop(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_STAIRS);
+		this.addDrop(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_WALL);
+		this.addDrop(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_FENCE);
+		this.addDrop(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_FENCE_GATE);
+		this.addDrop(MSBlocks.CHISELED_MAGMA_NETHER_BRICKS);
+		this.addDrop(MSBlocks.CHISELED_MAGMA_NETHER_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CHISELED_MAGMA_NETHER_BRICK_STAIRS);
+		this.addDrop(MSBlocks.CHISELED_MAGMA_NETHER_BRICK_WALL);
+		this.addDrop(MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICKS);
+		this.addDrop(MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICK_SLAB, this::slabDrops);
+		this.addDrop(MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICK_STAIRS);
+		this.addDrop(MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICK_WALL);
+		
 		this.addDrop(MSBlocks.GHASTLY_NETHER_BRICKS);
 		this.addDrop(MSBlocks.GHASTLY_NETHER_BRICK_SLAB, this::slabDrops);
 		this.addDrop(MSBlocks.GHASTLY_NETHER_BRICK_STAIRS);
@@ -485,5 +574,9 @@ public class MSBlockLootTableGen extends AquiferBlockLootTableProvider {
 		this.addDrop(MSBlocks.INFESTED_CRACKED_CHISELED_TUFF_BRICKS, this.dropsWithSilkTouch(MSItems.CRACKED_CHISELED_TUFF_BRICKS));
 		this.addDrop(MSBlocks.INFESTED_MOSSY_CHISELED_TUFF_BRICKS, this.dropsWithSilkTouch(MSItems.MOSSY_CHISELED_TUFF_BRICKS));
 		this.addDrop(MSBlocks.INFESTED_CRACKED_MOSSY_CHISELED_TUFF_BRICKS, this.dropsWithSilkTouch(MSItems.CRACKED_MOSSY_CHISELED_TUFF_BRICKS));
+		
+		this.addDrop(MSBlocks.SUSPICIOUS_RED_SAND, dropsNothing());
+		this.addDrop(MSBlocks.SUSPICIOUS_WHITE_SAND, dropsNothing());
+		this.addDrop(MSBlocks.SUSPICIOUS_BLACK_SAND, dropsNothing());
 	}
 }

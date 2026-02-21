@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "smooth_black_sandstone_stairs",
+  "key": {
+    "#": {
+      "item": "mountainspring:smooth_black_sandstone"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:smooth_black_sandstone_stairs"
+  }
+}

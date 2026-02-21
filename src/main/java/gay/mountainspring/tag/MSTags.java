@@ -67,19 +67,37 @@ public class MSTags {
 		public static final TagKey<Block> RED_SANDSTONE_BRICK_STAIRS = create("sandstone_brick_stairs/red");
 		public static final TagKey<Block> RED_SANDSTONE_BRICK_WALLS = create("sandstone_brick_walls/red");
 		
+		public static final TagKey<Block> WHITE_SANDSTONE = create("sandstone/white");
+		public static final TagKey<Block> WHITE_SANDSTONE_SLABS = create("sandstone_slabs/white");
+		public static final TagKey<Block> WHITE_SANDSTONE_STAIRS = create("sandstone_stairs/white");
+		public static final TagKey<Block> WHITE_SANDSTONE_WALLS = create("sandstone_walls/white");
+		public static final TagKey<Block> WHITE_SANDSTONE_BRICKS = create("sandstone_bricks/white");
+		public static final TagKey<Block> WHITE_SANDSTONE_BRICK_SLABS = create("sandstone_brick_slabs/white");
+		public static final TagKey<Block> WHITE_SANDSTONE_BRICK_STAIRS = create("sandstone_brick_stairs/white");
+		public static final TagKey<Block> WHITE_SANDSTONE_BRICK_WALLS = create("sandstone_brick_walls/white");
+		
+		public static final TagKey<Block> BLACK_SANDSTONE = create("sandstone/black");
+		public static final TagKey<Block> BLACK_SANDSTONE_SLABS = create("sandstone_slabs/black");
+		public static final TagKey<Block> BLACK_SANDSTONE_STAIRS = create("sandstone_stairs/black");
+		public static final TagKey<Block> BLACK_SANDSTONE_WALLS = create("sandstone_walls/black");
+		public static final TagKey<Block> BLACK_SANDSTONE_BRICKS = create("sandstone_bricks/black");
+		public static final TagKey<Block> BLACK_SANDSTONE_BRICK_SLABS = create("sandstone_brick_slabs/black");
+		public static final TagKey<Block> BLACK_SANDSTONE_BRICK_STAIRS = create("sandstone_brick_stairs/black");
+		public static final TagKey<Block> BLACK_SANDSTONE_BRICK_WALLS = create("sandstone_brick_walls/black");
+		
 		public static final TagKey<Block> PRISMARINE_BRICKS = create("prismarine_bricks");
 		public static final TagKey<Block> PRISMARINE_BRICK_SLABS = create("prismarine_brick_slabs");
 		public static final TagKey<Block> PRISMARINE_BRICK_STAIRS = create("prismarine_brick_stairs");
 		public static final TagKey<Block> PRISMARINE_BRICK_WALLS = create("prismarine_brick_walls");
 		
-		public static final TagKey<Block> SOUL_SANDSTONE = create("soul_sandstone");
-		public static final TagKey<Block> SOUL_SANDSTONE_SLABS = create("soul_sandstone_slabs");
-		public static final TagKey<Block> SOUL_SANDSTONE_STAIRS = create("soul_sandstone_stairs");
-		public static final TagKey<Block> SOUL_SANDSTONE_WALLS = create("soul_sandstone_walls");
-		public static final TagKey<Block> SOUL_SANDSTONE_BRICKS = create("soul_sandstone_bricks");
-		public static final TagKey<Block> SOUL_SANDSTONE_BRICK_SLABS = create("soul_sandstone_brick_slabs");
-		public static final TagKey<Block> SOUL_SANDSTONE_BRICK_STAIRS = create("soul_sandstone_brick_stairs");
-		public static final TagKey<Block> SOUL_SANDSTONE_BRICK_WALLS = create("soul_sandstone_brick_walls");
+		public static final TagKey<Block> SOUL_SANDSTONE = create("sandstone/soul");
+		public static final TagKey<Block> SOUL_SANDSTONE_SLABS = create("sandstone_slabs/soul");
+		public static final TagKey<Block> SOUL_SANDSTONE_STAIRS = create("sandstone_stairs/soul");
+		public static final TagKey<Block> SOUL_SANDSTONE_WALLS = create("sandstone_walls/soul");
+		public static final TagKey<Block> SOUL_SANDSTONE_BRICKS = create("sandstone_bricks/soul");
+		public static final TagKey<Block> SOUL_SANDSTONE_BRICK_SLABS = create("sandstone_brick_slabs/soul");
+		public static final TagKey<Block> SOUL_SANDSTONE_BRICK_STAIRS = create("sandstone_brick_stairs/soul");
+		public static final TagKey<Block> SOUL_SANDSTONE_BRICK_WALLS = create("sandstone_brick_walls/soul");
 		
 		public static final TagKey<Block> BONE_BLOCKS = create("bone_blocks");
 		public static final TagKey<Block> BONE_SLABS = create("bone_slabs");
@@ -135,6 +153,13 @@ public class MSTags {
 		public static final TagKey<Block> GLOWING_NETHER_BRICK_FENCES = create("nether_brick_fences/glowing");
 		public static final TagKey<Block> GLOWING_NETHER_BRICK_FENCE_GATES = create("nether_brick_fence_gates/glowing");
 		
+		public static final TagKey<Block> MAGMA_NETHER_BRICK_BLOCKS = create("nether_brick_blocks/magma");
+		public static final TagKey<Block> MAGMA_NETHER_BRICK_SLABS = create("nether_brick_slabs/magma");
+		public static final TagKey<Block> MAGMA_NETHER_BRICK_STAIRS = create("nether_brick_stairs/magma");
+		public static final TagKey<Block> MAGMA_NETHER_BRICK_WALLS = create("nether_brick_walls/magma");
+		public static final TagKey<Block> MAGMA_NETHER_BRICK_FENCES = create("nether_brick_fences/magma");
+		public static final TagKey<Block> MAGMA_NETHER_BRICK_FENCE_GATES = create("nether_brick_fence_gates/magma");
+		
 		public static final TagKey<Block> GHASTLY_NETHER_BRICK_BLOCKS = create("nether_brick_blocks/ghastly");
 		public static final TagKey<Block> GHASTLY_NETHER_BRICK_SLABS = create("nether_brick_slabs/ghastly");
 		public static final TagKey<Block> GHASTLY_NETHER_BRICK_STAIRS = create("nether_brick_stairs/ghastly");
@@ -153,6 +178,15 @@ public class MSTags {
 		public static final TagKey<Block> QUARTZ_BRICK_WALLS = create("quartz_brick_walls");
 		
 		public static final TagKey<Block> SUPPORTS_WARPED_WART = create("supports_warped_wart");
+		
+		public static final TagKey<Block> OVERWORLD_NATURAL_SAND = create("overworld_natural_sand");
+		public static final TagKey<Block> OVERWORLD_NATURAL_SANDSTONE = create("overworld_natural_sandstone");
+		
+		public static final TagKey<Block> SUSPICIOUS_SAND = create("suspicious_sand");
+		public static final TagKey<Block> SUSPICIOUS_BLOCKS = create("suspicious_blocks");
+		
+		public static final TagKey<Block> NEEDS_FLINT_TOOL = create("needs_flint_tool");
+		public static final TagKey<Block> INCORRECT_FOR_FLINT_TOOL = create("incorrect_for_flint_tool");
 		
 		public static TagKey<Block> create(String path) {
 			return MSTags.create(RegistryKeys.BLOCK, path);
@@ -173,6 +207,20 @@ public class MSTags {
 			public static final TagKey<Block> DIORITE_COBBLESTONES = create("cobblestones/diorite");
 			public static final TagKey<Block> ANDESITE_COBBLESTONES = create("cobblestones/andesite");
 			
+			public static final TagKey<Block> WHITE_SANDS = create("sands/white");
+			public static final TagKey<Block> BLACK_SANDS = create("sands/black");
+			public static final TagKey<Block> SOUL_SANDS = create("sands/soul");
+			
+			public static final TagKey<Block> WHITE_SANDSTONE_BLOCKS = create("sandstone/white_blocks");
+			public static final TagKey<Block> WHITE_SANDSTONE_SLABS = create("sandstone/white_slabs");
+			public static final TagKey<Block> WHITE_SANDSTONE_STAIRS = create("sandstone/white_stairs");
+			public static final TagKey<Block> WHITE_SANDSTONE_WALLS = create("sandstone/white_walls");
+			
+			public static final TagKey<Block> BLACK_SANDSTONE_BLOCKS = create("sandstone/black_blocks");
+			public static final TagKey<Block> BLACK_SANDSTONE_SLABS = create("sandstone/black_slabs");
+			public static final TagKey<Block> BLACK_SANDSTONE_STAIRS = create("sandstone/black_stairs");
+			public static final TagKey<Block> BLACK_SANDSTONE_WALLS = create("sandstone/black_walls");
+			
 			public static final TagKey<Block> SOUL_SANDSTONE_BLOCKS = create("sandstone/soul_blocks");
 			public static final TagKey<Block> SOUL_SANDSTONE_SLABS = create("sandstone/soul_slabs");
 			public static final TagKey<Block> SOUL_SANDSTONE_STAIRS = create("sandstone/soul_stairs");
@@ -182,6 +230,8 @@ public class MSTags {
 			public static final TagKey<Block> STORAGE_BLOCKS_SAND = create("storage_blocks/sand");
 			public static final TagKey<Block> STORAGE_BLOCKS_COLORLESS_SAND = create("storage_blocks/sand/colorless");
 			public static final TagKey<Block> STORAGE_BLOCKS_RED_SAND = create("storage_blocks/sand/red");
+			public static final TagKey<Block> STORAGE_BLOCKS_WHITE_SAND = create("storage_blocks/sand/white");
+			public static final TagKey<Block> STORAGE_BLOCKS_BLACK_SAND = create("storage_blocks/sand/black");
 			public static final TagKey<Block> STORAGE_BLOCKS_SOUL_SAND = create("storage_blocks/sand/soul");
 			public static final TagKey<Block> STORAGE_BLOCKS_PRISMARINE_SHARD = create("storage_blocks/prismarine_shard");
 			public static final TagKey<Block> STORAGE_BLOCKS_NETHER_BRICK = create("storage_blocks/nether_brick");
@@ -192,6 +242,7 @@ public class MSTags {
 			public static final TagKey<Block> STORAGE_BLOCKS_SOUL_NETHER_BRICK = create("storage_blocks/nether_brick/soul");
 			public static final TagKey<Block> STORAGE_BLOCKS_BLAZING_NETHER_BRICK = create("storage_blocks/nether_brick/blazing");
 			public static final TagKey<Block> STORAGE_BLOCKS_GLOWING_NETHER_BRICK = create("storage_blocks/nether_brick/glowing");
+			public static final TagKey<Block> STORAGE_BLOCKS_MAGMA_NETHER_BRICK = create("storage_blocks/nether_brick/magma");
 			public static final TagKey<Block> STORAGE_BLOCKS_GHASTLY_NETHER_BRICK = create("storage_blocks/nether_brick/ghastly");
 			public static final TagKey<Block> STORAGE_BLOCKS_QUARTZ = create("storage_blocks/quartz");
 			public static final TagKey<Block> STORAGE_BLOCKS_WHITE_QUARTZ = create("storage_blocks/quartz/white");
@@ -261,19 +312,37 @@ public class MSTags {
 		public static final TagKey<Item> RED_SANDSTONE_BRICK_STAIRS = create("sandstone_brick_stairs/red");
 		public static final TagKey<Item> RED_SANDSTONE_BRICK_WALLS = create("sandstone_brick_walls/red");
 		
+		public static final TagKey<Item> WHITE_SANDSTONE = create("sandstone/white");
+		public static final TagKey<Item> WHITE_SANDSTONE_SLABS = create("sandstone_slabs/white");
+		public static final TagKey<Item> WHITE_SANDSTONE_STAIRS = create("sandstone_stairs/white");
+		public static final TagKey<Item> WHITE_SANDSTONE_WALLS = create("sandstone_walls/white");
+		public static final TagKey<Item> WHITE_SANDSTONE_BRICKS = create("sandstone_bricks/white");
+		public static final TagKey<Item> WHITE_SANDSTONE_BRICK_SLABS = create("sandstone_brick_slabs/white");
+		public static final TagKey<Item> WHITE_SANDSTONE_BRICK_STAIRS = create("sandstone_brick_stairs/white");
+		public static final TagKey<Item> WHITE_SANDSTONE_BRICK_WALLS = create("sandstone_brick_walls/white");
+		
+		public static final TagKey<Item> BLACK_SANDSTONE = create("sandstone/black");
+		public static final TagKey<Item> BLACK_SANDSTONE_SLABS = create("sandstone_slabs/black");
+		public static final TagKey<Item> BLACK_SANDSTONE_STAIRS = create("sandstone_stairs/black");
+		public static final TagKey<Item> BLACK_SANDSTONE_WALLS = create("sandstone_walls/black");
+		public static final TagKey<Item> BLACK_SANDSTONE_BRICKS = create("sandstone_bricks/black");
+		public static final TagKey<Item> BLACK_SANDSTONE_BRICK_SLABS = create("sandstone_brick_slabs/black");
+		public static final TagKey<Item> BLACK_SANDSTONE_BRICK_STAIRS = create("sandstone_brick_stairs/black");
+		public static final TagKey<Item> BLACK_SANDSTONE_BRICK_WALLS = create("sandstone_brick_walls/black");
+		
 		public static final TagKey<Item> PRISMARINE_BRICKS = create("prismarine_bricks");
 		public static final TagKey<Item> PRISMARINE_BRICK_SLABS = create("prismarine_brick_slabs");
 		public static final TagKey<Item> PRISMARINE_BRICK_STAIRS = create("prismarine_brick_stairs");
 		public static final TagKey<Item> PRISMARINE_BRICK_WALLS = create("prismarine_brick_walls");
 		
-		public static final TagKey<Item> SOUL_SANDSTONE = create("soul_sandstone");
-		public static final TagKey<Item> SOUL_SANDSTONE_SLABS = create("soul_sandstone_slabs");
-		public static final TagKey<Item> SOUL_SANDSTONE_STAIRS = create("soul_sandstone_stairs");
-		public static final TagKey<Item> SOUL_SANDSTONE_WALLS = create("soul_sandstone_walls");
-		public static final TagKey<Item> SOUL_SANDSTONE_BRICKS = create("soul_sandstone_bricks");
-		public static final TagKey<Item> SOUL_SANDSTONE_BRICK_SLABS = create("soul_sandstone_brick_slabs");
-		public static final TagKey<Item> SOUL_SANDSTONE_BRICK_STAIRS = create("soul_sandstone_brick_stairs");
-		public static final TagKey<Item> SOUL_SANDSTONE_BRICK_WALLS = create("soul_sandstone_brick_walls");
+		public static final TagKey<Item> SOUL_SANDSTONE = create("sandstone/soul");
+		public static final TagKey<Item> SOUL_SANDSTONE_SLABS = create("sandstone_slabs/soul");
+		public static final TagKey<Item> SOUL_SANDSTONE_STAIRS = create("sandstone_stairs/soul");
+		public static final TagKey<Item> SOUL_SANDSTONE_WALLS = create("sandstone_walls/soul");
+		public static final TagKey<Item> SOUL_SANDSTONE_BRICKS = create("sandstone_bricks/soul");
+		public static final TagKey<Item> SOUL_SANDSTONE_BRICK_SLABS = create("sandstone_brick_slabs/soul");
+		public static final TagKey<Item> SOUL_SANDSTONE_BRICK_STAIRS = create("sandstone_brick_stairs/soul");
+		public static final TagKey<Item> SOUL_SANDSTONE_BRICK_WALLS = create("sandstone_brick_walls/soul");
 		
 		public static final TagKey<Item> BONE_BLOCKS = create("bone_blocks");
 		public static final TagKey<Item> BONE_SLABS = create("bone_slabs");
@@ -329,6 +398,13 @@ public class MSTags {
 		public static final TagKey<Item> GLOWING_NETHER_BRICK_FENCES = create("nether_brick_fences/glowing");
 		public static final TagKey<Item> GLOWING_NETHER_BRICK_FENCE_GATES = create("nether_brick_fence_gates/glowing");
 		
+		public static final TagKey<Item> MAGMA_NETHER_BRICK_BLOCKS = create("nether_brick_blocks/magma");
+		public static final TagKey<Item> MAGMA_NETHER_BRICK_SLABS = create("nether_brick_slabs/magma");
+		public static final TagKey<Item> MAGMA_NETHER_BRICK_STAIRS = create("nether_brick_stairs/magma");
+		public static final TagKey<Item> MAGMA_NETHER_BRICK_WALLS = create("nether_brick_walls/magma");
+		public static final TagKey<Item> MAGMA_NETHER_BRICK_FENCES = create("nether_brick_fences/magma");
+		public static final TagKey<Item> MAGMA_NETHER_BRICK_FENCE_GATES = create("nether_brick_fence_gates/magma");
+		
 		public static final TagKey<Item> GHASTLY_NETHER_BRICK_BLOCKS = create("nether_brick_blocks/ghastly");
 		public static final TagKey<Item> GHASTLY_NETHER_BRICK_SLABS = create("nether_brick_slabs/ghastly");
 		public static final TagKey<Item> GHASTLY_NETHER_BRICK_STAIRS = create("nether_brick_stairs/ghastly");
@@ -345,6 +421,14 @@ public class MSTags {
 		public static final TagKey<Item> QUARTZ_BRICK_SLABS = create("quartz_brick_slabs");
 		public static final TagKey<Item> QUARTZ_BRICK_STAIRS = create("quartz_brick_stairs");
 		public static final TagKey<Item> QUARTZ_BRICK_WALLS = create("quartz_brick_walls");
+		
+		public static final TagKey<Item> OVERWORLD_NATURAL_SAND = create("overworld_natural_sand");
+		public static final TagKey<Item> OVERWORLD_NATURAL_SANDSTONE = create("overworld_natural_sandstone");
+		
+		public static final TagKey<Item> SUSPICIOUS_SAND = create("suspicious_sand");
+		public static final TagKey<Item> SUSPICIOUS_BLOCKS = create("suspicious_blocks");
+		
+		public static final TagKey<Item> FLINT_TOOL_MATERIALS = create("flint_tool_materials");
 		
 		public static TagKey<Item> create(String path) {
 			return MSTags.create(RegistryKeys.ITEM, path);
@@ -365,6 +449,20 @@ public class MSTags {
 			public static final TagKey<Item> DIORITE_COBBLESTONES = create("cobblestones/diorite");
 			public static final TagKey<Item> ANDESITE_COBBLESTONES = create("cobblestones/andesite");
 			
+			public static final TagKey<Item> WHITE_SANDS = create("sands/white");
+			public static final TagKey<Item> BLACK_SANDS = create("sands/black");
+			public static final TagKey<Item> SOUL_SANDS = create("sands/soul");
+			
+			public static final TagKey<Item> WHITE_SANDSTONE_BLOCKS = create("sandstone/white_blocks");
+			public static final TagKey<Item> WHITE_SANDSTONE_SLABS = create("sandstone/white_slabs");
+			public static final TagKey<Item> WHITE_SANDSTONE_STAIRS = create("sandstone/white_stairs");
+			public static final TagKey<Item> WHITE_SANDSTONE_WALLS = create("sandstone/white_walls");
+			
+			public static final TagKey<Item> BLACK_SANDSTONE_BLOCKS = create("sandstone/black_blocks");
+			public static final TagKey<Item> BLACK_SANDSTONE_SLABS = create("sandstone/black_slabs");
+			public static final TagKey<Item> BLACK_SANDSTONE_STAIRS = create("sandstone/black_stairs");
+			public static final TagKey<Item> BLACK_SANDSTONE_WALLS = create("sandstone/black_walls");
+			
 			public static final TagKey<Item> SOUL_SANDSTONE_BLOCKS = create("sandstone/soul_blocks");
 			public static final TagKey<Item> SOUL_SANDSTONE_SLABS = create("sandstone/soul_slabs");
 			public static final TagKey<Item> SOUL_SANDSTONE_STAIRS = create("sandstone/soul_stairs");
@@ -374,6 +472,8 @@ public class MSTags {
 			public static final TagKey<Item> STORAGE_BLOCKS_SAND = create("storage_blocks/sand");
 			public static final TagKey<Item> STORAGE_BLOCKS_COLORLESS_SAND = create("storage_blocks/sand/colorless");
 			public static final TagKey<Item> STORAGE_BLOCKS_RED_SAND = create("storage_blocks/sand/red");
+			public static final TagKey<Item> STORAGE_BLOCKS_WHITE_SAND = create("storage_blocks/sand/white");
+			public static final TagKey<Item> STORAGE_BLOCKS_BLACK_SAND = create("storage_blocks/sand/black");
 			public static final TagKey<Item> STORAGE_BLOCKS_SOUL_SAND = create("storage_blocks/sand/soul");
 			public static final TagKey<Item> STORAGE_BLOCKS_PRISMARINE_SHARD = create("storage_blocks/prismarine_shard");
 			public static final TagKey<Item> STORAGE_BLOCKS_NETHER_BRICK = create("storage_blocks/nether_brick");
@@ -384,6 +484,7 @@ public class MSTags {
 			public static final TagKey<Item> STORAGE_BLOCKS_SOUL_NETHER_BRICK = create("storage_blocks/nether_brick/soul");
 			public static final TagKey<Item> STORAGE_BLOCKS_BLAZING_NETHER_BRICK = create("storage_blocks/nether_brick/blazing");
 			public static final TagKey<Item> STORAGE_BLOCKS_GLOWING_NETHER_BRICK = create("storage_blocks/nether_brick/glowing");
+			public static final TagKey<Item> STORAGE_BLOCKS_MAGMA_NETHER_BRICK = create("storage_blocks/nether_brick/magma");
 			public static final TagKey<Item> STORAGE_BLOCKS_GHASTLY_NETHER_BRICK = create("storage_blocks/nether_brick/ghastly");
 			public static final TagKey<Item> STORAGE_BLOCKS_QUARTZ = create("storage_blocks/quartz");
 			public static final TagKey<Item> STORAGE_BLOCKS_WHITE_QUARTZ = create("storage_blocks/quartz/white");

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mountainspring:block/black_sandstone_slab"
+    },
+    "type=double": {
+      "model": "mountainspring:block/black_sandstone"
+    },
+    "type=top": {
+      "model": "mountainspring:block/black_sandstone_slab_top"
+    }
+  }
+}

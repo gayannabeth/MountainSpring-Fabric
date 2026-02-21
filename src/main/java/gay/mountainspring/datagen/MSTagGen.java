@@ -16,6 +16,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider.ItemTagProv
 import net.fabricmc.fabric.api.tag.convention.v2.ConventionalBlockTags;
 import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
@@ -177,6 +178,98 @@ public class MSTagGen {
 					MSBlocks.MOSSY_RED_SANDSTONE_BRICK_WALL,
 					MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_WALL);
 			
+			this.getOrCreateTagBuilder(MSTags.Blocks.WHITE_SANDSTONE_BRICKS)
+			.add(MSBlocks.WHITE_SANDSTONE_BRICKS,
+					MSBlocks.CRACKED_WHITE_SANDSTONE_BRICKS,
+					MSBlocks.MOSSY_WHITE_SANDSTONE_BRICKS,
+					MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICKS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.WHITE_SANDSTONE_BRICK_SLABS)
+			.add(MSBlocks.WHITE_SANDSTONE_BRICK_SLAB,
+					MSBlocks.CRACKED_WHITE_SANDSTONE_BRICK_SLAB,
+					MSBlocks.MOSSY_WHITE_SANDSTONE_BRICK_SLAB,
+					MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_SLAB);
+			this.getOrCreateTagBuilder(MSTags.Blocks.WHITE_SANDSTONE_BRICK_STAIRS)
+			.add(MSBlocks.WHITE_SANDSTONE_BRICK_STAIRS,
+					MSBlocks.CRACKED_WHITE_SANDSTONE_BRICK_STAIRS,
+					MSBlocks.MOSSY_WHITE_SANDSTONE_BRICK_STAIRS,
+					MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_STAIRS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.WHITE_SANDSTONE_BRICK_WALLS)
+			.add(MSBlocks.WHITE_SANDSTONE_BRICK_WALL,
+					MSBlocks.CRACKED_WHITE_SANDSTONE_BRICK_WALL,
+					MSBlocks.MOSSY_WHITE_SANDSTONE_BRICK_WALL,
+					MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_WALL);
+			
+			this.getOrCreateTagBuilder(MSTags.Blocks.WHITE_SANDSTONE)
+			.add(MSBlocks.WHITE_SANDSTONE,
+					MSBlocks.CHISELED_WHITE_SANDSTONE,
+					MSBlocks.SMOOTH_WHITE_SANDSTONE,
+					MSBlocks.CUT_WHITE_SANDSTONE)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_BRICKS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.WHITE_SANDSTONE_SLABS)
+			.add(MSBlocks.WHITE_SANDSTONE_SLAB,
+					MSBlocks.CHISELED_WHITE_SANDSTONE_SLAB,
+					MSBlocks.SMOOTH_WHITE_SANDSTONE_SLAB,
+					MSBlocks.CUT_WHITE_SANDSTONE_SLAB)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_BRICK_SLABS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.WHITE_SANDSTONE_STAIRS)
+			.add(MSBlocks.WHITE_SANDSTONE_STAIRS,
+					MSBlocks.CHISELED_WHITE_SANDSTONE_STAIRS,
+					MSBlocks.SMOOTH_WHITE_SANDSTONE_STAIRS,
+					MSBlocks.CUT_WHITE_SANDSTONE_STAIRS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_BRICK_STAIRS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.WHITE_SANDSTONE_WALLS)
+			.add(MSBlocks.WHITE_SANDSTONE_WALL,
+					MSBlocks.CHISELED_WHITE_SANDSTONE_WALL,
+					MSBlocks.SMOOTH_WHITE_SANDSTONE_WALL,
+					MSBlocks.CUT_WHITE_SANDSTONE_WALL)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_BRICK_WALLS);
+			
+			this.getOrCreateTagBuilder(MSTags.Blocks.BLACK_SANDSTONE_BRICKS)
+			.add(MSBlocks.BLACK_SANDSTONE_BRICKS,
+					MSBlocks.CRACKED_BLACK_SANDSTONE_BRICKS,
+					MSBlocks.MOSSY_BLACK_SANDSTONE_BRICKS,
+					MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICKS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.BLACK_SANDSTONE_BRICK_SLABS)
+			.add(MSBlocks.BLACK_SANDSTONE_BRICK_SLAB,
+					MSBlocks.CRACKED_BLACK_SANDSTONE_BRICK_SLAB,
+					MSBlocks.MOSSY_BLACK_SANDSTONE_BRICK_SLAB,
+					MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_SLAB);
+			this.getOrCreateTagBuilder(MSTags.Blocks.BLACK_SANDSTONE_BRICK_STAIRS)
+			.add(MSBlocks.BLACK_SANDSTONE_BRICK_STAIRS,
+					MSBlocks.CRACKED_BLACK_SANDSTONE_BRICK_STAIRS,
+					MSBlocks.MOSSY_BLACK_SANDSTONE_BRICK_STAIRS,
+					MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_STAIRS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.BLACK_SANDSTONE_BRICK_WALLS)
+			.add(MSBlocks.BLACK_SANDSTONE_BRICK_WALL,
+					MSBlocks.CRACKED_BLACK_SANDSTONE_BRICK_WALL,
+					MSBlocks.MOSSY_BLACK_SANDSTONE_BRICK_WALL,
+					MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_WALL);
+			
+			this.getOrCreateTagBuilder(MSTags.Blocks.BLACK_SANDSTONE)
+			.add(MSBlocks.BLACK_SANDSTONE,
+					MSBlocks.CHISELED_BLACK_SANDSTONE,
+					MSBlocks.SMOOTH_BLACK_SANDSTONE,
+					MSBlocks.CUT_BLACK_SANDSTONE)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_BRICKS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.BLACK_SANDSTONE_SLABS)
+			.add(MSBlocks.BLACK_SANDSTONE_SLAB,
+					MSBlocks.CHISELED_BLACK_SANDSTONE_SLAB,
+					MSBlocks.SMOOTH_BLACK_SANDSTONE_SLAB,
+					MSBlocks.CUT_BLACK_SANDSTONE_SLAB)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_BRICK_SLABS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.BLACK_SANDSTONE_STAIRS)
+			.add(MSBlocks.BLACK_SANDSTONE_STAIRS,
+					MSBlocks.CHISELED_BLACK_SANDSTONE_STAIRS,
+					MSBlocks.SMOOTH_BLACK_SANDSTONE_STAIRS,
+					MSBlocks.CUT_BLACK_SANDSTONE_STAIRS)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_BRICK_STAIRS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.BLACK_SANDSTONE_WALLS)
+			.add(MSBlocks.BLACK_SANDSTONE_WALL,
+					MSBlocks.CHISELED_BLACK_SANDSTONE_WALL,
+					MSBlocks.SMOOTH_BLACK_SANDSTONE_WALL,
+					MSBlocks.CUT_BLACK_SANDSTONE_WALL)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_BRICK_WALLS);
+			
 			this.getOrCreateTagBuilder(MSTags.Blocks.SOUL_SANDSTONE_BRICKS)
 			.add(MSBlocks.SOUL_SANDSTONE_BRICKS,
 					MSBlocks.CRACKED_SOUL_SANDSTONE_BRICKS,
@@ -226,18 +319,26 @@ public class MSTagGen {
 			this.getOrCreateTagBuilder(MSTags.Blocks.SANDSTONE_BRICKS)
 			.addTag(MSTags.Blocks.BEIGE_SANDSTONE_BRICKS)
 			.addTag(MSTags.Blocks.RED_SANDSTONE_BRICKS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_BRICKS)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_BRICKS)
 			.addTag(MSTags.Blocks.SOUL_SANDSTONE_BRICKS);
 			this.getOrCreateTagBuilder(MSTags.Blocks.SANDSTONE_BRICK_SLABS)
 			.addTag(MSTags.Blocks.BEIGE_SANDSTONE_BRICK_SLABS)
 			.addTag(MSTags.Blocks.RED_SANDSTONE_BRICK_SLABS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_BRICK_SLABS)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_BRICK_SLABS)
 			.addTag(MSTags.Blocks.SOUL_SANDSTONE_BRICK_SLABS);
 			this.getOrCreateTagBuilder(MSTags.Blocks.SANDSTONE_BRICK_STAIRS)
 			.addTag(MSTags.Blocks.BEIGE_SANDSTONE_BRICK_STAIRS)
 			.addTag(MSTags.Blocks.RED_SANDSTONE_BRICK_STAIRS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_BRICK_STAIRS)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_BRICK_STAIRS)
 			.addTag(MSTags.Blocks.SOUL_SANDSTONE_BRICK_STAIRS);
 			this.getOrCreateTagBuilder(MSTags.Blocks.SANDSTONE_BRICK_WALLS)
 			.addTag(MSTags.Blocks.BEIGE_SANDSTONE_BRICK_WALLS)
 			.addTag(MSTags.Blocks.RED_SANDSTONE_BRICK_WALLS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_BRICK_WALLS)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_BRICK_WALLS)
 			.addTag(MSTags.Blocks.SOUL_SANDSTONE_BRICK_WALLS);
 			
 			this.getOrCreateTagBuilder(MSTags.Blocks.PRISMARINE_BRICKS)
@@ -455,6 +556,33 @@ public class MSTagGen {
 			.add(MSBlocks.GLOWING_NETHER_BRICK_FENCE_GATE,
 					MSBlocks.CRACKED_GLOWING_NETHER_BRICK_FENCE_GATE);
 			
+			this.getOrCreateTagBuilder(MSTags.Blocks.MAGMA_NETHER_BRICK_BLOCKS)
+			.add(MSBlocks.MAGMA_NETHER_BRICKS,
+					MSBlocks.CRACKED_MAGMA_NETHER_BRICKS,
+					MSBlocks.CHISELED_MAGMA_NETHER_BRICKS,
+					MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICKS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.MAGMA_NETHER_BRICK_SLABS)
+			.add(MSBlocks.MAGMA_NETHER_BRICK_SLAB,
+					MSBlocks.CRACKED_MAGMA_NETHER_BRICK_SLAB,
+					MSBlocks.CHISELED_MAGMA_NETHER_BRICK_SLAB,
+					MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICK_SLAB);
+			this.getOrCreateTagBuilder(MSTags.Blocks.MAGMA_NETHER_BRICK_STAIRS)
+			.add(MSBlocks.MAGMA_NETHER_BRICK_STAIRS,
+					MSBlocks.CRACKED_MAGMA_NETHER_BRICK_STAIRS,
+					MSBlocks.CHISELED_MAGMA_NETHER_BRICK_STAIRS,
+					MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICK_STAIRS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.MAGMA_NETHER_BRICK_WALLS)
+			.add(MSBlocks.MAGMA_NETHER_BRICK_WALL,
+					MSBlocks.CRACKED_MAGMA_NETHER_BRICK_WALL,
+					MSBlocks.CHISELED_MAGMA_NETHER_BRICK_WALL,
+					MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICK_WALL);
+			this.getOrCreateTagBuilder(MSTags.Blocks.MAGMA_NETHER_BRICK_FENCES)
+			.add(MSBlocks.MAGMA_NETHER_BRICK_FENCE,
+					MSBlocks.CRACKED_MAGMA_NETHER_BRICK_FENCE);
+			this.getOrCreateTagBuilder(MSTags.Blocks.MAGMA_NETHER_BRICK_FENCE_GATES)
+			.add(MSBlocks.MAGMA_NETHER_BRICK_FENCE_GATE,
+					MSBlocks.CRACKED_MAGMA_NETHER_BRICK_FENCE_GATE);
+			
 			this.getOrCreateTagBuilder(MSTags.Blocks.GHASTLY_NETHER_BRICK_BLOCKS)
 			.add(MSBlocks.GHASTLY_NETHER_BRICKS,
 					MSBlocks.CRACKED_GHASTLY_NETHER_BRICKS,
@@ -510,6 +638,84 @@ public class MSTagGen {
 			
 			this.getOrCreateTagBuilder(MSTags.Blocks.SUPPORTS_WARPED_WART)
 			.forceAddTag(AquiferTags.Blocks.NETHER_WART_GROWABLE);
+			
+			this.getOrCreateTagBuilder(MSTags.Blocks.OVERWORLD_NATURAL_SAND)
+			.add(Blocks.SAND,
+					Blocks.RED_SAND,
+					MSBlocks.WHITE_SAND,
+					MSBlocks.BLACK_SAND);
+			this.getOrCreateTagBuilder(MSTags.Blocks.OVERWORLD_NATURAL_SANDSTONE)
+			.add(Blocks.SANDSTONE,
+					Blocks.RED_SANDSTONE,
+					MSBlocks.WHITE_SANDSTONE,
+					MSBlocks.BLACK_SANDSTONE);
+			
+			this.getOrCreateTagBuilder(MSTags.Blocks.SUSPICIOUS_SAND)
+			.add(Blocks.SUSPICIOUS_SAND,
+					MSBlocks.SUSPICIOUS_RED_SAND,
+					MSBlocks.SUSPICIOUS_WHITE_SAND,
+					MSBlocks.SUSPICIOUS_BLACK_SAND);
+			this.getOrCreateTagBuilder(MSTags.Blocks.SUSPICIOUS_BLOCKS)
+			.add(Blocks.SUSPICIOUS_GRAVEL)
+			.addTag(MSTags.Blocks.SUSPICIOUS_SAND);
+			
+			this.getOrCreateTagBuilder(MSTags.Blocks.NEEDS_FLINT_TOOL)
+			.add(Blocks.LAPIS_BLOCK,
+					SSWPBlocks.LAPIS_SLAB,
+					SSWPBlocks.LAPIS_STAIRS,
+					SSWPBlocks.LAPIS_WALL,
+					Blocks.RAW_COPPER_BLOCK,
+					SSWPBlocks.RAW_COPPER_SLAB,
+					SSWPBlocks.RAW_COPPER_STAIRS,
+					SSWPBlocks.RAW_COPPER_WALL,
+					Blocks.LIGHTNING_ROD,
+					Blocks.CRAFTER)
+			.forceAddTag(BlockTags.COPPER_ORES)
+			.forceAddTag(BlockTags.LAPIS_ORES)
+			.forceAddTag(SSWPTags.Blocks.COPPER_BLOCKS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_BARS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_BULBS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_BUTTONS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_CAULDRONS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_CHAINS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_DOORS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_FENCES)
+			.forceAddTag(SSWPTags.Blocks.COPPER_FENCE_GATES)
+			.forceAddTag(SSWPTags.Blocks.COPPER_LADDERS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_LANTERNS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_ORE_SLABS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_ORE_STAIRS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_ORE_WALLS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_PRESSURE_PLATES)
+			.forceAddTag(SSWPTags.Blocks.COPPER_SLABS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_STAIRS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_TRAPDOORS)
+			.forceAddTag(SSWPTags.Blocks.COPPER_WALLS)
+			.forceAddTag(SSWPTags.Blocks.ALL_COPPER_SIGNS);
+			
+			this.getOrCreateTagBuilder(MSTags.Blocks.INCORRECT_FOR_FLINT_TOOL)
+			.add(Blocks.IRON_BLOCK,
+					Blocks.RAW_IRON_BLOCK,
+					SSWPBlocks.IRON_BUTTON,
+					SSWPBlocks.IRON_FENCE,
+					SSWPBlocks.IRON_FENCE_GATE,
+					SSWPBlocks.IRON_HANGING_SIGN,
+					SSWPBlocks.IRON_LADDER,
+					SSWPBlocks.IRON_SIGN,
+					SSWPBlocks.IRON_SLAB,
+					SSWPBlocks.IRON_STAIRS,
+					SSWPBlocks.IRON_WALL,
+					SSWPBlocks.IRON_WALL_HANGING_SIGN,
+					SSWPBlocks.IRON_WALL_SIGN,
+					SSWPBlocks.RAW_IRON_SLAB,
+					SSWPBlocks.RAW_IRON_STAIRS,
+					SSWPBlocks.RAW_IRON_WALL)
+			.forceAddTag(BlockTags.IRON_ORES)
+			.forceAddTag(SSWPTags.Blocks.IRON_ORE_SLABS)
+			.forceAddTag(SSWPTags.Blocks.IRON_ORE_STAIRS)
+			.forceAddTag(SSWPTags.Blocks.IRON_ORE_WALLS)
+			.forceAddTag(BlockTags.NEEDS_IRON_TOOL)
+			.forceAddTag(BlockTags.NEEDS_DIAMOND_TOOL);
 			
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.STONE)
 			.add(MSBlocks.MOSSY_STONE);
@@ -696,15 +902,23 @@ public class MSTagGen {
 			
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.SANDSTONE)
 			.addTag(MSTags.Blocks.SANDSTONE_BRICKS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE)
 			.addTag(MSTags.Blocks.SOUL_SANDSTONE);
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.SANDSTONE_SLABS)
 			.addTag(MSTags.Blocks.SANDSTONE_BRICK_SLABS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_SLABS)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_SLABS)
 			.addTag(MSTags.Blocks.SOUL_SANDSTONE_SLABS);
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.SANDSTONE_STAIRS)
 			.addTag(MSTags.Blocks.SANDSTONE_BRICK_STAIRS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_STAIRS)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_STAIRS)
 			.addTag(MSTags.Blocks.SOUL_SANDSTONE_STAIRS);
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.SANDSTONE_WALLS)
 			.addTag(MSTags.Blocks.SANDSTONE_BRICK_WALLS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_WALLS)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_WALLS)
 			.addTag(MSTags.Blocks.SOUL_SANDSTONE_WALLS);
 			
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.PRISMARINE)
@@ -724,6 +938,7 @@ public class MSTagGen {
 			.addTag(MSTags.Blocks.SOUL_NETHER_BRICK_BLOCKS)
 			.addTag(MSTags.Blocks.BLAZING_NETHER_BRICK_BLOCKS)
 			.addTag(MSTags.Blocks.GLOWING_NETHER_BRICK_BLOCKS)
+			.addTag(MSTags.Blocks.MAGMA_NETHER_BRICK_BLOCKS)
 			.addTag(MSTags.Blocks.GHASTLY_NETHER_BRICK_BLOCKS);
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.NETHER_BRICK_SLABS)
 			.addTag(MSTags.Blocks.UNCOLORED_NETHER_BRICK_SLABS)
@@ -733,6 +948,7 @@ public class MSTagGen {
 			.addTag(MSTags.Blocks.SOUL_NETHER_BRICK_SLABS)
 			.addTag(MSTags.Blocks.BLAZING_NETHER_BRICK_SLABS)
 			.addTag(MSTags.Blocks.GLOWING_NETHER_BRICK_SLABS)
+			.addTag(MSTags.Blocks.MAGMA_NETHER_BRICK_SLABS)
 			.addTag(MSTags.Blocks.GHASTLY_NETHER_BRICK_SLABS);
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.NETHER_BRICK_STAIRS)
 			.addTag(MSTags.Blocks.UNCOLORED_NETHER_BRICK_STAIRS)
@@ -742,6 +958,7 @@ public class MSTagGen {
 			.addTag(MSTags.Blocks.SOUL_NETHER_BRICK_STAIRS)
 			.addTag(MSTags.Blocks.BLAZING_NETHER_BRICK_STAIRS)
 			.addTag(MSTags.Blocks.GLOWING_NETHER_BRICK_STAIRS)
+			.addTag(MSTags.Blocks.MAGMA_NETHER_BRICK_STAIRS)
 			.addTag(MSTags.Blocks.GHASTLY_NETHER_BRICK_STAIRS);
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.NETHER_BRICK_WALLS)
 			.addTag(MSTags.Blocks.UNCOLORED_NETHER_BRICK_WALLS)
@@ -751,6 +968,7 @@ public class MSTagGen {
 			.addTag(MSTags.Blocks.SOUL_NETHER_BRICK_WALLS)
 			.addTag(MSTags.Blocks.BLAZING_NETHER_BRICK_WALLS)
 			.addTag(MSTags.Blocks.GLOWING_NETHER_BRICK_WALLS)
+			.addTag(MSTags.Blocks.MAGMA_NETHER_BRICK_WALLS)
 			.addTag(MSTags.Blocks.GHASTLY_NETHER_BRICK_WALLS);
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.NETHER_BRICK_FENCES)
 			.addTag(MSTags.Blocks.UNCOLORED_NETHER_BRICK_FENCES)
@@ -760,6 +978,7 @@ public class MSTagGen {
 			.addTag(MSTags.Blocks.SOUL_NETHER_BRICK_FENCES)
 			.addTag(MSTags.Blocks.BLAZING_NETHER_BRICK_FENCES)
 			.addTag(MSTags.Blocks.GLOWING_NETHER_BRICK_FENCES)
+			.addTag(MSTags.Blocks.MAGMA_NETHER_BRICK_FENCES)
 			.addTag(MSTags.Blocks.GHASTLY_NETHER_BRICK_FENCES);
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.NETHER_BRICK_FENCE_GATES)
 			.addTag(MSTags.Blocks.UNCOLORED_NETHER_BRICK_FENCE_GATES)
@@ -769,6 +988,7 @@ public class MSTagGen {
 			.addTag(MSTags.Blocks.SOUL_NETHER_BRICK_FENCE_GATES)
 			.addTag(MSTags.Blocks.BLAZING_NETHER_BRICK_FENCE_GATES)
 			.addTag(MSTags.Blocks.GLOWING_NETHER_BRICK_FENCE_GATES)
+			.addTag(MSTags.Blocks.MAGMA_NETHER_BRICK_FENCE_GATES)
 			.addTag(MSTags.Blocks.GHASTLY_NETHER_BRICK_FENCE_GATES);
 			
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.QUARTZ_BLOCKS)
@@ -886,6 +1106,10 @@ public class MSTagGen {
 			.addTag(MSTags.Blocks.BONE_WALLS)
 			.addTag(MSTags.Blocks.END_STONE_BRICK_WALLS);
 			
+			this.getOrCreateTagBuilder(BlockTags.SAND)
+			.addTag(MSTags.Blocks.OVERWORLD_NATURAL_SAND)
+			.addTag(MSTags.Blocks.SUSPICIOUS_SAND);
+			
 			this.getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
 			.addTag(MSTags.Blocks.BRICK_BLOCKS)
 			.addTag(MSTags.Blocks.BRICK_SLABS)
@@ -903,6 +1127,35 @@ public class MSTagGen {
 			.addTag(MSTags.Blocks.END_STONE_BRICK_SLABS)
 			.addTag(MSTags.Blocks.END_STONE_BRICK_STAIRS)
 			.addTag(MSTags.Blocks.END_STONE_BRICK_WALLS);
+			
+			this.getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+			.addTag(MSTags.Blocks.OVERWORLD_NATURAL_SAND)
+			.addTag(MSTags.Blocks.SUSPICIOUS_SAND);
+			
+			this.getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
+			.addTag(MSTags.Blocks.NEEDS_FLINT_TOOL);
+			
+			this.getOrCreateTagBuilder(BlockTags.AZALEA_ROOT_REPLACEABLE)
+			.addTag(MSTags.Blocks.OVERWORLD_NATURAL_SAND);
+			
+			this.getOrCreateTagBuilder(BlockTags.ENDERMAN_HOLDABLE)
+			.addTag(MSTags.Blocks.OVERWORLD_NATURAL_SAND);
+			
+			this.getOrCreateTagBuilder(BlockTags.LUSH_GROUND_REPLACEABLE)
+			.addTag(MSTags.Blocks.OVERWORLD_NATURAL_SAND);
+			
+			this.getOrCreateTagBuilder(BlockTags.NETHER_CARVER_REPLACEABLES)
+			.add(MSBlocks.SOUL_SANDSTONE);
+			
+			this.getOrCreateTagBuilder(BlockTags.OVERWORLD_CARVER_REPLACEABLES)
+			.addTag(MSTags.Blocks.OVERWORLD_NATURAL_SANDSTONE);
+			
+			this.getOrCreateTagBuilder(BlockTags.SCULK_REPLACEABLE)
+			.addTag(MSTags.Blocks.OVERWORLD_NATURAL_SAND)
+			.addTag(MSTags.Blocks.OVERWORLD_NATURAL_SANDSTONE);
+			
+			this.getOrCreateTagBuilder(BlockTags.SMELTS_TO_GLASS)
+			.addTag(MSTags.Blocks.OVERWORLD_NATURAL_SAND);
 			
 			this.getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS)
 			.addTag(MSTags.Blocks.SOUL_SANDSTONE)
@@ -940,6 +1193,33 @@ public class MSTagGen {
 			.add(MSBlocks.COBBLED_ANDESITE,
 					MSBlocks.MOSSY_COBBLED_ANDESITE);
 			
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.SOUL_SANDS)
+			.add(Blocks.SOUL_SAND);
+			
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.WHITE_SANDS)
+			.add(MSBlocks.WHITE_SAND);
+			
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.BLACK_SANDS)
+			.add(MSBlocks.BLACK_SAND);
+			
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.WHITE_SANDSTONE_BLOCKS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE);
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.WHITE_SANDSTONE_SLABS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_SLABS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.WHITE_SANDSTONE_STAIRS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_STAIRS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.WHITE_SANDSTONE_WALLS)
+			.addTag(MSTags.Blocks.WHITE_SANDSTONE_WALLS);
+			
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.BLACK_SANDSTONE_BLOCKS)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE);
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.BLACK_SANDSTONE_SLABS)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_SLABS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.BLACK_SANDSTONE_STAIRS)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_STAIRS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.BLACK_SANDSTONE_WALLS)
+			.addTag(MSTags.Blocks.BLACK_SANDSTONE_WALLS);
+			
 			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.SOUL_SANDSTONE_BLOCKS)
 			.addTag(MSTags.Blocks.SOUL_SANDSTONE);
 			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.SOUL_SANDSTONE_SLABS)
@@ -956,11 +1236,17 @@ public class MSTagGen {
 			.add(Blocks.SANDSTONE);
 			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.STORAGE_BLOCKS_RED_SAND)
 			.add(Blocks.RED_SANDSTONE);
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.STORAGE_BLOCKS_WHITE_SAND)
+			.add(MSBlocks.WHITE_SANDSTONE);
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.STORAGE_BLOCKS_BLACK_SAND)
+			.add(MSBlocks.BLACK_SANDSTONE);
 			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.STORAGE_BLOCKS_SOUL_SAND)
 			.add(MSBlocks.SOUL_SANDSTONE);
 			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.STORAGE_BLOCKS_SAND)
 			.addTag(MSTags.Blocks.Conventional.STORAGE_BLOCKS_COLORLESS_SAND)
 			.addTag(MSTags.Blocks.Conventional.STORAGE_BLOCKS_RED_SAND)
+			.addTag(MSTags.Blocks.Conventional.STORAGE_BLOCKS_WHITE_SAND)
+			.addTag(MSTags.Blocks.Conventional.STORAGE_BLOCKS_BLACK_SAND)
 			.addTag(MSTags.Blocks.Conventional.STORAGE_BLOCKS_SOUL_SAND);
 			
 			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.STORAGE_BLOCKS_PRISMARINE_SHARD)
@@ -981,6 +1267,8 @@ public class MSTagGen {
 			.add(MSBlocks.BLAZING_NETHER_BRICKS);
 			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.STORAGE_BLOCKS_GLOWING_NETHER_BRICK)
 			.add(MSBlocks.GLOWING_NETHER_BRICKS);
+			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.STORAGE_BLOCKS_MAGMA_NETHER_BRICK)
+			.add(MSBlocks.MAGMA_NETHER_BRICKS);
 			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.STORAGE_BLOCKS_GHASTLY_NETHER_BRICK)
 			.add(MSBlocks.GHASTLY_NETHER_BRICKS);
 			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.STORAGE_BLOCKS_NETHER_BRICK)
@@ -991,6 +1279,7 @@ public class MSTagGen {
 			.addTag(MSTags.Blocks.Conventional.STORAGE_BLOCKS_SOUL_NETHER_BRICK)
 			.addTag(MSTags.Blocks.Conventional.STORAGE_BLOCKS_BLAZING_NETHER_BRICK)
 			.addTag(MSTags.Blocks.Conventional.STORAGE_BLOCKS_GLOWING_NETHER_BRICK)
+			.addTag(MSTags.Blocks.Conventional.STORAGE_BLOCKS_MAGMA_NETHER_BRICK)
 			.addTag(MSTags.Blocks.Conventional.STORAGE_BLOCKS_GHASTLY_NETHER_BRICK);
 			
 			this.getOrCreateTagBuilder(MSTags.Blocks.Conventional.STORAGE_BLOCKS_WHITE_QUARTZ)
@@ -1044,6 +1333,8 @@ public class MSTagGen {
 			.add(Blocks.MELON);
 			
 			this.getOrCreateTagBuilder(SSWPTags.Blocks.Conventional.SANDSTONE_WALLS)
+			.addTag(MSTags.Blocks.Conventional.WHITE_SANDSTONE_WALLS)
+			.addTag(MSTags.Blocks.Conventional.BLACK_SANDSTONE_WALLS)
 			.addTag(MSTags.Blocks.Conventional.SOUL_SANDSTONE_WALLS);
 			
 			this.getOrCreateTagBuilder(ConventionalBlockTags.MOSSY_COBBLESTONES)
@@ -1064,11 +1355,22 @@ public class MSTagGen {
 					MSBlocks.INFESTED_MOSSY_COBBLED_ANDESITE,
 					MSBlocks.INFESTED_MOSSY_COBBLED_DEEPSLATE);
 			
+			this.getOrCreateTagBuilder(ConventionalBlockTags.SANDS)
+			.addTag(MSTags.Blocks.Conventional.WHITE_SANDS)
+			.addTag(MSTags.Blocks.Conventional.BLACK_SANDS)
+			.addTag(MSTags.Blocks.Conventional.SOUL_SANDS);
+			
 			this.getOrCreateTagBuilder(ConventionalBlockTags.SANDSTONE_BLOCKS)
+			.addTag(MSTags.Blocks.Conventional.WHITE_SANDSTONE_BLOCKS)
+			.addTag(MSTags.Blocks.Conventional.BLACK_SANDSTONE_BLOCKS)
 			.addTag(MSTags.Blocks.Conventional.SOUL_SANDSTONE_BLOCKS);
 			this.getOrCreateTagBuilder(ConventionalBlockTags.SANDSTONE_SLABS)
+			.addTag(MSTags.Blocks.Conventional.WHITE_SANDSTONE_SLABS)
+			.addTag(MSTags.Blocks.Conventional.BLACK_SANDSTONE_SLABS)
 			.addTag(MSTags.Blocks.Conventional.SOUL_SANDSTONE_SLABS);
 			this.getOrCreateTagBuilder(ConventionalBlockTags.SANDSTONE_STAIRS)
+			.addTag(MSTags.Blocks.Conventional.WHITE_SANDSTONE_STAIRS)
+			.addTag(MSTags.Blocks.Conventional.BLACK_SANDSTONE_STAIRS)
 			.addTag(MSTags.Blocks.Conventional.SOUL_SANDSTONE_STAIRS);
 			
 			this.getOrCreateTagBuilder(ConventionalBlockTags.STORAGE_BLOCKS_BONE_MEAL)
@@ -1133,6 +1435,22 @@ public class MSTagGen {
 			this.copy(MSTags.Blocks.RED_SANDSTONE_BRICK_SLABS, MSTags.Items.RED_SANDSTONE_BRICK_SLABS);
 			this.copy(MSTags.Blocks.RED_SANDSTONE_BRICK_STAIRS, MSTags.Items.RED_SANDSTONE_BRICK_STAIRS);
 			this.copy(MSTags.Blocks.RED_SANDSTONE_BRICK_WALLS, MSTags.Items.RED_SANDSTONE_BRICK_WALLS);
+			this.copy(MSTags.Blocks.WHITE_SANDSTONE, MSTags.Items.WHITE_SANDSTONE);
+			this.copy(MSTags.Blocks.WHITE_SANDSTONE_SLABS, MSTags.Items.WHITE_SANDSTONE_SLABS);
+			this.copy(MSTags.Blocks.WHITE_SANDSTONE_STAIRS, MSTags.Items.WHITE_SANDSTONE_STAIRS);
+			this.copy(MSTags.Blocks.WHITE_SANDSTONE_WALLS, MSTags.Items.WHITE_SANDSTONE_WALLS);
+			this.copy(MSTags.Blocks.WHITE_SANDSTONE_BRICKS, MSTags.Items.WHITE_SANDSTONE_BRICKS);
+			this.copy(MSTags.Blocks.WHITE_SANDSTONE_BRICK_SLABS, MSTags.Items.WHITE_SANDSTONE_BRICK_SLABS);
+			this.copy(MSTags.Blocks.WHITE_SANDSTONE_BRICK_STAIRS, MSTags.Items.WHITE_SANDSTONE_BRICK_STAIRS);
+			this.copy(MSTags.Blocks.WHITE_SANDSTONE_BRICK_WALLS, MSTags.Items.WHITE_SANDSTONE_BRICK_WALLS);
+			this.copy(MSTags.Blocks.BLACK_SANDSTONE, MSTags.Items.BLACK_SANDSTONE);
+			this.copy(MSTags.Blocks.BLACK_SANDSTONE_SLABS, MSTags.Items.BLACK_SANDSTONE_SLABS);
+			this.copy(MSTags.Blocks.BLACK_SANDSTONE_STAIRS, MSTags.Items.BLACK_SANDSTONE_STAIRS);
+			this.copy(MSTags.Blocks.BLACK_SANDSTONE_WALLS, MSTags.Items.BLACK_SANDSTONE_WALLS);
+			this.copy(MSTags.Blocks.BLACK_SANDSTONE_BRICKS, MSTags.Items.BLACK_SANDSTONE_BRICKS);
+			this.copy(MSTags.Blocks.BLACK_SANDSTONE_BRICK_SLABS, MSTags.Items.BLACK_SANDSTONE_BRICK_SLABS);
+			this.copy(MSTags.Blocks.BLACK_SANDSTONE_BRICK_STAIRS, MSTags.Items.BLACK_SANDSTONE_BRICK_STAIRS);
+			this.copy(MSTags.Blocks.BLACK_SANDSTONE_BRICK_WALLS, MSTags.Items.BLACK_SANDSTONE_BRICK_WALLS);
 			this.copy(MSTags.Blocks.PRISMARINE_BRICKS, MSTags.Items.PRISMARINE_BRICKS);
 			this.copy(MSTags.Blocks.PRISMARINE_BRICK_SLABS, MSTags.Items.PRISMARINE_BRICK_SLABS);
 			this.copy(MSTags.Blocks.PRISMARINE_BRICK_STAIRS, MSTags.Items.PRISMARINE_BRICK_STAIRS);
@@ -1191,6 +1509,12 @@ public class MSTagGen {
 			this.copy(MSTags.Blocks.GLOWING_NETHER_BRICK_WALLS, MSTags.Items.GLOWING_NETHER_BRICK_WALLS);
 			this.copy(MSTags.Blocks.GLOWING_NETHER_BRICK_FENCES, MSTags.Items.GLOWING_NETHER_BRICK_FENCES);
 			this.copy(MSTags.Blocks.GLOWING_NETHER_BRICK_FENCE_GATES, MSTags.Items.GLOWING_NETHER_BRICK_FENCE_GATES);
+			this.copy(MSTags.Blocks.MAGMA_NETHER_BRICK_BLOCKS, MSTags.Items.MAGMA_NETHER_BRICK_BLOCKS);
+			this.copy(MSTags.Blocks.MAGMA_NETHER_BRICK_SLABS, MSTags.Items.MAGMA_NETHER_BRICK_SLABS);
+			this.copy(MSTags.Blocks.MAGMA_NETHER_BRICK_STAIRS, MSTags.Items.MAGMA_NETHER_BRICK_STAIRS);
+			this.copy(MSTags.Blocks.MAGMA_NETHER_BRICK_WALLS, MSTags.Items.MAGMA_NETHER_BRICK_WALLS);
+			this.copy(MSTags.Blocks.MAGMA_NETHER_BRICK_FENCES, MSTags.Items.MAGMA_NETHER_BRICK_FENCES);
+			this.copy(MSTags.Blocks.MAGMA_NETHER_BRICK_FENCE_GATES, MSTags.Items.MAGMA_NETHER_BRICK_FENCE_GATES);
 			this.copy(MSTags.Blocks.GHASTLY_NETHER_BRICK_BLOCKS, MSTags.Items.GHASTLY_NETHER_BRICK_BLOCKS);
 			this.copy(MSTags.Blocks.GHASTLY_NETHER_BRICK_SLABS, MSTags.Items.GHASTLY_NETHER_BRICK_SLABS);
 			this.copy(MSTags.Blocks.GHASTLY_NETHER_BRICK_STAIRS, MSTags.Items.GHASTLY_NETHER_BRICK_STAIRS);
@@ -1205,6 +1529,10 @@ public class MSTagGen {
 			this.copy(MSTags.Blocks.QUARTZ_BRICK_SLABS, MSTags.Items.QUARTZ_BRICK_SLABS);
 			this.copy(MSTags.Blocks.QUARTZ_BRICK_STAIRS, MSTags.Items.QUARTZ_BRICK_STAIRS);
 			this.copy(MSTags.Blocks.QUARTZ_BRICK_WALLS, MSTags.Items.QUARTZ_BRICK_WALLS);
+			this.copy(MSTags.Blocks.OVERWORLD_NATURAL_SAND, MSTags.Items.OVERWORLD_NATURAL_SAND);
+			this.copy(MSTags.Blocks.OVERWORLD_NATURAL_SANDSTONE, MSTags.Items.OVERWORLD_NATURAL_SANDSTONE);
+			this.copy(MSTags.Blocks.SUSPICIOUS_SAND, MSTags.Items.SUSPICIOUS_SAND);
+			this.copy(MSTags.Blocks.SUSPICIOUS_BLOCKS, MSTags.Items.SUSPICIOUS_BLOCKS);
 			
 			this.copy(SSWPTags.Blocks.STONE, SSWPTags.Items.STONE);
 			this.copy(SSWPTags.Blocks.STONE_SLABS, SSWPTags.Items.STONE_SLABS);
@@ -1277,11 +1605,26 @@ public class MSTagGen {
 			this.copy(BlockTags.SLABS, ItemTags.SLABS);
 			this.copy(BlockTags.STAIRS, ItemTags.STAIRS);
 			this.copy(BlockTags.WALLS, ItemTags.WALLS);
+			this.copy(BlockTags.SAND, ItemTags.SAND);
+			this.copy(BlockTags.SMELTS_TO_GLASS, ItemTags.SMELTS_TO_GLASS);
+			this.copy(BlockTags.SOUL_FIRE_BASE_BLOCKS, ItemTags.SOUL_FIRE_BASE_BLOCKS);
 			
 			this.copy(MSTags.Blocks.Conventional.GRANITE_COBBLESTONES, MSTags.Items.Conventional.GRANITE_COBBLESTONES);
 			this.copy(MSTags.Blocks.Conventional.DIORITE_COBBLESTONES, MSTags.Items.Conventional.DIORITE_COBBLESTONES);
 			this.copy(MSTags.Blocks.Conventional.ANDESITE_COBBLESTONES, MSTags.Items.Conventional.ANDESITE_COBBLESTONES);
 			
+			this.copy(MSTags.Blocks.Conventional.WHITE_SANDS, MSTags.Items.Conventional.WHITE_SANDS);
+			this.copy(MSTags.Blocks.Conventional.BLACK_SANDS, MSTags.Items.Conventional.BLACK_SANDS);
+			this.copy(MSTags.Blocks.Conventional.SOUL_SANDS, MSTags.Items.Conventional.SOUL_SANDS);
+			
+			this.copy(MSTags.Blocks.Conventional.WHITE_SANDSTONE_BLOCKS, MSTags.Items.Conventional.WHITE_SANDSTONE_BLOCKS);
+			this.copy(MSTags.Blocks.Conventional.WHITE_SANDSTONE_SLABS, MSTags.Items.Conventional.WHITE_SANDSTONE_SLABS);
+			this.copy(MSTags.Blocks.Conventional.WHITE_SANDSTONE_STAIRS, MSTags.Items.Conventional.WHITE_SANDSTONE_STAIRS);
+			this.copy(MSTags.Blocks.Conventional.WHITE_SANDSTONE_WALLS, MSTags.Items.Conventional.WHITE_SANDSTONE_WALLS);
+			this.copy(MSTags.Blocks.Conventional.BLACK_SANDSTONE_BLOCKS, MSTags.Items.Conventional.BLACK_SANDSTONE_BLOCKS);
+			this.copy(MSTags.Blocks.Conventional.BLACK_SANDSTONE_SLABS, MSTags.Items.Conventional.BLACK_SANDSTONE_SLABS);
+			this.copy(MSTags.Blocks.Conventional.BLACK_SANDSTONE_STAIRS, MSTags.Items.Conventional.BLACK_SANDSTONE_STAIRS);
+			this.copy(MSTags.Blocks.Conventional.BLACK_SANDSTONE_WALLS, MSTags.Items.Conventional.BLACK_SANDSTONE_WALLS);
 			this.copy(MSTags.Blocks.Conventional.SOUL_SANDSTONE_BLOCKS, MSTags.Items.Conventional.SOUL_SANDSTONE_BLOCKS);
 			this.copy(MSTags.Blocks.Conventional.SOUL_SANDSTONE_SLABS, MSTags.Items.Conventional.SOUL_SANDSTONE_SLABS);
 			this.copy(MSTags.Blocks.Conventional.SOUL_SANDSTONE_STAIRS, MSTags.Items.Conventional.SOUL_SANDSTONE_STAIRS);
@@ -1291,6 +1634,8 @@ public class MSTagGen {
 			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_SAND, MSTags.Items.Conventional.STORAGE_BLOCKS_SAND);
 			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_COLORLESS_SAND, MSTags.Items.Conventional.STORAGE_BLOCKS_COLORLESS_SAND);
 			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_RED_SAND, MSTags.Items.Conventional.STORAGE_BLOCKS_RED_SAND);
+			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_WHITE_SAND, MSTags.Items.Conventional.STORAGE_BLOCKS_WHITE_SAND);
+			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_BLACK_SAND, MSTags.Items.Conventional.STORAGE_BLOCKS_BLACK_SAND);
 			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_SOUL_SAND, MSTags.Items.Conventional.STORAGE_BLOCKS_SOUL_SAND);
 			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_PRISMARINE_SHARD, MSTags.Items.Conventional.STORAGE_BLOCKS_PRISMARINE_SHARD);
 			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_NETHER_BRICK, MSTags.Items.Conventional.STORAGE_BLOCKS_NETHER_BRICK);
@@ -1301,6 +1646,7 @@ public class MSTagGen {
 			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_SOUL_NETHER_BRICK, MSTags.Items.Conventional.STORAGE_BLOCKS_SOUL_NETHER_BRICK);
 			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_BLAZING_NETHER_BRICK, MSTags.Items.Conventional.STORAGE_BLOCKS_BLAZING_NETHER_BRICK);
 			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_GLOWING_NETHER_BRICK, MSTags.Items.Conventional.STORAGE_BLOCKS_GLOWING_NETHER_BRICK);
+			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_MAGMA_NETHER_BRICK, MSTags.Items.Conventional.STORAGE_BLOCKS_MAGMA_NETHER_BRICK);
 			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_GHASTLY_NETHER_BRICK, MSTags.Items.Conventional.STORAGE_BLOCKS_GHASTLY_NETHER_BRICK);
 			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_QUARTZ, MSTags.Items.Conventional.STORAGE_BLOCKS_QUARTZ);
 			this.copy(MSTags.Blocks.Conventional.STORAGE_BLOCKS_WHITE_QUARTZ, MSTags.Items.Conventional.STORAGE_BLOCKS_WHITE_QUARTZ);
@@ -1327,6 +1673,7 @@ public class MSTagGen {
 			this.copy(ConventionalBlockTags.DEEPSLATE_COBBLESTONES, ConventionalItemTags.DEEPSLATE_COBBLESTONES);
 			this.copy(ConventionalBlockTags.INFESTED_COBBLESTONES, ConventionalItemTags.INFESTED_COBBLESTONES);
 			
+			this.copy(ConventionalBlockTags.SANDS, ConventionalItemTags.SANDS);
 			this.copy(ConventionalBlockTags.SANDSTONE_BLOCKS, ConventionalItemTags.SANDSTONE_BLOCKS);
 			this.copy(ConventionalBlockTags.SANDSTONE_SLABS, ConventionalItemTags.SANDSTONE_SLABS);
 			this.copy(ConventionalBlockTags.SANDSTONE_STAIRS, ConventionalItemTags.SANDSTONE_STAIRS);
@@ -1334,12 +1681,39 @@ public class MSTagGen {
 			this.copy(ConventionalBlockTags.STORAGE_BLOCKS_BONE_MEAL, ConventionalItemTags.STORAGE_BLOCKS_BONE_MEAL);
 			this.copy(ConventionalBlockTags.STORAGE_BLOCKS, ConventionalItemTags.STORAGE_BLOCKS);
 			
+			this.getOrCreateTagBuilder(MSTags.Items.FLINT_TOOL_MATERIALS)
+			.add(Items.FLINT);
+			
 			this.getOrCreateTagBuilder(SSWPTags.Items.NETHER_BRICKS)
 			.add(MSItems.WARPED_NETHER_BRICK,
 					MSItems.WITHERED_NETHER_BRICK,
 					MSItems.SOUL_NETHER_BRICK,
 					MSItems.BLAZING_NETHER_BRICK,
 					MSItems.GLOWING_NETHER_BRICK,
+					MSItems.MAGMA_NETHER_BRICK,
+					MSItems.GHASTLY_NETHER_BRICK);
+			
+			this.getOrCreateTagBuilder(ItemTags.CLUSTER_MAX_HARVESTABLES)
+			.add(MSItems.FLINT_PICKAXE);
+			
+			this.getOrCreateTagBuilder(ItemTags.AXES)
+			.add(MSItems.FLINT_AXE);
+			this.getOrCreateTagBuilder(ItemTags.HOES)
+			.add(MSItems.FLINT_HOE);
+			this.getOrCreateTagBuilder(ItemTags.PICKAXES)
+			.add(MSItems.FLINT_PICKAXE);
+			this.getOrCreateTagBuilder(ItemTags.SHOVELS)
+			.add(MSItems.FLINT_SHOVEL);
+			this.getOrCreateTagBuilder(ItemTags.SWORDS)
+			.add(MSItems.FLINT_SWORD);
+			
+			this.getOrCreateTagBuilder(ConventionalItemTags.NETHER_BRICKS)
+			.add(MSItems.WARPED_NETHER_BRICK,
+					MSItems.WITHERED_NETHER_BRICK,
+					MSItems.SOUL_NETHER_BRICK,
+					MSItems.BLAZING_NETHER_BRICK,
+					MSItems.GLOWING_NETHER_BRICK,
+					MSItems.MAGMA_NETHER_BRICK,
 					MSItems.GHASTLY_NETHER_BRICK);
 			
 			this.getOrCreateTagBuilder(ConventionalItemTags.BONES)
@@ -1347,6 +1721,9 @@ public class MSTagGen {
 			
 			this.getOrCreateTagBuilder(ConventionalItemTags.FERTILIZERS)
 			.add(MSItems.WITHER_BONE_MEAL);
+			
+			this.getOrCreateTagBuilder(ConventionalItemTags.MINING_TOOL_TOOLS)
+			.add(MSItems.FLINT_PICKAXE);
 		}
 	}
 }

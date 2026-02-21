@@ -1,9 +1,9 @@
 {
   "values": [
-    "#mountainspring:soul_sandstone",
-    "#mountainspring:soul_sandstone_slabs",
-    "#mountainspring:soul_sandstone_stairs",
-    "#mountainspring:soul_sandstone_walls",
+    "#mountainspring:sandstone/soul",
+    "#mountainspring:sandstone_slabs/soul",
+    "#mountainspring:sandstone_stairs/soul",
+    "#mountainspring:sandstone_walls/soul",
     "#mountainspring:nether_brick_blocks/soul",
     "#mountainspring:nether_brick_slabs/soul",
     "#mountainspring:nether_brick_stairs/soul",

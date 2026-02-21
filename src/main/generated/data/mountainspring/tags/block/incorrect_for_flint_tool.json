@@ -1,0 +1,26 @@
+{
+  "values": [
+    "minecraft:iron_block",
+    "minecraft:raw_iron_block",
+    "sswplus:iron_button",
+    "sswplus:iron_fence",
+    "sswplus:iron_fence_gate",
+    "sswplus:iron_hanging_sign",
+    "sswplus:iron_ladder",
+    "sswplus:iron_sign",
+    "sswplus:iron_slab",
+    "sswplus:iron_stairs",
+    "sswplus:iron_wall",
+    "sswplus:iron_wall_hanging_sign",
+    "sswplus:iron_wall_sign",
+    "sswplus:raw_iron_slab",
+    "sswplus:raw_iron_stairs",
+    "sswplus:raw_iron_wall",
+    "#minecraft:iron_ores",
+    "#sswplus:iron_ore_slabs",
+    "#sswplus:iron_ore_stairs",
+    "#sswplus:iron_ore_walls",
+    "#minecraft:needs_iron_tool",
+    "#minecraft:needs_diamond_tool"
+  ]
+}

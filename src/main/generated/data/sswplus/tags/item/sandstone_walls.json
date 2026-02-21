@@ -1,6 +1,8 @@
 {
   "values": [
     "#mountainspring:sandstone_brick_walls",
-    "#mountainspring:soul_sandstone_walls"
+    "#mountainspring:sandstone_walls/white",
+    "#mountainspring:sandstone_walls/black",
+    "#mountainspring:sandstone_walls/soul"
   ]
 }

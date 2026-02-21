@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mountainspring:cracked_black_sandstone_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "mountainspring:cracked_black_sandstone_brick_stairs"
+  }
+}

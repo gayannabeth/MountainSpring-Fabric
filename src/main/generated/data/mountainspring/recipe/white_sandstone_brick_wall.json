@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "white_sandstone_brick_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:white_sandstone_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:white_sandstone_brick_wall"
+  }
+}

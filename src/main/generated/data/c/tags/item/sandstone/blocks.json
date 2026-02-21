@@ -1,5 +1,7 @@
 {
   "values": [
+    "#c:sandstone/white_blocks",
+    "#c:sandstone/black_blocks",
     "#c:sandstone/soul_blocks"
   ]
 }

@@ -13,6 +13,8 @@ import gay.mountainspring.sswplus.block.SSWPWoodTypes;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.BrushableBlock;
+import net.minecraft.block.ColoredFallingBlock;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.InfestedBlock;
@@ -22,17 +24,23 @@ import net.minecraft.block.RotatedInfestedBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.WallBlock;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.ColorCode;
 import net.minecraft.util.Identifier;
 
 public class MSBlocks {
 	private MSBlocks() {}
 	
 	public static void init() {}
+	
+	private static final int blackSandColor = 0x1f1f1f;
+	private static final int whiteSandColor = 0xf1f1f1;
 	
 	public static final Block MOSSY_STONE = register("mossy_stone", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
 	public static final Block MOSSY_STONE_SLAB = register("mossy_stone_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_STONE)));
@@ -256,6 +264,74 @@ public class MSBlocks {
 	public static final Block CRACKED_MOSSY_RED_SANDSTONE_BRICK_STAIRS = register("cracked_mossy_red_sandstone_brick_stairs", new StairsBlock(CRACKED_MOSSY_RED_SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MOSSY_RED_SANDSTONE_BRICKS)));
 	public static final Block CRACKED_MOSSY_RED_SANDSTONE_BRICK_WALL = register("cracked_mossy_red_sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_RED_SANDSTONE_BRICKS).solid()));
 	
+	public static final Block WHITE_SAND = register("white_sand", new ColoredFallingBlock(new ColorCode(whiteSandColor), AbstractBlock.Settings.create().mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.SNARE).strength(0.5f).sounds(BlockSoundGroup.SAND)));
+	public static final Block WHITE_SANDSTONE = register("white_sandstone", new Block(AbstractBlock.Settings.create().mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(0.8f)));
+	public static final Block WHITE_SANDSTONE_SLAB = register("white_sandstone_slab", new SlabBlock(AbstractBlock.Settings.copy(WHITE_SANDSTONE)));
+	public static final Block WHITE_SANDSTONE_STAIRS = register("white_sandstone_stairs", new StairsBlock(WHITE_SANDSTONE.getDefaultState(), AbstractBlock.Settings.copy(WHITE_SANDSTONE)));
+	public static final Block WHITE_SANDSTONE_WALL = register("white_sandstone_wall", new WallBlock(AbstractBlock.Settings.copy(WHITE_SANDSTONE).solid()));
+	public static final Block CHISELED_WHITE_SANDSTONE = register("chiseled_white_sandstone", new Block(AbstractBlock.Settings.copy(WHITE_SANDSTONE)));
+	public static final Block CHISELED_WHITE_SANDSTONE_SLAB = register("chiseled_white_sandstone_slab", new SlabBlock(AbstractBlock.Settings.copy(CHISELED_WHITE_SANDSTONE)));
+	public static final Block CHISELED_WHITE_SANDSTONE_STAIRS = register("chiseled_white_sandstone_stairs", new StairsBlock(CHISELED_WHITE_SANDSTONE.getDefaultState(), AbstractBlock.Settings.copy(CHISELED_WHITE_SANDSTONE)));
+	public static final Block CHISELED_WHITE_SANDSTONE_WALL = register("chiseled_white_sandstone_wall", new WallBlock(AbstractBlock.Settings.copy(CHISELED_WHITE_SANDSTONE).solid()));
+	public static final Block SMOOTH_WHITE_SANDSTONE = register("smooth_white_sandstone", new Block(AbstractBlock.Settings.copy(WHITE_SANDSTONE)));
+	public static final Block SMOOTH_WHITE_SANDSTONE_SLAB = register("smooth_white_sandstone_slab", new SlabBlock(AbstractBlock.Settings.copy(SMOOTH_WHITE_SANDSTONE)));
+	public static final Block SMOOTH_WHITE_SANDSTONE_STAIRS = register("smooth_white_sandstone_stairs", new StairsBlock(SMOOTH_WHITE_SANDSTONE.getDefaultState(), AbstractBlock.Settings.copy(SMOOTH_WHITE_SANDSTONE)));
+	public static final Block SMOOTH_WHITE_SANDSTONE_WALL = register("smooth_white_sandstone_wall", new WallBlock(AbstractBlock.Settings.copy(SMOOTH_WHITE_SANDSTONE).solid()));
+	public static final Block CUT_WHITE_SANDSTONE = register("cut_white_sandstone", new Block(AbstractBlock.Settings.copy(WHITE_SANDSTONE)));
+	public static final Block CUT_WHITE_SANDSTONE_SLAB = register("cut_white_sandstone_slab", new SlabBlock(AbstractBlock.Settings.copy(CUT_WHITE_SANDSTONE)));
+	public static final Block CUT_WHITE_SANDSTONE_STAIRS = register("cut_white_sandstone_stairs", new StairsBlock(CUT_WHITE_SANDSTONE.getDefaultState(), AbstractBlock.Settings.copy(CUT_WHITE_SANDSTONE)));
+	public static final Block CUT_WHITE_SANDSTONE_WALL = register("cut_white_sandstone_wall", new WallBlock(AbstractBlock.Settings.copy(CUT_WHITE_SANDSTONE).solid()));
+	public static final Block WHITE_SANDSTONE_BRICKS = register("white_sandstone_bricks", new Block(AbstractBlock.Settings.copy(WHITE_SANDSTONE)));
+	public static final Block WHITE_SANDSTONE_BRICK_SLAB = register("white_sandstone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(WHITE_SANDSTONE_BRICKS)));
+	public static final Block WHITE_SANDSTONE_BRICK_STAIRS = register("white_sandstone_brick_stairs", new StairsBlock(WHITE_SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(WHITE_SANDSTONE_BRICKS)));
+	public static final Block WHITE_SANDSTONE_BRICK_WALL = register("white_sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(WHITE_SANDSTONE_BRICKS).solid()));
+	public static final Block CRACKED_WHITE_SANDSTONE_BRICKS = register("cracked_white_sandstone_bricks", new Block(AbstractBlock.Settings.copy(WHITE_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_WHITE_SANDSTONE_BRICK_SLAB = register("cracked_white_sandstone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_WHITE_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_WHITE_SANDSTONE_BRICK_STAIRS = register("cracked_white_sandstone_brick_stairs", new StairsBlock(CRACKED_WHITE_SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_WHITE_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_WHITE_SANDSTONE_BRICK_WALL = register("cracked_white_sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_WHITE_SANDSTONE_BRICKS).solid()));
+	public static final Block MOSSY_WHITE_SANDSTONE_BRICKS = register("mossy_white_sandstone_bricks", new Block(AbstractBlock.Settings.copy(WHITE_SANDSTONE_BRICKS)));
+	public static final Block MOSSY_WHITE_SANDSTONE_BRICK_SLAB = register("mossy_white_sandstone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_WHITE_SANDSTONE_BRICKS)));
+	public static final Block MOSSY_WHITE_SANDSTONE_BRICK_STAIRS = register("mossy_white_sandstone_brick_stairs", new StairsBlock(MOSSY_WHITE_SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_WHITE_SANDSTONE_BRICKS)));
+	public static final Block MOSSY_WHITE_SANDSTONE_BRICK_WALL = register("mossy_white_sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_WHITE_SANDSTONE_BRICKS).solid()));
+	public static final Block CRACKED_MOSSY_WHITE_SANDSTONE_BRICKS = register("cracked_mossy_white_sandstone_bricks", new Block(AbstractBlock.Settings.copy(WHITE_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_SLAB = register("cracked_mossy_white_sandstone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_WHITE_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_STAIRS = register("cracked_mossy_white_sandstone_brick_stairs", new StairsBlock(CRACKED_MOSSY_WHITE_SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MOSSY_WHITE_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_WALL = register("cracked_mossy_white_sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_WHITE_SANDSTONE_BRICKS).solid()));
+	
+	public static final Block BLACK_SAND = register("black_sand", new ColoredFallingBlock(new ColorCode(blackSandColor), AbstractBlock.Settings.create().mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.SNARE).strength(0.5f).sounds(BlockSoundGroup.SAND)));
+	public static final Block BLACK_SANDSTONE = register("black_sandstone", new Block(AbstractBlock.Settings.create().mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(0.8f)));
+	public static final Block BLACK_SANDSTONE_SLAB = register("black_sandstone_slab", new SlabBlock(AbstractBlock.Settings.copy(BLACK_SANDSTONE)));
+	public static final Block BLACK_SANDSTONE_STAIRS = register("black_sandstone_stairs", new StairsBlock(BLACK_SANDSTONE.getDefaultState(), AbstractBlock.Settings.copy(BLACK_SANDSTONE)));
+	public static final Block BLACK_SANDSTONE_WALL = register("black_sandstone_wall", new WallBlock(AbstractBlock.Settings.copy(BLACK_SANDSTONE).solid()));
+	public static final Block CHISELED_BLACK_SANDSTONE = register("chiseled_black_sandstone", new Block(AbstractBlock.Settings.copy(BLACK_SANDSTONE)));
+	public static final Block CHISELED_BLACK_SANDSTONE_SLAB = register("chiseled_black_sandstone_slab", new SlabBlock(AbstractBlock.Settings.copy(CHISELED_BLACK_SANDSTONE)));
+	public static final Block CHISELED_BLACK_SANDSTONE_STAIRS = register("chiseled_black_sandstone_stairs", new StairsBlock(CHISELED_BLACK_SANDSTONE.getDefaultState(), AbstractBlock.Settings.copy(CHISELED_BLACK_SANDSTONE)));
+	public static final Block CHISELED_BLACK_SANDSTONE_WALL = register("chiseled_black_sandstone_wall", new WallBlock(AbstractBlock.Settings.copy(CHISELED_BLACK_SANDSTONE).solid()));
+	public static final Block SMOOTH_BLACK_SANDSTONE = register("smooth_black_sandstone", new Block(AbstractBlock.Settings.copy(BLACK_SANDSTONE)));
+	public static final Block SMOOTH_BLACK_SANDSTONE_SLAB = register("smooth_black_sandstone_slab", new SlabBlock(AbstractBlock.Settings.copy(SMOOTH_BLACK_SANDSTONE)));
+	public static final Block SMOOTH_BLACK_SANDSTONE_STAIRS = register("smooth_black_sandstone_stairs", new StairsBlock(SMOOTH_BLACK_SANDSTONE.getDefaultState(), AbstractBlock.Settings.copy(SMOOTH_BLACK_SANDSTONE)));
+	public static final Block SMOOTH_BLACK_SANDSTONE_WALL = register("smooth_black_sandstone_wall", new WallBlock(AbstractBlock.Settings.copy(SMOOTH_BLACK_SANDSTONE).solid()));
+	public static final Block CUT_BLACK_SANDSTONE = register("cut_black_sandstone", new Block(AbstractBlock.Settings.copy(BLACK_SANDSTONE)));
+	public static final Block CUT_BLACK_SANDSTONE_SLAB = register("cut_black_sandstone_slab", new SlabBlock(AbstractBlock.Settings.copy(CUT_BLACK_SANDSTONE)));
+	public static final Block CUT_BLACK_SANDSTONE_STAIRS = register("cut_black_sandstone_stairs", new StairsBlock(CUT_BLACK_SANDSTONE.getDefaultState(), AbstractBlock.Settings.copy(CUT_BLACK_SANDSTONE)));
+	public static final Block CUT_BLACK_SANDSTONE_WALL = register("cut_black_sandstone_wall", new WallBlock(AbstractBlock.Settings.copy(CUT_BLACK_SANDSTONE).solid()));
+	public static final Block BLACK_SANDSTONE_BRICKS = register("black_sandstone_bricks", new Block(AbstractBlock.Settings.copy(BLACK_SANDSTONE)));
+	public static final Block BLACK_SANDSTONE_BRICK_SLAB = register("black_sandstone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(BLACK_SANDSTONE_BRICKS)));
+	public static final Block BLACK_SANDSTONE_BRICK_STAIRS = register("black_sandstone_brick_stairs", new StairsBlock(BLACK_SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(BLACK_SANDSTONE_BRICKS)));
+	public static final Block BLACK_SANDSTONE_BRICK_WALL = register("black_sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(BLACK_SANDSTONE_BRICKS).solid()));
+	public static final Block CRACKED_BLACK_SANDSTONE_BRICKS = register("cracked_black_sandstone_bricks", new Block(AbstractBlock.Settings.copy(BLACK_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_BLACK_SANDSTONE_BRICK_SLAB = register("cracked_black_sandstone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_BLACK_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_BLACK_SANDSTONE_BRICK_STAIRS = register("cracked_black_sandstone_brick_stairs", new StairsBlock(CRACKED_BLACK_SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_BLACK_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_BLACK_SANDSTONE_BRICK_WALL = register("cracked_black_sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_BLACK_SANDSTONE_BRICKS).solid()));
+	public static final Block MOSSY_BLACK_SANDSTONE_BRICKS = register("mossy_black_sandstone_bricks", new Block(AbstractBlock.Settings.copy(BLACK_SANDSTONE_BRICKS)));
+	public static final Block MOSSY_BLACK_SANDSTONE_BRICK_SLAB = register("mossy_black_sandstone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_BLACK_SANDSTONE_BRICKS)));
+	public static final Block MOSSY_BLACK_SANDSTONE_BRICK_STAIRS = register("mossy_black_sandstone_brick_stairs", new StairsBlock(MOSSY_BLACK_SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_BLACK_SANDSTONE_BRICKS)));
+	public static final Block MOSSY_BLACK_SANDSTONE_BRICK_WALL = register("mossy_black_sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_BLACK_SANDSTONE_BRICKS).solid()));
+	public static final Block CRACKED_MOSSY_BLACK_SANDSTONE_BRICKS = register("cracked_mossy_black_sandstone_bricks", new Block(AbstractBlock.Settings.copy(BLACK_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_SLAB = register("cracked_mossy_black_sandstone_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_BLACK_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_STAIRS = register("cracked_mossy_black_sandstone_brick_stairs", new StairsBlock(CRACKED_MOSSY_BLACK_SANDSTONE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MOSSY_BLACK_SANDSTONE_BRICKS)));
+	public static final Block CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_WALL = register("cracked_mossy_black_sandstone_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_MOSSY_BLACK_SANDSTONE_BRICKS).solid()));
+	
 	public static final Block CRACKED_PRISMARINE_BRICKS = register("cracked_prismarine_bricks", new Block(AbstractBlock.Settings.copy(Blocks.PRISMARINE_BRICKS)));
 	public static final Block CRACKED_PRISMARINE_BRICK_SLAB = register("cracked_prismarine_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(CRACKED_PRISMARINE_BRICKS)));
 	public static final Block CRACKED_PRISMARINE_BRICK_STAIRS = register("cracked_prismarine_brick_stairs", new StairsBlock(CRACKED_PRISMARINE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_PRISMARINE_BRICKS)));
@@ -426,6 +502,27 @@ public class MSBlocks {
 	public static final Block CRACKED_CHISELED_GLOWING_NETHER_BRICK_STAIRS = register("cracked_chiseled_glowing_nether_brick_stairs", new StairsBlock(CRACKED_CHISELED_GLOWING_NETHER_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_CHISELED_GLOWING_NETHER_BRICKS)));
 	public static final Block CRACKED_CHISELED_GLOWING_NETHER_BRICK_WALL = register("cracked_chiseled_glowing_nether_brick_wall", new WallBlock(AbstractBlock.Settings.copy(CRACKED_CHISELED_GLOWING_NETHER_BRICKS).solid()));
 	
+	public static final Block MAGMA_NETHER_BRICKS = register("magma_nether_bricks", new HotFloorBlock(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(2.0f, 6.0f).sounds(BlockSoundGroup.NETHER_BRICKS).luminance(state -> 15)));
+	public static final Block MAGMA_NETHER_BRICK_SLAB = register("magma_nether_brick_slab", new HotFloorSlabBlock(AbstractBlock.Settings.copy(MAGMA_NETHER_BRICKS)));
+	public static final Block MAGMA_NETHER_BRICK_STAIRS = register("magma_nether_brick_stairs", new HotFloorStairsBlock(MAGMA_NETHER_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MAGMA_NETHER_BRICKS)));
+	public static final Block MAGMA_NETHER_BRICK_WALL = register("magma_nether_brick_wall", new HotFloorWallBlock(AbstractBlock.Settings.copy(MAGMA_NETHER_BRICKS).solid()));
+	public static final Block MAGMA_NETHER_BRICK_FENCE = register("magma_nether_brick_fence", new HotFloorFenceBlock(AbstractBlock.Settings.copy(MAGMA_NETHER_BRICKS).solid()));
+	public static final Block MAGMA_NETHER_BRICK_FENCE_GATE = register("magma_nether_brick_fence_gate", new HotFloorFenceGateBlock(SSWPWoodTypes.NETHER_BRICK, AbstractBlock.Settings.copy(MAGMA_NETHER_BRICKS).solid()));
+	public static final Block CRACKED_MAGMA_NETHER_BRICKS = register("cracked_magma_nether_bricks", new HotFloorBlock(AbstractBlock.Settings.copy(MAGMA_NETHER_BRICKS)));
+	public static final Block CRACKED_MAGMA_NETHER_BRICK_SLAB = register("cracked_magma_nether_brick_slab", new HotFloorSlabBlock(AbstractBlock.Settings.copy(CRACKED_MAGMA_NETHER_BRICKS)));
+	public static final Block CRACKED_MAGMA_NETHER_BRICK_STAIRS = register("cracked_magma_nether_brick_stairs", new HotFloorStairsBlock(CRACKED_MAGMA_NETHER_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_MAGMA_NETHER_BRICKS)));
+	public static final Block CRACKED_MAGMA_NETHER_BRICK_WALL = register("cracked_magma_nether_brick_wall", new HotFloorWallBlock(AbstractBlock.Settings.copy(CRACKED_MAGMA_NETHER_BRICKS).solid()));
+	public static final Block CRACKED_MAGMA_NETHER_BRICK_FENCE = register("cracked_magma_nether_brick_fence", new HotFloorFenceBlock(AbstractBlock.Settings.copy(CRACKED_MAGMA_NETHER_BRICKS).solid()));
+	public static final Block CRACKED_MAGMA_NETHER_BRICK_FENCE_GATE = register("cracked_magma_nether_brick_fence_gate", new HotFloorFenceGateBlock(SSWPWoodTypes.NETHER_BRICK, AbstractBlock.Settings.copy(CRACKED_MAGMA_NETHER_BRICKS).solid()));
+	public static final Block CHISELED_MAGMA_NETHER_BRICKS = register("chiseled_magma_nether_bricks", new HotFloorBlock(AbstractBlock.Settings.copy(MAGMA_NETHER_BRICKS)));
+	public static final Block CHISELED_MAGMA_NETHER_BRICK_SLAB = register("chiseled_magma_nether_brick_slab", new HotFloorSlabBlock(AbstractBlock.Settings.copy(CHISELED_MAGMA_NETHER_BRICKS)));
+	public static final Block CHISELED_MAGMA_NETHER_BRICK_STAIRS = register("chiseled_magma_nether_brick_stairs", new HotFloorStairsBlock(CHISELED_MAGMA_NETHER_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CHISELED_MAGMA_NETHER_BRICKS)));
+	public static final Block CHISELED_MAGMA_NETHER_BRICK_WALL = register("chiseled_magma_nether_brick_wall", new HotFloorWallBlock(AbstractBlock.Settings.copy(CHISELED_MAGMA_NETHER_BRICKS).solid()));
+	public static final Block CRACKED_CHISELED_MAGMA_NETHER_BRICKS = register("cracked_chiseled_magma_nether_bricks", new HotFloorBlock(AbstractBlock.Settings.copy(MAGMA_NETHER_BRICKS)));
+	public static final Block CRACKED_CHISELED_MAGMA_NETHER_BRICK_SLAB = register("cracked_chiseled_magma_nether_brick_slab", new HotFloorSlabBlock(AbstractBlock.Settings.copy(CRACKED_CHISELED_MAGMA_NETHER_BRICKS)));
+	public static final Block CRACKED_CHISELED_MAGMA_NETHER_BRICK_STAIRS = register("cracked_chiseled_magma_nether_brick_stairs", new HotFloorStairsBlock(CRACKED_CHISELED_MAGMA_NETHER_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(CRACKED_CHISELED_MAGMA_NETHER_BRICKS)));
+	public static final Block CRACKED_CHISELED_MAGMA_NETHER_BRICK_WALL = register("cracked_chiseled_magma_nether_brick_wall", new HotFloorWallBlock(AbstractBlock.Settings.copy(CRACKED_CHISELED_MAGMA_NETHER_BRICKS).solid()));
+	
 	public static final Block GHASTLY_NETHER_BRICKS = register("ghastly_nether_bricks", new Block(AbstractBlock.Settings.create().mapColor(MapColor.WHITE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(2.0f, 6.0f).sounds(BlockSoundGroup.NETHER_BRICKS).luminance(state -> 3)));
 	public static final Block GHASTLY_NETHER_BRICK_SLAB = register("ghastly_nether_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(GHASTLY_NETHER_BRICKS)));
 	public static final Block GHASTLY_NETHER_BRICK_STAIRS = register("ghastly_nether_brick_stairs", new StairsBlock(GHASTLY_NETHER_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(GHASTLY_NETHER_BRICKS)));
@@ -502,7 +599,17 @@ public class MSBlocks {
 	public static final Block INFESTED_MOSSY_CHISELED_TUFF_BRICKS = register("infested_mossy_chiseled_tuff_bricks", new InfestedBlock(MOSSY_CHISELED_TUFF_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.TUFF_BRICKS)));
 	public static final Block INFESTED_CRACKED_MOSSY_CHISELED_TUFF_BRICKS = register("infested_cracked_mossy_chiseled_tuff_bricks", new InfestedBlock(CRACKED_MOSSY_CHISELED_TUFF_BRICKS, AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.TUFF_BRICKS)));
 	
+	public static final Block SUSPICIOUS_RED_SAND = register("suspicious_red_sand", new BrushableBlock(Blocks.RED_SAND, SoundEvents.ITEM_BRUSH_BRUSHING_SAND, SoundEvents.ITEM_BRUSH_BRUSHING_SAND_COMPLETE, AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).instrument(NoteBlockInstrument.SNARE).strength(0.25f).sounds(BlockSoundGroup.SUSPICIOUS_SAND).pistonBehavior(PistonBehavior.DESTROY)));
+	public static final Block SUSPICIOUS_WHITE_SAND = register("suspicious_white_sand", new BrushableBlock(WHITE_SAND, SoundEvents.ITEM_BRUSH_BRUSHING_SAND, SoundEvents.ITEM_BRUSH_BRUSHING_SAND_COMPLETE, AbstractBlock.Settings.create().mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.SNARE).strength(0.25f).sounds(BlockSoundGroup.SUSPICIOUS_SAND).pistonBehavior(PistonBehavior.DESTROY)));
+	public static final Block SUSPICIOUS_BLACK_SAND = register("suspicious_black_sand", new BrushableBlock(BLACK_SAND, SoundEvents.ITEM_BRUSH_BRUSHING_SAND, SoundEvents.ITEM_BRUSH_BRUSHING_SAND_COMPLETE, AbstractBlock.Settings.create().mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.SNARE).strength(0.25f).sounds(BlockSoundGroup.SUSPICIOUS_SAND).pistonBehavior(PistonBehavior.DESTROY)));
+	
 	public static Block register(String name, Block block) {
 		return Registry.register(Registries.BLOCK, Identifier.of(MSMain.MOD_ID, name), block);
+	}
+	
+	static {
+		BlockEntityType.BRUSHABLE_BLOCK.addSupportedBlock(SUSPICIOUS_RED_SAND);
+		BlockEntityType.BRUSHABLE_BLOCK.addSupportedBlock(SUSPICIOUS_WHITE_SAND);
+		BlockEntityType.BRUSHABLE_BLOCK.addSupportedBlock(SUSPICIOUS_BLACK_SAND);
 	}
 }

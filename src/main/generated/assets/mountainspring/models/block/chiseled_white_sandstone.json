@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mountainspring:block/white_sandstone_top",
+    "side": "mountainspring:block/chiseled_white_sandstone"
+  }
+}

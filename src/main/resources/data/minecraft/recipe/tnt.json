@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"key": {
+		"#": {
+			"tag": "mountainspring:overworld_natural_sand"
+		},
+		"X": {
+			"item": "minecraft:gunpowder"
+		}
+	},
+	"pattern": [
+		"X#X",
+		"#X#",
+		"X#X"
+	],
+	"result": {
+		"count": 1,
+		"id": "minecraft:tnt"
+	}
+}

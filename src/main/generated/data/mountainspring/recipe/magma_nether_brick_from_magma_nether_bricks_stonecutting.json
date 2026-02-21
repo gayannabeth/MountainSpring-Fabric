@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mountainspring:magma_nether_bricks"
+  },
+  "result": {
+    "count": 4,
+    "id": "mountainspring:magma_nether_brick"
+  }
+}

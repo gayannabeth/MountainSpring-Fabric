@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "magma_nether_brick_wall",
+  "key": {
+    "#": {
+      "item": "mountainspring:magma_nether_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "mountainspring:magma_nether_brick_wall"
+  }
+}

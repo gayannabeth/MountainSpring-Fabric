@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mountainspring:block/chiseled_white_sandstone_slab"
+    },
+    "type=double": {
+      "model": "mountainspring:block/chiseled_white_sandstone"
+    },
+    "type=top": {
+      "model": "mountainspring:block/chiseled_white_sandstone_slab_top"
+    }
+  }
+}

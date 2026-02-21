@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "mountainspring:black_sandstone"
+  },
+  "result": {
+    "id": "mountainspring:smooth_black_sandstone"
+  }
+}

@@ -3,12 +3,22 @@ package gay.mountainspring.item;
 import java.util.function.Function;
 
 import gay.mountainspring.MSMain;
+import gay.mountainspring.aquifer.item.AquiferAxeItem;
+import gay.mountainspring.aquifer.item.AquiferHoeItem;
+import gay.mountainspring.aquifer.item.AquiferPickaxeItem;
+import gay.mountainspring.aquifer.item.AquiferShovelItem;
+import gay.mountainspring.aquifer.item.AquiferSwordItem;
 import gay.mountainspring.block.MSBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.BoneMealItem;
+import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ShovelItem;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -240,6 +250,74 @@ public class MSItems {
 	public static final Item CRACKED_MOSSY_RED_SANDSTONE_BRICK_STAIRS = registerBlock(MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_STAIRS);
 	public static final Item CRACKED_MOSSY_RED_SANDSTONE_BRICK_WALL = registerBlock(MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_WALL);
 	
+	public static final Item WHITE_SAND = registerBlock(MSBlocks.WHITE_SAND);
+	public static final Item WHITE_SANDSTONE = registerBlock(MSBlocks.WHITE_SANDSTONE);
+	public static final Item WHITE_SANDSTONE_SLAB = registerBlock(MSBlocks.WHITE_SANDSTONE_SLAB);
+	public static final Item WHITE_SANDSTONE_STAIRS = registerBlock(MSBlocks.WHITE_SANDSTONE_STAIRS);
+	public static final Item WHITE_SANDSTONE_WALL = registerBlock(MSBlocks.WHITE_SANDSTONE_WALL);
+	public static final Item CHISELED_WHITE_SANDSTONE = registerBlock(MSBlocks.CHISELED_WHITE_SANDSTONE);
+	public static final Item CHISELED_WHITE_SANDSTONE_SLAB = registerBlock(MSBlocks.CHISELED_WHITE_SANDSTONE_SLAB);
+	public static final Item CHISELED_WHITE_SANDSTONE_STAIRS = registerBlock(MSBlocks.CHISELED_WHITE_SANDSTONE_STAIRS);
+	public static final Item CHISELED_WHITE_SANDSTONE_WALL = registerBlock(MSBlocks.CHISELED_WHITE_SANDSTONE_WALL);
+	public static final Item SMOOTH_WHITE_SANDSTONE = registerBlock(MSBlocks.SMOOTH_WHITE_SANDSTONE);
+	public static final Item SMOOTH_WHITE_SANDSTONE_SLAB = registerBlock(MSBlocks.SMOOTH_WHITE_SANDSTONE_SLAB);
+	public static final Item SMOOTH_WHITE_SANDSTONE_STAIRS = registerBlock(MSBlocks.SMOOTH_WHITE_SANDSTONE_STAIRS);
+	public static final Item SMOOTH_WHITE_SANDSTONE_WALL = registerBlock(MSBlocks.SMOOTH_WHITE_SANDSTONE_WALL);
+	public static final Item CUT_WHITE_SANDSTONE = registerBlock(MSBlocks.CUT_WHITE_SANDSTONE);
+	public static final Item CUT_WHITE_SANDSTONE_SLAB = registerBlock(MSBlocks.CUT_WHITE_SANDSTONE_SLAB);
+	public static final Item CUT_WHITE_SANDSTONE_STAIRS = registerBlock(MSBlocks.CUT_WHITE_SANDSTONE_STAIRS);
+	public static final Item CUT_WHITE_SANDSTONE_WALL = registerBlock(MSBlocks.CUT_WHITE_SANDSTONE_WALL);
+	public static final Item WHITE_SANDSTONE_BRICKS = registerBlock(MSBlocks.WHITE_SANDSTONE_BRICKS);
+	public static final Item WHITE_SANDSTONE_BRICK_SLAB = registerBlock(MSBlocks.WHITE_SANDSTONE_BRICK_SLAB);
+	public static final Item WHITE_SANDSTONE_BRICK_STAIRS = registerBlock(MSBlocks.WHITE_SANDSTONE_BRICK_STAIRS);
+	public static final Item WHITE_SANDSTONE_BRICK_WALL = registerBlock(MSBlocks.WHITE_SANDSTONE_BRICK_WALL);
+	public static final Item CRACKED_WHITE_SANDSTONE_BRICKS = registerBlock(MSBlocks.CRACKED_WHITE_SANDSTONE_BRICKS);
+	public static final Item CRACKED_WHITE_SANDSTONE_BRICK_SLAB = registerBlock(MSBlocks.CRACKED_WHITE_SANDSTONE_BRICK_SLAB);
+	public static final Item CRACKED_WHITE_SANDSTONE_BRICK_STAIRS = registerBlock(MSBlocks.CRACKED_WHITE_SANDSTONE_BRICK_STAIRS);
+	public static final Item CRACKED_WHITE_SANDSTONE_BRICK_WALL = registerBlock(MSBlocks.CRACKED_WHITE_SANDSTONE_BRICK_WALL);
+	public static final Item MOSSY_WHITE_SANDSTONE_BRICKS = registerBlock(MSBlocks.MOSSY_WHITE_SANDSTONE_BRICKS);
+	public static final Item MOSSY_WHITE_SANDSTONE_BRICK_SLAB = registerBlock(MSBlocks.MOSSY_WHITE_SANDSTONE_BRICK_SLAB);
+	public static final Item MOSSY_WHITE_SANDSTONE_BRICK_STAIRS = registerBlock(MSBlocks.MOSSY_WHITE_SANDSTONE_BRICK_STAIRS);
+	public static final Item MOSSY_WHITE_SANDSTONE_BRICK_WALL = registerBlock(MSBlocks.MOSSY_WHITE_SANDSTONE_BRICK_WALL);
+	public static final Item CRACKED_MOSSY_WHITE_SANDSTONE_BRICKS = registerBlock(MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICKS);
+	public static final Item CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_SLAB = registerBlock(MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_SLAB);
+	public static final Item CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_STAIRS = registerBlock(MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_STAIRS);
+	public static final Item CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_WALL = registerBlock(MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_WALL);
+	
+	public static final Item BLACK_SAND = registerBlock(MSBlocks.BLACK_SAND);
+	public static final Item BLACK_SANDSTONE = registerBlock(MSBlocks.BLACK_SANDSTONE);
+	public static final Item BLACK_SANDSTONE_SLAB = registerBlock(MSBlocks.BLACK_SANDSTONE_SLAB);
+	public static final Item BLACK_SANDSTONE_STAIRS = registerBlock(MSBlocks.BLACK_SANDSTONE_STAIRS);
+	public static final Item BLACK_SANDSTONE_WALL = registerBlock(MSBlocks.BLACK_SANDSTONE_WALL);
+	public static final Item CHISELED_BLACK_SANDSTONE = registerBlock(MSBlocks.CHISELED_BLACK_SANDSTONE);
+	public static final Item CHISELED_BLACK_SANDSTONE_SLAB = registerBlock(MSBlocks.CHISELED_BLACK_SANDSTONE_SLAB);
+	public static final Item CHISELED_BLACK_SANDSTONE_STAIRS = registerBlock(MSBlocks.CHISELED_BLACK_SANDSTONE_STAIRS);
+	public static final Item CHISELED_BLACK_SANDSTONE_WALL = registerBlock(MSBlocks.CHISELED_BLACK_SANDSTONE_WALL);
+	public static final Item SMOOTH_BLACK_SANDSTONE = registerBlock(MSBlocks.SMOOTH_BLACK_SANDSTONE);
+	public static final Item SMOOTH_BLACK_SANDSTONE_SLAB = registerBlock(MSBlocks.SMOOTH_BLACK_SANDSTONE_SLAB);
+	public static final Item SMOOTH_BLACK_SANDSTONE_STAIRS = registerBlock(MSBlocks.SMOOTH_BLACK_SANDSTONE_STAIRS);
+	public static final Item SMOOTH_BLACK_SANDSTONE_WALL = registerBlock(MSBlocks.SMOOTH_BLACK_SANDSTONE_WALL);
+	public static final Item CUT_BLACK_SANDSTONE = registerBlock(MSBlocks.CUT_BLACK_SANDSTONE);
+	public static final Item CUT_BLACK_SANDSTONE_SLAB = registerBlock(MSBlocks.CUT_BLACK_SANDSTONE_SLAB);
+	public static final Item CUT_BLACK_SANDSTONE_STAIRS = registerBlock(MSBlocks.CUT_BLACK_SANDSTONE_STAIRS);
+	public static final Item CUT_BLACK_SANDSTONE_WALL = registerBlock(MSBlocks.CUT_BLACK_SANDSTONE_WALL);
+	public static final Item BLACK_SANDSTONE_BRICKS = registerBlock(MSBlocks.BLACK_SANDSTONE_BRICKS);
+	public static final Item BLACK_SANDSTONE_BRICK_SLAB = registerBlock(MSBlocks.BLACK_SANDSTONE_BRICK_SLAB);
+	public static final Item BLACK_SANDSTONE_BRICK_STAIRS = registerBlock(MSBlocks.BLACK_SANDSTONE_BRICK_STAIRS);
+	public static final Item BLACK_SANDSTONE_BRICK_WALL = registerBlock(MSBlocks.BLACK_SANDSTONE_BRICK_WALL);
+	public static final Item CRACKED_BLACK_SANDSTONE_BRICKS = registerBlock(MSBlocks.CRACKED_BLACK_SANDSTONE_BRICKS);
+	public static final Item CRACKED_BLACK_SANDSTONE_BRICK_SLAB = registerBlock(MSBlocks.CRACKED_BLACK_SANDSTONE_BRICK_SLAB);
+	public static final Item CRACKED_BLACK_SANDSTONE_BRICK_STAIRS = registerBlock(MSBlocks.CRACKED_BLACK_SANDSTONE_BRICK_STAIRS);
+	public static final Item CRACKED_BLACK_SANDSTONE_BRICK_WALL = registerBlock(MSBlocks.CRACKED_BLACK_SANDSTONE_BRICK_WALL);
+	public static final Item MOSSY_BLACK_SANDSTONE_BRICKS = registerBlock(MSBlocks.MOSSY_BLACK_SANDSTONE_BRICKS);
+	public static final Item MOSSY_BLACK_SANDSTONE_BRICK_SLAB = registerBlock(MSBlocks.MOSSY_BLACK_SANDSTONE_BRICK_SLAB);
+	public static final Item MOSSY_BLACK_SANDSTONE_BRICK_STAIRS = registerBlock(MSBlocks.MOSSY_BLACK_SANDSTONE_BRICK_STAIRS);
+	public static final Item MOSSY_BLACK_SANDSTONE_BRICK_WALL = registerBlock(MSBlocks.MOSSY_BLACK_SANDSTONE_BRICK_WALL);
+	public static final Item CRACKED_MOSSY_BLACK_SANDSTONE_BRICKS = registerBlock(MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICKS);
+	public static final Item CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_SLAB = registerBlock(MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_SLAB);
+	public static final Item CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_STAIRS = registerBlock(MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_STAIRS);
+	public static final Item CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_WALL = registerBlock(MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_WALL);
+	
 	public static final Item CRACKED_PRISMARINE_BRICKS = registerBlock(MSBlocks.CRACKED_PRISMARINE_BRICKS);
 	public static final Item CRACKED_PRISMARINE_BRICK_SLAB = registerBlock(MSBlocks.CRACKED_PRISMARINE_BRICK_SLAB);
 	public static final Item CRACKED_PRISMARINE_BRICK_STAIRS = registerBlock(MSBlocks.CRACKED_PRISMARINE_BRICK_STAIRS);
@@ -408,6 +486,27 @@ public class MSItems {
 	public static final Item CRACKED_CHISELED_GLOWING_NETHER_BRICK_STAIRS = registerBlock(MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICK_STAIRS);
 	public static final Item CRACKED_CHISELED_GLOWING_NETHER_BRICK_WALL = registerBlock(MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICK_WALL);
 	
+	public static final Item MAGMA_NETHER_BRICKS = registerBlock(MSBlocks.MAGMA_NETHER_BRICKS);
+	public static final Item MAGMA_NETHER_BRICK_SLAB = registerBlock(MSBlocks.MAGMA_NETHER_BRICK_SLAB);
+	public static final Item MAGMA_NETHER_BRICK_STAIRS = registerBlock(MSBlocks.MAGMA_NETHER_BRICK_STAIRS);
+	public static final Item MAGMA_NETHER_BRICK_WALL = registerBlock(MSBlocks.MAGMA_NETHER_BRICK_WALL);
+	public static final Item MAGMA_NETHER_BRICK_FENCE = registerBlock(MSBlocks.MAGMA_NETHER_BRICK_FENCE);
+	public static final Item MAGMA_NETHER_BRICK_FENCE_GATE = registerBlock(MSBlocks.MAGMA_NETHER_BRICK_FENCE_GATE);
+	public static final Item CRACKED_MAGMA_NETHER_BRICKS = registerBlock(MSBlocks.CRACKED_MAGMA_NETHER_BRICKS);
+	public static final Item CRACKED_MAGMA_NETHER_BRICK_SLAB = registerBlock(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_SLAB);
+	public static final Item CRACKED_MAGMA_NETHER_BRICK_STAIRS = registerBlock(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_STAIRS);
+	public static final Item CRACKED_MAGMA_NETHER_BRICK_WALL = registerBlock(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_WALL);
+	public static final Item CRACKED_MAGMA_NETHER_BRICK_FENCE = registerBlock(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_FENCE);
+	public static final Item CRACKED_MAGMA_NETHER_BRICK_FENCE_GATE = registerBlock(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_FENCE_GATE);
+	public static final Item CHISELED_MAGMA_NETHER_BRICKS = registerBlock(MSBlocks.CHISELED_MAGMA_NETHER_BRICKS);
+	public static final Item CHISELED_MAGMA_NETHER_BRICK_SLAB = registerBlock(MSBlocks.CHISELED_MAGMA_NETHER_BRICK_SLAB);
+	public static final Item CHISELED_MAGMA_NETHER_BRICK_STAIRS = registerBlock(MSBlocks.CHISELED_MAGMA_NETHER_BRICK_STAIRS);
+	public static final Item CHISELED_MAGMA_NETHER_BRICK_WALL = registerBlock(MSBlocks.CHISELED_MAGMA_NETHER_BRICK_WALL);
+	public static final Item CRACKED_CHISELED_MAGMA_NETHER_BRICKS = registerBlock(MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICKS);
+	public static final Item CRACKED_CHISELED_MAGMA_NETHER_BRICK_SLAB = registerBlock(MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICK_SLAB);
+	public static final Item CRACKED_CHISELED_MAGMA_NETHER_BRICK_STAIRS = registerBlock(MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICK_STAIRS);
+	public static final Item CRACKED_CHISELED_MAGMA_NETHER_BRICK_WALL = registerBlock(MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICK_WALL);
+	
 	public static final Item GHASTLY_NETHER_BRICKS = registerBlock(MSBlocks.GHASTLY_NETHER_BRICKS);
 	public static final Item GHASTLY_NETHER_BRICK_SLAB = registerBlock(MSBlocks.GHASTLY_NETHER_BRICK_SLAB);
 	public static final Item GHASTLY_NETHER_BRICK_STAIRS = registerBlock(MSBlocks.GHASTLY_NETHER_BRICK_STAIRS);
@@ -484,6 +583,10 @@ public class MSItems {
 	public static final Item INFESTED_MOSSY_CHISELED_TUFF_BRICKS = registerBlock(MSBlocks.INFESTED_MOSSY_CHISELED_TUFF_BRICKS);
 	public static final Item INFESTED_CRACKED_MOSSY_CHISELED_TUFF_BRICKS = registerBlock(MSBlocks.INFESTED_CRACKED_MOSSY_CHISELED_TUFF_BRICKS);
 	
+	public static final Item SUSPICIOUS_RED_SAND = registerBlock(MSBlocks.SUSPICIOUS_RED_SAND);
+	public static final Item SUSPICIOUS_WHITE_SAND = registerBlock(MSBlocks.SUSPICIOUS_WHITE_SAND);
+	public static final Item SUSPICIOUS_BLACK_SAND = registerBlock(MSBlocks.SUSPICIOUS_BLACK_SAND);
+	
 	public static final Item WITHER_BONE = register("wither_bone");
 	public static final Item WITHER_BONE_MEAL = register("wither_bone_meal", BoneMealItem::new);
 	
@@ -494,7 +597,14 @@ public class MSItems {
 	public static final Item SOUL_NETHER_BRICK = register("soul_nether_brick");
 	public static final Item BLAZING_NETHER_BRICK = register("blazing_nether_brick");
 	public static final Item GLOWING_NETHER_BRICK = register("glowing_nether_brick");
+	public static final Item MAGMA_NETHER_BRICK = register("magma_nether_brick");
 	public static final Item GHASTLY_NETHER_BRICK = register("ghastly_nether_brick");
+	
+	public static final Item FLINT_SWORD = register("flint_sword", new AquiferSwordItem(MSToolMaterials.FLINT, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(MSToolMaterials.FLINT, 3, -2.3f))));
+	public static final Item FLINT_SHOVEL = register("flint_shovel", new AquiferShovelItem(MSToolMaterials.FLINT, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(MSToolMaterials.FLINT, 1.5f, -2.9f))));
+	public static final Item FLINT_PICKAXE = register("flint_pickaxe", new AquiferPickaxeItem(MSToolMaterials.FLINT, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(MSToolMaterials.FLINT, 1.0f, -2.7f))));
+	public static final Item FLINT_AXE = register("flint_axe", new AquiferAxeItem(MSToolMaterials.FLINT, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(MSToolMaterials.FLINT, 7.0f, -3.1f))));
+	public static final Item FLINT_HOE = register("flint_hoe", new AquiferHoeItem(MSToolMaterials.FLINT, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(MSToolMaterials.FLINT, -1.0f, -1.9f))));
 	
 	public static Item register(String name) {
 		return register(name, new Item.Settings());

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "white_sand",
+  "ingredients": [
+    {
+      "item": "mountainspring:white_sandstone"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "mountainspring:white_sand"
+  }
+}

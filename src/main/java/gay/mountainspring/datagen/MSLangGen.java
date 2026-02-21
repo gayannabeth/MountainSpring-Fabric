@@ -242,6 +242,74 @@ public class MSLangGen {
 			builder.add(MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_STAIRS, "Cracked Mossy Red Sandstone Brick Stairs");
 			builder.add(MSBlocks.CRACKED_MOSSY_RED_SANDSTONE_BRICK_WALL, "Cracked Mossy Red Sandstone Brick Wall");
 			
+			builder.add(MSBlocks.WHITE_SAND, "White Sand");
+			builder.add(MSBlocks.WHITE_SANDSTONE, "White Sandstone");
+			builder.add(MSBlocks.WHITE_SANDSTONE_SLAB, "White Sandstone Slab");
+			builder.add(MSBlocks.WHITE_SANDSTONE_STAIRS, "White Sandstone Stairs");
+			builder.add(MSBlocks.WHITE_SANDSTONE_WALL, "White Sandstone Wall");
+			builder.add(MSBlocks.CHISELED_WHITE_SANDSTONE, "Chiseled White Sandstone");
+			builder.add(MSBlocks.CHISELED_WHITE_SANDSTONE_SLAB, "Chiseled White Sandstone Slab");
+			builder.add(MSBlocks.CHISELED_WHITE_SANDSTONE_STAIRS, "Chiseled White Sandstone Stairs");
+			builder.add(MSBlocks.CHISELED_WHITE_SANDSTONE_WALL, "Chiseled White Sandstone Wall");
+			builder.add(MSBlocks.SMOOTH_WHITE_SANDSTONE, "Smooth White Sandstone");
+			builder.add(MSBlocks.SMOOTH_WHITE_SANDSTONE_SLAB, "Smooth White Sandstone Slab");
+			builder.add(MSBlocks.SMOOTH_WHITE_SANDSTONE_STAIRS, "Smooth White Sandstone Stairs");
+			builder.add(MSBlocks.SMOOTH_WHITE_SANDSTONE_WALL, "Smooth White Sandstone Wall");
+			builder.add(MSBlocks.CUT_WHITE_SANDSTONE, "Cut White Sandstone");
+			builder.add(MSBlocks.CUT_WHITE_SANDSTONE_SLAB, "Cut White Sandstone Slab");
+			builder.add(MSBlocks.CUT_WHITE_SANDSTONE_STAIRS, "Cut White Sandstone Stairs");
+			builder.add(MSBlocks.CUT_WHITE_SANDSTONE_WALL, "Cut White Sandstone Wall");
+			builder.add(MSBlocks.WHITE_SANDSTONE_BRICKS, "White Sandstone Bricks");
+			builder.add(MSBlocks.WHITE_SANDSTONE_BRICK_SLAB, "White Sandstone Brick Slab");
+			builder.add(MSBlocks.WHITE_SANDSTONE_BRICK_STAIRS, "White Sandstone Brick Stairs");
+			builder.add(MSBlocks.WHITE_SANDSTONE_BRICK_WALL, "White Sandstone Brick Wall");
+			builder.add(MSBlocks.CRACKED_WHITE_SANDSTONE_BRICKS, "Cracked White Sandstone Bricks");
+			builder.add(MSBlocks.CRACKED_WHITE_SANDSTONE_BRICK_SLAB, "Cracked White Sandstone Brick Slab");
+			builder.add(MSBlocks.CRACKED_WHITE_SANDSTONE_BRICK_STAIRS, "Cracked White Sandstone Brick Stairs");
+			builder.add(MSBlocks.CRACKED_WHITE_SANDSTONE_BRICK_WALL, "Cracked White Sandstone Brick Wall");
+			builder.add(MSBlocks.MOSSY_WHITE_SANDSTONE_BRICKS, "Mossy White Sandstone Bricks");
+			builder.add(MSBlocks.MOSSY_WHITE_SANDSTONE_BRICK_SLAB, "Mossy White Sandstone Brick Slab");
+			builder.add(MSBlocks.MOSSY_WHITE_SANDSTONE_BRICK_STAIRS, "Mossy White Sandstone Brick Stairs");
+			builder.add(MSBlocks.MOSSY_WHITE_SANDSTONE_BRICK_WALL, "Mossy White Sandstone Brick Wall");
+			builder.add(MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICKS, "Cracked Mossy White Sandstone Bricks");
+			builder.add(MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_SLAB, "Cracked Mossy White Sandstone Brick Slab");
+			builder.add(MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_STAIRS, "Cracked Mossy White Sandstone Brick Stairs");
+			builder.add(MSBlocks.CRACKED_MOSSY_WHITE_SANDSTONE_BRICK_WALL, "Cracked Mossy White Sandstone Brick Wall");
+			
+			builder.add(MSBlocks.BLACK_SAND, "Black Sand");
+			builder.add(MSBlocks.BLACK_SANDSTONE, "Black Sandstone");
+			builder.add(MSBlocks.BLACK_SANDSTONE_SLAB, "Black Sandstone Slab");
+			builder.add(MSBlocks.BLACK_SANDSTONE_STAIRS, "Black Sandstone Stairs");
+			builder.add(MSBlocks.BLACK_SANDSTONE_WALL, "Black Sandstone Wall");
+			builder.add(MSBlocks.CHISELED_BLACK_SANDSTONE, "Chiseled Black Sandstone");
+			builder.add(MSBlocks.CHISELED_BLACK_SANDSTONE_SLAB, "Chiseled Black Sandstone Slab");
+			builder.add(MSBlocks.CHISELED_BLACK_SANDSTONE_STAIRS, "Chiseled Black Sandstone Stairs");
+			builder.add(MSBlocks.CHISELED_BLACK_SANDSTONE_WALL, "Chiseled Black Sandstone Wall");
+			builder.add(MSBlocks.SMOOTH_BLACK_SANDSTONE, "Smooth Black Sandstone");
+			builder.add(MSBlocks.SMOOTH_BLACK_SANDSTONE_SLAB, "Smooth Black Sandstone Slab");
+			builder.add(MSBlocks.SMOOTH_BLACK_SANDSTONE_STAIRS, "Smooth Black Sandstone Stairs");
+			builder.add(MSBlocks.SMOOTH_BLACK_SANDSTONE_WALL, "Smooth Black Sandstone Wall");
+			builder.add(MSBlocks.CUT_BLACK_SANDSTONE, "Cut Black Sandstone");
+			builder.add(MSBlocks.CUT_BLACK_SANDSTONE_SLAB, "Cut Black Sandstone Slab");
+			builder.add(MSBlocks.CUT_BLACK_SANDSTONE_STAIRS, "Cut Black Sandstone Stairs");
+			builder.add(MSBlocks.CUT_BLACK_SANDSTONE_WALL, "Cut Black Sandstone Wall");
+			builder.add(MSBlocks.BLACK_SANDSTONE_BRICKS, "Black Sandstone Bricks");
+			builder.add(MSBlocks.BLACK_SANDSTONE_BRICK_SLAB, "Black Sandstone Brick Slab");
+			builder.add(MSBlocks.BLACK_SANDSTONE_BRICK_STAIRS, "Black Sandstone Brick Stairs");
+			builder.add(MSBlocks.BLACK_SANDSTONE_BRICK_WALL, "Black Sandstone Brick Wall");
+			builder.add(MSBlocks.CRACKED_BLACK_SANDSTONE_BRICKS, "Cracked Black Sandstone Bricks");
+			builder.add(MSBlocks.CRACKED_BLACK_SANDSTONE_BRICK_SLAB, "Cracked Black Sandstone Brick Slab");
+			builder.add(MSBlocks.CRACKED_BLACK_SANDSTONE_BRICK_STAIRS, "Cracked Black Sandstone Brick Stairs");
+			builder.add(MSBlocks.CRACKED_BLACK_SANDSTONE_BRICK_WALL, "Cracked Black Sandstone Brick Wall");
+			builder.add(MSBlocks.MOSSY_BLACK_SANDSTONE_BRICKS, "Mossy Black Sandstone Bricks");
+			builder.add(MSBlocks.MOSSY_BLACK_SANDSTONE_BRICK_SLAB, "Mossy Black Sandstone Brick Slab");
+			builder.add(MSBlocks.MOSSY_BLACK_SANDSTONE_BRICK_STAIRS, "Mossy Black Sandstone Brick Stairs");
+			builder.add(MSBlocks.MOSSY_BLACK_SANDSTONE_BRICK_WALL, "Mossy Black Sandstone Brick Wall");
+			builder.add(MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICKS, "Cracked Mossy Black Sandstone Bricks");
+			builder.add(MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_SLAB, "Cracked Mossy Black Sandstone Brick Slab");
+			builder.add(MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_STAIRS, "Cracked Mossy Black Sandstone Brick Stairs");
+			builder.add(MSBlocks.CRACKED_MOSSY_BLACK_SANDSTONE_BRICK_WALL, "Cracked Mossy Black Sandstone Brick Wall");
+			
 			builder.add(MSBlocks.CRACKED_PRISMARINE_BRICKS, "Cracked Prismarine Bricks");
 			builder.add(MSBlocks.CRACKED_PRISMARINE_BRICK_SLAB, "Cracked Prismarine Brick Slab");
 			builder.add(MSBlocks.CRACKED_PRISMARINE_BRICK_STAIRS, "Cracked Prismarine Brick Stairs");
@@ -418,6 +486,27 @@ public class MSLangGen {
 			builder.add(MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICK_STAIRS, "Cracked Chiseled Glowing Nether Brick Stairs");
 			builder.add(MSBlocks.CRACKED_CHISELED_GLOWING_NETHER_BRICK_WALL, "Cracked Chiseled Glowing Nether Brick Wall");
 			
+			builder.add(MSBlocks.MAGMA_NETHER_BRICKS, "Magma Nether Bricks");
+			builder.add(MSBlocks.MAGMA_NETHER_BRICK_SLAB, "Magma Nether Brick Slab");
+			builder.add(MSBlocks.MAGMA_NETHER_BRICK_STAIRS, "Magma Nether Brick Stairs");
+			builder.add(MSBlocks.MAGMA_NETHER_BRICK_WALL, "Magma Nether Brick Wall");
+			builder.add(MSBlocks.MAGMA_NETHER_BRICK_FENCE, "Magma Nether Brick Fence");
+			builder.add(MSBlocks.MAGMA_NETHER_BRICK_FENCE_GATE, "Magma Nether Brick Fence Gate");
+			builder.add(MSBlocks.CRACKED_MAGMA_NETHER_BRICKS, "Cracked Magma Nether Bricks");
+			builder.add(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_SLAB, "Cracked Magma Nether Brick Slab");
+			builder.add(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_STAIRS, "Cracked Magma Nether Brick Stairs");
+			builder.add(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_WALL, "Cracked Magma Nether Brick Wall");
+			builder.add(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_FENCE, "Cracked Magma Nether Brick Fence");
+			builder.add(MSBlocks.CRACKED_MAGMA_NETHER_BRICK_FENCE_GATE, "Cracked Magma Nether Brick Fence Gate");
+			builder.add(MSBlocks.CHISELED_MAGMA_NETHER_BRICKS, "Chiseled Magma Nether Bricks");
+			builder.add(MSBlocks.CHISELED_MAGMA_NETHER_BRICK_SLAB, "Chiseled Magma Nether Brick Slab");
+			builder.add(MSBlocks.CHISELED_MAGMA_NETHER_BRICK_STAIRS, "Chiseled Magma Nether Brick Stairs");
+			builder.add(MSBlocks.CHISELED_MAGMA_NETHER_BRICK_WALL, "Chiseled Magma Nether Brick Wall");
+			builder.add(MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICKS, "Cracked Chiseled Magma Nether Bricks");
+			builder.add(MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICK_SLAB, "Cracked Chiseled Magma Nether Brick Slab");
+			builder.add(MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICK_STAIRS, "Cracked Chiseled Magma Nether Brick Stairs");
+			builder.add(MSBlocks.CRACKED_CHISELED_MAGMA_NETHER_BRICK_WALL, "Cracked Chiseled Magma Nether Brick Wall");
+			
 			builder.add(MSBlocks.GHASTLY_NETHER_BRICKS, "Ghastly Nether Bricks");
 			builder.add(MSBlocks.GHASTLY_NETHER_BRICK_SLAB, "Ghastly Nether Brick Slab");
 			builder.add(MSBlocks.GHASTLY_NETHER_BRICK_STAIRS, "Ghastly Nether Brick Stairs");
@@ -494,6 +583,10 @@ public class MSLangGen {
 			builder.add(MSBlocks.INFESTED_MOSSY_CHISELED_TUFF_BRICKS, "Infested Mossy Chiseled Tuff Bricks");
 			builder.add(MSBlocks.INFESTED_CRACKED_MOSSY_CHISELED_TUFF_BRICKS, "Infested Cracked Mossy Chiseled Tuff Bricks");
 			
+			builder.add(MSBlocks.SUSPICIOUS_RED_SAND, "Suspicious Red Sand");
+			builder.add(MSBlocks.SUSPICIOUS_WHITE_SAND, "Suspicious White Sand");
+			builder.add(MSBlocks.SUSPICIOUS_BLACK_SAND, "Suspicious Black Sand");
+			
 			builder.add(MSItems.WITHER_BONE, "Wither Bone");
 			builder.add(MSItems.WITHER_BONE_MEAL, "Wither Bone Meal");
 			
@@ -504,7 +597,14 @@ public class MSLangGen {
 			builder.add(MSItems.SOUL_NETHER_BRICK, "Soul Nether Brick");
 			builder.add(MSItems.BLAZING_NETHER_BRICK, "Blazing Nether Brick");
 			builder.add(MSItems.GLOWING_NETHER_BRICK, "Glowing Nether Brick");
+			builder.add(MSItems.MAGMA_NETHER_BRICK, "Magma Nether Brick");
 			builder.add(MSItems.GHASTLY_NETHER_BRICK, "Ghastly Nether Brick");
+			
+			builder.add(MSItems.FLINT_SWORD, "Flint Sword");
+			builder.add(MSItems.FLINT_SHOVEL, "Flint Shovel");
+			builder.add(MSItems.FLINT_PICKAXE, "Flint Pickaxe");
+			builder.add(MSItems.FLINT_AXE, "Flint Axe");
+			builder.add(MSItems.FLINT_HOE, "Flint Hoe");
 		}
 	}
 	

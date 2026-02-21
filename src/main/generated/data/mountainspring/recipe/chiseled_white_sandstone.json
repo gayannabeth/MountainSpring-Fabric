@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chiseled_white_sandstone",
+  "key": {
+    "#": {
+      "item": "mountainspring:white_sandstone_slab"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:chiseled_white_sandstone"
+  }
+}

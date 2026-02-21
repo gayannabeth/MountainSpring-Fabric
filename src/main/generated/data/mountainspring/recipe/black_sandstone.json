@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "black_sandstone",
+  "key": {
+    "#": {
+      "item": "mountainspring:black_sand"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mountainspring:black_sandstone"
+  }
+}
